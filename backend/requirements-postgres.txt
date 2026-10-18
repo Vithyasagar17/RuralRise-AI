@@ -1,0 +1,3 @@
+-r requirements.txt
+# Optional PostgreSQL adapter; version installed in the verification environment.
+psycopg2-binary==2.9.12

@@ -1,0 +1,26 @@
+RuralRise AI — Member 2 + Member 3 merged backend verification
+Date: 2026-10-18
+Command (from repository root, with backend package on PYTHONPATH):
+  PYTHONPATH=backend python -m unittest discover -s backend/tests -v
+Windows PowerShell equivalent:
+  $env:PYTHONPATH = (Resolve-Path 'backend').Path
+  python -m unittest discover -s backend/tests -v
+
+Observed summary:
+  Ran 74 tests
+  OK (skipped=22)
+
+Interpretation:
+  - 52 tests passed.
+  - 22 tests were skipped.
+  - The 14 Member 2 career-engine unit tests passed.
+  - The 24 Member 3 API/storage tests passed, including the preserved seven-route contract and the six-field recommendation response.
+  - Remaining discovered tests for Stage 2 configuration/upgrade logic also passed.
+  - Skips relate to real PostgreSQL integration tests requiring an explicitly configured dedicated database and adapter tests requiring the optional PostgreSQL dependency.
+
+Not verified by this command:
+  - A real PostgreSQL server integration run.
+  - External data/career prerequisite accuracy.
+  - A browser/frontend end-to-end run.
+  - A public HTTP learning-roadmap endpoint; none is defined in this merge.
+  - Deployment and production authentication/authorisation.

@@ -1,0 +1,103 @@
+/* Design tokens for the facilitator, offline and language features. Prefixed --rr5- so they cannot clash
+   with Member 1's variables. Colours were chosen for WCAG AA contrast
+   (4.5:1 or better for body text) in both light and dark mode. */
+:root {
+  --rr5-bg: #ffffff;
+  --rr5-surface: #f6f8f7;
+  --rr5-border: #c9d3ce;
+  --rr5-text: #1a1a1a;
+  --rr5-muted: #4a5550;
+  --rr5-primary: #1f6f4a;
+  --rr5-primary-text: #ffffff;
+  --rr5-primary-soft: #e3f1ea;
+  --rr5-warn-bg: #fff4e0;
+  --rr5-warn-text: #7a4100;
+  --rr5-error-bg: #fdecea;
+  --rr5-error-text: #a1241b;
+  --rr5-info-bg: #e8f0fb;
+  --rr5-info-text: #1d4f91;
+  --rr5-focus: #b45309;
+  --rr5-radius: 10px;
+  --rr5-tap: 44px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --rr5-bg: #121614;
+    --rr5-surface: #1c2320;
+    --rr5-border: #3a4641;
+    --rr5-text: #f1f4f2;
+    --rr5-muted: #b8c4be;
+    --rr5-primary: #6fcf97;
+    --rr5-primary-text: #0b1f14;
+    --rr5-primary-soft: #1f3a2c;
+    --rr5-warn-bg: #3a2a10;
+    --rr5-warn-text: #ffd8a1;
+    --rr5-error-bg: #3d1a17;
+    --rr5-error-text: #ffb4ab;
+    --rr5-info-bg: #18283d;
+    --rr5-info-text: #a9c8f5;
+    --rr5-focus: #ffb547;
+  }
+}
+
+/* Shared button + focus styles. */
+.rr5-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: var(--rr5-tap);
+  padding: 10px 18px;
+  border-radius: var(--rr5-radius);
+  border: 2px solid var(--rr5-primary);
+  background: var(--rr5-primary);
+  color: var(--rr5-primary-text);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+}
+.rr5-btn--secondary {
+  background: transparent;
+  color: var(--rr5-primary);
+}
+.rr5-btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+.rr5-btn:focus-visible,
+.rr5-focusable:focus-visible {
+  outline: 3px solid var(--rr5-focus);
+  outline-offset: 2px;
+}
+
+.rr5-notice {
+  padding: 12px 14px;
+  border-radius: var(--rr5-radius);
+  border-left: 5px solid currentColor;
+  margin: 12px 0;
+}
+.rr5-notice--info { background: var(--rr5-info-bg); color: var(--rr5-info-text); }
+.rr5-notice--warn { background: var(--rr5-warn-bg); color: var(--rr5-warn-text); }
+.rr5-notice--error { background: var(--rr5-error-bg); color: var(--rr5-error-text); }
+.rr5-notice--ok { background: var(--rr5-primary-soft); color: var(--rr5-primary); }
+.rr5-notice p { margin: 0; }
+.rr5-notice p + p { margin-top: 6px; }
+
+.rr5-visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Language selector (src/features/i18n/LanguageSelect.jsx) */
+.rr5-language { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.rr5-language select { min-height: var(--rr5-tap); }
+.rr5-language__draft { flex-basis: 100%; margin: 0; font-size: 0.85rem; }

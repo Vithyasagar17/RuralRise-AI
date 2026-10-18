@@ -1,0 +1,13 @@
+[
+  {
+    "id": "demo-safety", "title": "Demo: Recognising electrical hazards", "skill": "safety awareness",
+    "difficulty": "beginner",
+    "lesson": "Fictional prototype lesson. Stay away from exposed wires and report hazards to a trained adult. Never touch or practise on live electrical equipment. This is not professional training.",
+    "practical_task": "On paper, list three situations where you would ask a trained professional for help."
+  },
+  {
+    "id": "demo-planning", "title": "Demo: Plan a learning week", "skill": "learning planning",
+    "difficulty": "beginner", "lesson": "Fictional prototype lesson. Choose one learning goal and divide your available time into short sessions.",
+    "practical_task": "Write a simple schedule with two short learning sessions."
+  }
+]

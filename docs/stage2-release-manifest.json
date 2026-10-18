@@ -1,0 +1,212 @@
+[
+  {
+    "path": ".env.example",
+    "size_bytes": 122,
+    "sha256": "8d15393a4ec0d706a9375284b28f0fd4dc876aa6440853baf41d4b442878e33d"
+  },
+  {
+    "path": ".gitignore",
+    "size_bytes": 89,
+    "sha256": "53f2a81f1503b2b7e03d2c12577ac81379db75563260ec26d11615ac3a4942ab"
+  },
+  {
+    "path": "README.md",
+    "size_bytes": 2726,
+    "sha256": "121dddd6db56338e64fb29bd33365bdaa45e678eadb5b1a18927080667eecb48"
+  },
+  {
+    "path": "STAGE2_SETUP.md",
+    "size_bytes": 13252,
+    "sha256": "5a71ae495231387f91c755a8ad71f2be39541de6e2353e33fadf684c4445261b"
+  },
+  {
+    "path": "backend/.env.example",
+    "size_bytes": 571,
+    "sha256": "dd857bf86f8dc42ab662200980b5d7dcca475c3de30330f40bce01e13fa89c18"
+  },
+  {
+    "path": "backend/app/__init__.py",
+    "size_bytes": 61,
+    "sha256": "0d525efe814961cf48e1a139277ccbca3ac03d5180a9d6c82b92945f77a9a784"
+  },
+  {
+    "path": "backend/app/career_engine.py",
+    "size_bytes": 717,
+    "sha256": "bb421a714548037158c376e484065548df2dc3b06c0a653b7bedc17138cc6e15"
+  },
+  {
+    "path": "backend/app/config.py",
+    "size_bytes": 2987,
+    "sha256": "e2cb697f16824586432322b22ee2f15c647f0a8f1340fb2e516d8402542c1be6"
+  },
+  {
+    "path": "backend/app/configure_db.py",
+    "size_bytes": 2059,
+    "sha256": "99cfada65ecb0edd3afdc5341a0657dcd2fee494e87f2aaf5bf628ce8e907edd"
+  },
+  {
+    "path": "backend/app/database.py",
+    "size_bytes": 4697,
+    "sha256": "a2750f1060054db023ad0f639c9984c34affc418bcb7fa9504f9f2dfbadaba6c"
+  },
+  {
+    "path": "backend/app/db_tools.py",
+    "size_bytes": 2831,
+    "sha256": "b050c20c3a4aad3fca2ebcc268dadf10d2a0785b2df135a02397225d8c12b9d0"
+  },
+  {
+    "path": "backend/app/main.py",
+    "size_bytes": 6103,
+    "sha256": "57ff9d8bc33812bc9a0c82663aaaa9eb4147459e33aedd17a2d4b494e2de2bb5"
+  },
+  {
+    "path": "backend/app/opportunity_engine.py",
+    "size_bytes": 1001,
+    "sha256": "5eac285fcf84de370414f22134be9e2b454e02d57cc89d4eefc7a2b35a386469"
+  },
+  {
+    "path": "backend/app/postgres_store.py",
+    "size_bytes": 9674,
+    "sha256": "3b91f2f700deff8192d78dc93f7c2219a737b8dc89b946ab578e71b3ee7d1065"
+  },
+  {
+    "path": "backend/app/schemas.py",
+    "size_bytes": 3199,
+    "sha256": "a3be373756035259a00bf34f70c7040bf7c03dba267ac8959e889fc5b3754f63"
+  },
+  {
+    "path": "backend/app/storage_import.py",
+    "size_bytes": 1316,
+    "sha256": "e59fb47d7d1edc9ba7a176efe739688e42e89d488a401d8740c0d2431109dc1f"
+  },
+  {
+    "path": "backend/data/careers.json",
+    "size_bytes": 193,
+    "sha256": "98fd2418119fd67a466d02257f13c571aa7d8a9f2c185f07dffa8c27e0633737"
+  },
+  {
+    "path": "backend/data/courses.json",
+    "size_bytes": 791,
+    "sha256": "271ff1295549f74b8897a9e0c6dfc730a49fb265b89d29db8ba9e9b98d63d073"
+  },
+  {
+    "path": "backend/data/opportunities.json",
+    "size_bytes": 887,
+    "sha256": "fb491686618404edf801b9d8a7a7b1299ab0a75119a543c065c792df36b6f0c5"
+  },
+  {
+    "path": "backend/requirements-postgres.txt",
+    "size_bytes": 126,
+    "sha256": "5e230791ea31686edd84f728bfef90e42a35e300710390166c9abd73326291dd"
+  },
+  {
+    "path": "backend/requirements.txt",
+    "size_bytes": 297,
+    "sha256": "9580fc4830bc137b6383f0760c7d10ccfef90e4c2edaff8d0c63931315b40ad0"
+  },
+  {
+    "path": "backend/tests/inprocess_loop.py",
+    "size_bytes": 1142,
+    "sha256": "bb407f874bb64572e801fd902a9b5c3327d3b224dbd327fa21f371be6f6d9362"
+  },
+  {
+    "path": "backend/tests/smoke_server.py",
+    "size_bytes": 5866,
+    "sha256": "c0e761d1269ab37f9cf116d8839a91cebc7ebe5fc7e900966cc1b81912ebe641"
+  },
+  {
+    "path": "backend/tests/test_api.py",
+    "size_bytes": 12952,
+    "sha256": "8a1bbd6007b85e9e5716fc04676e699107e021a6e244d572b3738c1f97dc7adf"
+  },
+  {
+    "path": "backend/tests/test_postgres_integration.py",
+    "size_bytes": 8328,
+    "sha256": "cb38b4db2162067890c1a7bb7d1dd6433cdaee2f956ed48cbe0c7e026c77d101"
+  },
+  {
+    "path": "backend/tests/test_stage2_storage.py",
+    "size_bytes": 14389,
+    "sha256": "5d9eede221cde55f07eff8cbe2d1341de8c806a498d8459f9f6e5caf453b97b5"
+  },
+  {
+    "path": "backend/tests/test_stage2_upgrade.py",
+    "size_bytes": 2770,
+    "sha256": "dc47b67f8f44d581bde7ca31acc3e55bdf40e94d6db075012d0f8c8ec04bd418"
+  },
+  {
+    "path": "database/migrations/001_backend_storage.sql",
+    "size_bytes": 2248,
+    "sha256": "501a10f05e687c84015e14c76ceff0d6f02933ab60d2c4669f65b17f193235f0"
+  },
+  {
+    "path": "database/schema.sql",
+    "size_bytes": 1575,
+    "sha256": "e170913220ea9924472183a67cf07ba828ebda65d9fa02dab7d535dcbc8385b3"
+  },
+  {
+    "path": "docs/api-contracts.md",
+    "size_bytes": 8359,
+    "sha256": "bdeda7cfce438f9044df527da48fd608d76e22c552a36ff2447abbc7261bb209"
+  },
+  {
+    "path": "docs/architecture.md",
+    "size_bytes": 4246,
+    "sha256": "8e14fc49f5ab4cd1d78c9ecc8c97b31e3c32540ca6d1d2e423729333939f8b71"
+  },
+  {
+    "path": "docs/file-manifest.json",
+    "size_bytes": 4083,
+    "sha256": "48e588180caa794b395b4c00f165d15e5f880d498e6136f6d7483a1c947851e9"
+  },
+  {
+    "path": "docs/integration-guide.md",
+    "size_bytes": 42357,
+    "sha256": "e951db6f0126498eb8e34df343da0b9ebf24eb2901d75db7b5f41564c278c5c9"
+  },
+  {
+    "path": "docs/runtime-versions.txt",
+    "size_bytes": 315,
+    "sha256": "6ed60910241802ff3134996dcddee03ae07d1578aa8a5e44f23425c686122ad1"
+  },
+  {
+    "path": "docs/server-smoke.log",
+    "size_bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "docs/smoke-results.json",
+    "size_bytes": 511,
+    "sha256": "60cce57a6c78a6fa851d36242a538a04e3d1dde9329f330f814ff3ec96bd3248"
+  },
+  {
+    "path": "docs/stage2-handoff.md",
+    "size_bytes": 23900,
+    "sha256": "b3964357f1373ad6610e5bd0f9301476594b886cd7dd97a7c2c8be6e577f9e31"
+  },
+  {
+    "path": "docs/stage2-test-results.txt",
+    "size_bytes": 9284,
+    "sha256": "5acbccd38475cb059e6ea62a022468abf430f986fdd8ffcd763485406854c285"
+  },
+  {
+    "path": "docs/stage2-verification.json",
+    "size_bytes": 1468,
+    "sha256": "326199c0004abfbad8de289362c0167b538425bbf5802c509231aa9fb34189fb"
+  },
+  {
+    "path": "docs/test-results.txt",
+    "size_bytes": 2098,
+    "sha256": "910d7cfbd44ca6cbc4696862175cc01af60dee3f94bd0423f68198507247c78f"
+  },
+  {
+    "path": "stage2-upgrade-manifest.json",
+    "size_bytes": 3934,
+    "sha256": "c60a45fc03810fbf15cd3fa40043697dbb22b60a65bc329f050675f47b6958ad"
+  },
+  {
+    "path": "upgrade_stage1.py",
+    "size_bytes": 4105,
+    "sha256": "49ead1f474a9e3099648e536313b96d147d9cdf70af5e662e42a49fd6c7f8f84"
+  }
+]

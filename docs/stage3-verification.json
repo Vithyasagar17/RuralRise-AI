@@ -1,0 +1,40 @@
+{
+  "executed_at_utc": "2026-10-18T11:54:13.525568+00:00",
+  "python": "3.13.7",
+  "dependencies": {
+    "fastapi": "0.137.1",
+    "pydantic": "2.12.5",
+    "uvicorn": "0.49.0",
+    "httpx": "0.28.1",
+    "python-dotenv": "1.0.1",
+    "psycopg2-binary": "2.9.12"
+  },
+  "tests_run": 89,
+  "passed": 89,
+  "failures": 0,
+  "errors": 0,
+  "successful": true,
+  "skipped": [],
+  "provider_boundary": "Supabase Auth responses mocked; actual hosted user-token verification needs project configuration and a real user session.",
+  "team_integrations": "Actual Member 5 frontend received: 73 unit/component tests, 6 live API tests, 10 actual-module ASGI/queue checks and production/PWA build passed. Members 1/2/4 real modules/screens remain absent.",
+  "deployment": "Deployment entrypoint prepared; no external host/repository/account configured.",
+  "default_compatibility": "Demo mode preserves seven API paths and existing bodies. Secure mode and proposed read additions are opt-in pending team review.",
+  "local_database_attempt": {
+    "startup": {
+      "exit_code": 0
+    },
+    "connection": {
+      "status": "connected",
+      "server": "PostgreSQL 17.5 on x86_64-windows, compiled by msvc-19.43.34808, 64-bit"
+    },
+    "database_restart_persistence": {
+      "passed": true,
+      "score_before": 87,
+      "score_after": 87
+    },
+    "shutdown": {
+      "exit_code": 0
+    }
+  },
+  "database_status": "Real SQL tests and actual PostgreSQL restart checked on private local PostgreSQL 17.5; hosted Supabase remains unconfigured."
+}

@@ -1,0 +1,44 @@
+{
+  "executed_at_utc": "2026-10-18T11:54:07.849413+00:00",
+  "python": "3.13.7",
+  "base_url": "http://127.0.0.1:58174",
+  "checks": [
+    {
+      "name": "documented Uvicorn command starts and health returns 200",
+      "passed": true
+    },
+    {
+      "name": "profile is accepted over HTTP",
+      "passed": true
+    },
+    {
+      "name": "recommendation endpoint returns fixture careers",
+      "passed": true
+    },
+    {
+      "name": "courses endpoint returns fixture modules",
+      "passed": true
+    },
+    {
+      "name": "opportunity filters work over HTTP",
+      "passed": true
+    },
+    {
+      "name": "progress is saved",
+      "passed": true
+    },
+    {
+      "name": "facilitator observes demo progress",
+      "passed": true
+    },
+    {
+      "name": "invalid profile returns 422 over HTTP",
+      "passed": true
+    },
+    {
+      "name": "progress survives actual server process restart",
+      "passed": true
+    }
+  ],
+  "status": "passed"
+}

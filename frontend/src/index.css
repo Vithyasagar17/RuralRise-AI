@@ -1,0 +1,84 @@
+/* TEMPORARY base styles for the integration harness (Member 5).
+   Member 1 owns this file; their version should replace it. Member 5's
+   components carry their own styles and do not depend on this file. */
+:root {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans', 'Noto Sans Tamil', sans-serif;
+  font-size: 17px;
+  line-height: 1.5;
+  color-scheme: light dark;
+  --app-bg: #ffffff;
+  --app-text: #1a1a1a;
+  --app-header-bg: #1f6f4a;
+  --app-header-text: #ffffff;
+  --app-muted: #4a5550;
+  --app-border: #c9d3ce;
+  --app-focus: #b45309;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --app-bg: #121614;
+    --app-text: #f1f4f2;
+    --app-header-bg: #163d2b;
+    --app-muted: #b8c4be;
+    --app-border: #3a4641;
+    --app-focus: #ffb547;
+  }
+}
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; background: var(--app-bg); color: var(--app-text); }
+button, select, input, textarea { font: inherit; }
+
+.app-skip {
+  position: absolute;
+  left: -999px;
+  top: 8px;
+  background: #fff;
+  color: #1a1a1a;
+  padding: 10px 14px;
+  z-index: 10;
+  border-radius: 6px;
+}
+.app-skip:focus { left: 8px; outline: 3px solid var(--app-focus); }
+
+.app-header { background: var(--app-header-bg); color: var(--app-header-text); padding: 10px 16px 0; }
+.app-header__row { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; justify-content: space-between; }
+.app-header__name { margin: 0; font-size: 1.25rem; font-weight: 700; }
+.app-header select {
+  min-height: 44px;
+  padding: 6px 8px;
+  border-radius: 8px;
+  border: 2px solid #ffffff;
+  background: #ffffff;
+  color: #1a1a1a;
+}
+
+.app-nav { list-style: none; display: flex; flex-wrap: wrap; gap: 4px; margin: 10px 0 0; padding: 0; }
+.app-nav__btn {
+  min-height: 44px;
+  padding: 8px 14px;
+  border: 0;
+  border-radius: 8px 8px 0 0;
+  background: transparent;
+  color: var(--app-header-text);
+  font-weight: 600;
+  cursor: pointer;
+}
+.app-nav__btn[aria-current='page'] { background: var(--app-bg); color: var(--app-text); }
+.app-nav__btn:focus-visible, .app-header select:focus-visible, .app-student-picker select:focus-visible {
+  outline: 3px solid var(--app-focus);
+  outline-offset: 2px;
+}
+
+.app-main { padding: 12px 16px 48px; }
+.app-main:focus { outline: none; }
+.app-student-picker { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; margin-bottom: 10px; max-width: 48rem; margin-inline: auto; }
+.app-student-picker label { font-weight: 600; }
+.app-student-picker select {
+  min-height: 44px;
+  padding: 6px 8px;
+  border-radius: 8px;
+  border: 2px solid var(--app-border);
+  background: var(--app-bg);
+  color: var(--app-text);
+  max-width: 100%;
+}

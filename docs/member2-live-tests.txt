@@ -1,0 +1,13 @@
+
+> ruralrise-ai-frontend@0.1.0 test:live
+> vitest run --config vitest.live.config.js
+
+
+ RUN  v5.0.5 C:/Users/Vithyasagar/Documents/Codex/2026-10-17/a-few-important-points-1-stick-2/work/incoming-review/extracted/ruralrise-ai/frontend
+
+
+ Test Files  1 passed (1)
+      Tests  6 passed (6)
+   Start at  17:54:10
+   Duration  1.28s (tests 56%, transform 26%, import 15%, worker 3%)
+

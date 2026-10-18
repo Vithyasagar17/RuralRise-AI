@@ -1,0 +1,62 @@
+{
+  "profiles": [
+    {
+      "profile_id": "class10_practical_technical",
+      "name": "Demo Student A",
+      "education_level": "Class 10",
+      "location": "Tamil Nadu",
+      "language": "Tamil",
+      "interests": ["hands-on work", "electrical systems", "renewable energy"],
+      "skills": ["basic mathematics"],
+      "preferred_learning": "practical",
+      "weekly_learning_hours": 4,
+      "goals": ["find vocational training"]
+    },
+    {
+      "profile_id": "class12_electronics",
+      "name": "Demo Student B",
+      "education_level": "Class 12",
+      "location": "Tamil Nadu",
+      "language": "Tamil",
+      "interests": ["electronics", "circuits", "repairing devices"],
+      "skills": ["basic mathematics", "basic science"],
+      "preferred_learning": "practical",
+      "weekly_learning_hours": 5,
+      "goals": ["technical training", "repair"]
+    },
+    {
+      "profile_id": "agriculture_sustainability",
+      "name": "Demo Student C",
+      "education_level": "Class 12",
+      "location": "Tamil Nadu",
+      "language": "Tamil",
+      "interests": ["agriculture", "sustainability", "outdoor work"],
+      "skills": ["basic mathematics", "record keeping"],
+      "preferred_learning": "practical",
+      "weekly_learning_hours": 3,
+      "goals": ["agricultural training", "sustainability"]
+    },
+    {
+      "profile_id": "art_and_design",
+      "name": "Demo Student D",
+      "education_level": "Class 12",
+      "location": "Tamil Nadu",
+      "language": "Tamil",
+      "interests": ["art", "design", "creativity"],
+      "skills": ["visual observation", "digital literacy"],
+      "preferred_learning": "visual",
+      "weekly_learning_hours": 4,
+      "goals": ["portfolio building", "creative work"]
+    },
+    {
+      "profile_id": "incomplete_profile",
+      "education_level": "Class 10",
+      "location": "Tamil Nadu",
+      "interests": [],
+      "skills": ["basic mathematics"],
+      "preferred_learning": "",
+      "weekly_learning_hours": 2,
+      "goals": []
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+[
+  {
+    "path": "backend/app/config.py",
+    "sha256": "e2cb697f16824586432322b22ee2f15c647f0a8f1340fb2e516d8402542c1be6",
+    "stage1_sha256": "8a8d715e4a7e2684f546ee5ce35557eedfeb44ecefb76414cadabc8a3d8562a0"
+  },
+  {
+    "path": "backend/app/database.py",
+    "sha256": "a2750f1060054db023ad0f639c9984c34affc418bcb7fa9504f9f2dfbadaba6c",
+    "stage1_sha256": "6397e5603da9262d5f3b4540c5898c26506f5c7f721aec6361f2fec12c01cdba"
+  },
+  {
+    "path": "backend/app/main.py",
+    "sha256": "57ff9d8bc33812bc9a0c82663aaaa9eb4147459e33aedd17a2d4b494e2de2bb5",
+    "stage1_sha256": "6d40aad48f74bc087d2dc6e3f65c1b8c0f5eb81c5e7584572a4e0f0e3e7bacf8"
+  },
+  {
+    "path": "backend/requirements.txt",
+    "sha256": "9580fc4830bc137b6383f0760c7d10ccfef90e4c2edaff8d0c63931315b40ad0",
+    "stage1_sha256": "d986434e81d40bf4e74da26272f564cfcce21f62b7d79274c1c371132c2c7319"
+  },
+  {
+    "path": "backend/.env.example",
+    "sha256": "dd857bf86f8dc42ab662200980b5d7dcca475c3de30330f40bce01e13fa89c18",
+    "stage1_sha256": "b375550c7ed459f61866fbd67061043b5a7e74d269517314f80b2b2968a00206"
+  },
+  {
+    "path": "README.md",
+    "sha256": "121dddd6db56338e64fb29bd33365bdaa45e678eadb5b1a18927080667eecb48",
+    "stage1_sha256": "dc27d26fd630579bf450adf358ca9698a39b3b4fa60cc6a92e71ef51a8bcd6b0"
+  },
+  {
+    "path": "docs/architecture.md",
+    "sha256": "8e14fc49f5ab4cd1d78c9ecc8c97b31e3c32540ca6d1d2e423729333939f8b71",
+    "stage1_sha256": "eb25b38269a718e019e39ff8d52846ea6a77fdebe72d850655e607ca604ea4f1"
+  },
+  {
+    "path": "docs/api-contracts.md",
+    "sha256": "bdeda7cfce438f9044df527da48fd608d76e22c552a36ff2447abbc7261bb209",
+    "stage1_sha256": "c709fec861b633517ec690774a5586757a6e8a07eea4163e67a4e2791f00b260"
+  },
+  {
+    "path": "docs/integration-guide.md",
+    "sha256": "e951db6f0126498eb8e34df343da0b9ebf24eb2901d75db7b5f41564c278c5c9",
+    "stage1_sha256": "65133c42567fd6375a95abd5cfe3574227e30b47213bca254bb744cad3c8f1f2"
+  },
+  {
+    "path": "STAGE2_SETUP.md",
+    "sha256": "5a71ae495231387f91c755a8ad71f2be39541de6e2353e33fadf684c4445261b"
+  },
+  {
+    "path": "upgrade_stage1.py",
+    "sha256": "49ead1f474a9e3099648e536313b96d147d9cdf70af5e662e42a49fd6c7f8f84"
+  },
+  {
+    "path": "backend/requirements-postgres.txt",
+    "sha256": "5e230791ea31686edd84f728bfef90e42a35e300710390166c9abd73326291dd"
+  },
+  {
+    "path": "backend/app/postgres_store.py",
+    "sha256": "3b91f2f700deff8192d78dc93f7c2219a737b8dc89b946ab578e71b3ee7d1065"
+  },
+  {
+    "path": "backend/app/storage_import.py",
+    "sha256": "e59fb47d7d1edc9ba7a176efe739688e42e89d488a401d8740c0d2431109dc1f"
+  },
+  {
+    "path": "backend/app/db_tools.py",
+    "sha256": "b050c20c3a4aad3fca2ebcc268dadf10d2a0785b2df135a02397225d8c12b9d0"
+  },
+  {
+    "path": "backend/app/configure_db.py",
+    "sha256": "99cfada65ecb0edd3afdc5341a0657dcd2fee494e87f2aaf5bf628ce8e907edd"
+  },
+  {
+    "path": "database/migrations/001_backend_storage.sql",
+    "sha256": "501a10f05e687c84015e14c76ceff0d6f02933ab60d2c4669f65b17f193235f0"
+  },
+  {
+    "path": "backend/tests/test_stage2_storage.py",
+    "sha256": "5d9eede221cde55f07eff8cbe2d1341de8c806a498d8459f9f6e5caf453b97b5"
+  },
+  {
+    "path": "backend/tests/test_stage2_upgrade.py",
+    "sha256": "dc47b67f8f44d581bde7ca31acc3e55bdf40e94d6db075012d0f8c8ec04bd418"
+  },
+  {
+    "path": "backend/tests/test_postgres_integration.py",
+    "sha256": "cb38b4db2162067890c1a7bb7d1dd6433cdaee2f956ed48cbe0c7e026c77d101"
+  },
+  {
+    "path": "docs/stage2-handoff.md",
+    "sha256": "b3964357f1373ad6610e5bd0f9301476594b886cd7dd97a7c2c8be6e577f9e31"
+  },
+  {
+    "path": "docs/stage2-test-results.txt",
+    "sha256": "5acbccd38475cb059e6ea62a022468abf430f986fdd8ffcd763485406854c285"
+  },
+  {
+    "path": "docs/stage2-verification.json",
+    "sha256": "326199c0004abfbad8de289362c0167b538425bbf5802c509231aa9fb34189fb"
+  }
+]

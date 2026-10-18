@@ -1,0 +1,629 @@
+[
+  {
+    "career_id": "solar-technician",
+    "title": "Solar PV Technician",
+    "description": "A technical pathway focused on learning how solar photovoltaic systems are planned, installed, checked, and maintained under suitable supervision.",
+    "interests": [
+      "electronics",
+      "hands-on work",
+      "renewable energy",
+      "sustainability",
+      "electrical systems"
+    ],
+    "relevant_skills": [
+      "basic mathematics",
+      "problem solving",
+      "basic science",
+      "tool use",
+      "electrical safety",
+      "measurement"
+    ],
+    "required_skills": [
+      "electrical safety",
+      "basic circuit knowledge",
+      "safe tool handling"
+    ],
+    "desirable_skills": [
+      "solar system basics",
+      "measurement",
+      "record keeping"
+    ],
+    "education_prerequisites": {
+      "minimum_level": null,
+      "mandatory": false,
+      "notes": "No universal minimum is encoded in this prototype dataset. Verify course, employer, and safety requirements with the relevant provider before enrolment or field work."
+    },
+    "learning_preferences": [
+      "practical",
+      "mixed"
+    ],
+    "goal_tags": [
+      "vocational training",
+      "technical training",
+      "sustainability",
+      "renewable energy",
+      "hands-on work"
+    ],
+    "learning_modules": [
+      "solar-001",
+      "solar-002",
+      "solar-003"
+    ],
+    "practical_next_steps": [
+      "Explore a beginner solar-energy lesson from a verifiable learning provider.",
+      "Practise electrical-safety concepts using supervised, low-risk learning activities."
+    ],
+    "opportunity_categories": [
+      "vocational training",
+      "renewable-energy maintenance",
+      "technical apprenticeship"
+    ],
+    "id": "solar-technician",
+    "record_status": "starter prototype data; content requires Member 4 review"
+  },
+  {
+    "career_id": "electronics-technician",
+    "title": "Electronics Technician",
+    "description": "A technical pathway involving basic electronic components, circuit understanding, testing, troubleshooting, and safe handling of equipment.",
+    "interests": [
+      "electronics",
+      "circuits",
+      "hands-on work",
+      "repairing devices",
+      "problem solving"
+    ],
+    "relevant_skills": [
+      "basic mathematics",
+      "basic science",
+      "logical thinking",
+      "measurement",
+      "tool use",
+      "circuit knowledge"
+    ],
+    "required_skills": [
+      "basic circuit knowledge",
+      "safe tool handling",
+      "measurement basics"
+    ],
+    "desirable_skills": [
+      "soldering awareness",
+      "troubleshooting",
+      "record keeping"
+    ],
+    "education_prerequisites": {
+      "minimum_level": null,
+      "mandatory": false,
+      "notes": "Formal requirements vary by course and role. Verify the chosen training provider and workplace safety requirements."
+    },
+    "learning_preferences": [
+      "practical",
+      "mixed"
+    ],
+    "goal_tags": [
+      "vocational training",
+      "technical training",
+      "repair",
+      "hands-on work"
+    ],
+    "learning_modules": [
+      "electronics-001",
+      "electronics-002",
+      "electronics-003"
+    ],
+    "practical_next_steps": [
+      "Learn component names and their basic functions.",
+      "Use supervised practice and follow safety instructions before handling equipment."
+    ],
+    "opportunity_categories": [
+      "technical training",
+      "repair services",
+      "apprenticeship"
+    ],
+    "id": "electronics-technician",
+    "record_status": "starter prototype data; content requires Member 4 review"
+  },
+  {
+    "career_id": "electrician",
+    "title": "Electrician",
+    "description": "A skilled-trade pathway focused on electrical fundamentals, safety, interpreting simple diagrams, and learning installation or maintenance tasks through appropriate training.",
+    "interests": [
+      "electrical systems",
+      "hands-on work",
+      "repairing devices",
+      "construction",
+      "problem solving"
+    ],
+    "relevant_skills": [
+      "basic mathematics",
+      "basic science",
+      "measurement",
+      "problem solving",
+      "electrical safety",
+      "tool use"
+    ],
+    "required_skills": [
+      "electrical safety",
+      "basic circuit knowledge",
+      "safe tool handling"
+    ],
+    "desirable_skills": [
+      "diagram reading",
+      "measurement",
+      "troubleshooting"
+    ],
+    "education_prerequisites": {
+      "minimum_level": null,
+      "mandatory": false,
+      "notes": "Licensing, training, and permitted work vary by location and role. Confirm local rules and provider requirements; never attempt unsafe electrical work."
+    },
+    "learning_preferences": [
+      "practical",
+      "mixed"
+    ],
+    "goal_tags": [
+      "vocational training",
+      "technical training",
+      "apprenticeship",
+      "hands-on work"
+    ],
+    "learning_modules": [
+      "electrician-001",
+      "electrician-002",
+      "electrician-003"
+    ],
+    "practical_next_steps": [
+      "Study electrical hazards and safety rules before practical work.",
+      "Ask a verified training provider about recognised training routes and requirements."
+    ],
+    "opportunity_categories": [
+      "vocational training",
+      "apprenticeship",
+      "electrical maintenance"
+    ],
+    "id": "electrician",
+    "record_status": "starter prototype data; content requires Member 4 review"
+  },
+  {
+    "career_id": "healthcare-support-assistant",
+    "title": "Healthcare Support Assistant",
+    "description": "A people-focused pathway that may involve assisting with non-clinical care tasks, communication, hygiene, and supporting trained healthcare staff within an authorised role.",
+    "interests": [
+      "helping people",
+      "healthcare",
+      "biology",
+      "community service",
+      "communication"
+    ],
+    "relevant_skills": [
+      "communication",
+      "basic science",
+      "carefulness",
+      "teamwork",
+      "record keeping",
+      "empathy"
+    ],
+    "required_skills": [
+      "hygiene and safety awareness",
+      "clear communication",
+      "respectful care"
+    ],
+    "desirable_skills": [
+      "basic first-aid awareness",
+      "record keeping",
+      "teamwork"
+    ],
+    "education_prerequisites": {
+      "minimum_level": null,
+      "mandatory": false,
+      "notes": "Healthcare job titles, required qualifications, and permitted duties vary. Verify the exact role with a recognised training provider or employer; this dataset does not establish clinical eligibility."
+    },
+    "learning_preferences": [
+      "practical",
+      "mixed",
+      "people-focused"
+    ],
+    "goal_tags": [
+      "vocational training",
+      "healthcare",
+      "community service",
+      "helping people"
+    ],
+    "learning_modules": [
+      "healthcare-001",
+      "healthcare-002",
+      "healthcare-003"
+    ],
+    "practical_next_steps": [
+      "Learn about hygiene, dignity, privacy, and safe support practices.",
+      "Check role-specific qualifications and permitted duties with a recognised provider."
+    ],
+    "opportunity_categories": [
+      "healthcare support training",
+      "community services",
+      "care support"
+    ],
+    "id": "healthcare-support-assistant",
+    "record_status": "starter prototype data; content requires Member 4 review"
+  },
+  {
+    "career_id": "agriculture-assistant",
+    "title": "Agriculture Assistant",
+    "description": "A pathway connecting agriculture with practical technology, including basic farm data, water-use awareness, sensor concepts, and digital record keeping.",
+    "interests": [
+      "agriculture",
+      "farming",
+      "sustainability",
+      "technology",
+      "outdoor work"
+    ],
+    "relevant_skills": [
+      "basic mathematics",
+      "observation",
+      "basic science",
+      "record keeping",
+      "problem solving",
+      "digital literacy"
+    ],
+    "required_skills": [
+      "basic crop or farm-system awareness",
+      "record keeping",
+      "basic digital literacy"
+    ],
+    "desirable_skills": [
+      "sensor awareness",
+      "data collection",
+      "water conservation"
+    ],
+    "education_prerequisites": {
+      "minimum_level": null,
+      "mandatory": false,
+      "notes": "The requirements depend on the specific role and local programme. Verify training and employer requirements before enrolment."
+    },
+    "learning_preferences": [
+      "practical",
+      "mixed",
+      "outdoor"
+    ],
+    "goal_tags": [
+      "vocational training",
+      "agriculture",
+      "sustainability",
+      "farming",
+      "community development"
+    ],
+    "learning_modules": [
+      "agri-001",
+      "agri-002",
+      "agri-003"
+    ],
+    "practical_next_steps": [
+      "Keep a simple observation log for a plant or crop in a safe learning setting.",
+      "Explore locally relevant agriculture-extension or training resources and verify their source."
+    ],
+    "opportunity_categories": [
+      "agricultural training",
+      "farm technology support",
+      "rural enterprise"
+    ],
+    "id": "agriculture-assistant",
+    "record_status": "starter prototype data; content requires Member 4 review"
+  },
+  {
+    "career_id": "data-analyst",
+    "title": "Data Analyst",
+    "description": "A digital pathway focused on asking clear questions, organising data, using spreadsheets, understanding basic statistics, and communicating findings.",
+    "interests": [
+      "data",
+      "patterns",
+      "mathematics",
+      "problem solving",
+      "computers",
+      "research"
+    ],
+    "relevant_skills": [
+      "basic mathematics",
+      "logical thinking",
+      "spreadsheet basics",
+      "careful observation",
+      "communication",
+      "digital literacy"
+    ],
+    "required_skills": [
+      "spreadsheet basics",
+      "basic statistics",
+      "data interpretation"
+    ],
+    "desirable_skills": [
+      "SQL basics",
+      "Python basics",
+      "data visualisation"
+    ],
+    "education_prerequisites": {
+      "minimum_level": null,
+      "mandatory": false,
+      "notes": "Entry expectations vary by employer and course; this dataset does not assert a universal degree requirement. Verify the specific role or learning programme."
+    },
+    "learning_preferences": [
+      "theoretical",
+      "practical",
+      "mixed"
+    ],
+    "goal_tags": [
+      "digital skills",
+      "technology career",
+      "data",
+      "problem solving",
+      "employment preparation"
+    ],
+    "learning_modules": [
+      "data-001",
+      "data-002",
+      "data-003"
+    ],
+    "practical_next_steps": [
+      "Practise organising a small sample table and answering one question from it.",
+      "Build a small portfolio example with fictional or non-sensitive data."
+    ],
+    "opportunity_categories": [
+      "digital-skills training",
+      "data support roles",
+      "analytics projects"
+    ],
+    "id": "data-analyst",
+    "record_status": "starter prototype data; content requires Member 4 review"
+  },
+  {
+    "career_id": "web-developer",
+    "title": "Web Developer",
+    "description": "A digital pathway focused on building websites, beginning with page structure, styling, interaction, and accessible, mobile-friendly design.",
+    "interests": [
+      "computers",
+      "websites",
+      "coding",
+      "building things",
+      "problem solving",
+      "design"
+    ],
+    "relevant_skills": [
+      "logical thinking",
+      "digital literacy",
+      "problem solving",
+      "attention to detail",
+      "communication"
+    ],
+    "required_skills": [
+      "HTML basics",
+      "CSS basics",
+      "JavaScript fundamentals"
+    ],
+    "desirable_skills": [
+      "responsive design",
+      "Git basics",
+      "accessibility awareness"
+    ],
+    "education_prerequisites": {
+      "minimum_level": null,
+      "mandatory": false,
+      "notes": "Course and employer expectations vary. Verify requirements for any advertised role or training course."
+    },
+    "learning_preferences": [
+      "practical",
+      "mixed",
+      "visual"
+    ],
+    "goal_tags": [
+      "digital skills",
+      "technology career",
+      "build websites",
+      "coding",
+      "employment preparation"
+    ],
+    "learning_modules": [
+      "web-001",
+      "web-002",
+      "web-003"
+    ],
+    "practical_next_steps": [
+      "Create a simple personal or community information page using practice content.",
+      "Learn basic version control and test the page on a small screen."
+    ],
+    "opportunity_categories": [
+      "web-development training",
+      "website projects",
+      "junior digital roles"
+    ],
+    "id": "web-developer",
+    "record_status": "starter prototype data; content requires Member 4 review"
+  },
+  {
+    "career_id": "graphic-designer",
+    "title": "Graphic Designer",
+    "description": "A creative pathway focused on visual communication, layout, typography, colour, and creating clear graphics for a specific audience.",
+    "interests": [
+      "art",
+      "drawing",
+      "design",
+      "visual communication",
+      "creativity",
+      "photography"
+    ],
+    "relevant_skills": [
+      "creativity",
+      "attention to detail",
+      "communication",
+      "visual observation",
+      "digital literacy"
+    ],
+    "required_skills": [
+      "visual hierarchy basics",
+      "layout basics",
+      "audience awareness"
+    ],
+    "desirable_skills": [
+      "typography",
+      "colour theory",
+      "design-tool familiarity"
+    ],
+    "education_prerequisites": {
+      "minimum_level": null,
+      "mandatory": false,
+      "notes": "Portfolio and course expectations vary. Verify any course, client, or employer requirements; a portfolio is useful for demonstrating work but is not represented here as a universal formal prerequisite."
+    },
+    "learning_preferences": [
+      "practical",
+      "visual",
+      "mixed"
+    ],
+    "goal_tags": [
+      "creative work",
+      "design",
+      "digital skills",
+      "freelancing",
+      "portfolio building"
+    ],
+    "learning_modules": [
+      "design-001",
+      "design-002",
+      "design-003"
+    ],
+    "practical_next_steps": [
+      "Create a poster for a fictional community event and ask someone in the intended audience for feedback.",
+      "Keep a small portfolio of original work and record what you changed after feedback."
+    ],
+    "opportunity_categories": [
+      "design training",
+      "creative projects",
+      "freelance design"
+    ],
+    "id": "graphic-designer",
+    "record_status": "starter prototype data; content requires Member 4 review"
+  },
+  {
+    "career_id": "hospitality-associate",
+    "title": "Hospitality Associate",
+    "description": "A service-oriented pathway that can include guest communication, teamwork, cleanliness, organisation, and helping customers in hospitality settings.",
+    "interests": [
+      "meeting people",
+      "hospitality",
+      "food",
+      "travel",
+      "communication",
+      "organising events"
+    ],
+    "relevant_skills": [
+      "communication",
+      "teamwork",
+      "time management",
+      "carefulness",
+      "problem solving",
+      "customer service"
+    ],
+    "required_skills": [
+      "customer communication",
+      "teamwork",
+      "hygiene awareness"
+    ],
+    "desirable_skills": [
+      "basic digital booking tools",
+      "language skills",
+      "service recovery"
+    ],
+    "education_prerequisites": {
+      "minimum_level": null,
+      "mandatory": false,
+      "notes": "Requirements differ by role, employer, and training provider. Verify the exact job duties and any food-safety or other required training."
+    },
+    "learning_preferences": [
+      "practical",
+      "people-focused",
+      "mixed"
+    ],
+    "goal_tags": [
+      "vocational training",
+      "customer service",
+      "hospitality",
+      "employment preparation",
+      "communication"
+    ],
+    "learning_modules": [
+      "hospitality-001",
+      "hospitality-002",
+      "hospitality-003"
+    ],
+    "practical_next_steps": [
+      "Practise greeting a guest, asking clarifying questions, and giving clear directions.",
+      "Check role-specific requirements and safety practices with a verified provider or employer."
+    ],
+    "opportunity_categories": [
+      "hospitality training",
+      "customer service",
+      "guest services"
+    ],
+    "id": "hospitality-associate",
+    "record_status": "starter prototype data; content requires Member 4 review"
+  },
+  {
+    "career_id": "craft-enterprise",
+    "title": "Craft Enterprise",
+    "description": "A livelihood pathway focused on identifying a community need, testing a simple product or service idea, tracking costs, and learning from customer feedback.",
+    "interests": [
+      "business",
+      "selling",
+      "helping the community",
+      "making things",
+      "problem solving",
+      "independence"
+    ],
+    "relevant_skills": [
+      "communication",
+      "basic mathematics",
+      "planning",
+      "record keeping",
+      "customer service",
+      "problem solving"
+    ],
+    "required_skills": [
+      "basic cost tracking",
+      "customer understanding",
+      "simple planning"
+    ],
+    "desirable_skills": [
+      "digital payments awareness",
+      "basic marketing",
+      "budgeting"
+    ],
+    "education_prerequisites": {
+      "minimum_level": null,
+      "mandatory": false,
+      "notes": "Business registration, licensing, tax, and sector-specific rules may apply. Verify local requirements before operating; this prototype does not provide legal or financial advice."
+    },
+    "learning_preferences": [
+      "practical",
+      "mixed",
+      "people-focused"
+    ],
+    "goal_tags": [
+      "entrepreneurship",
+      "self-employment",
+      "community development",
+      "business",
+      "livelihood"
+    ],
+    "learning_modules": [
+      "business-001",
+      "business-002",
+      "business-003"
+    ],
+    "practical_next_steps": [
+      "Interview a few potential customers about a problem before spending money.",
+      "Draft a simple cost-and-price worksheet using hypothetical numbers first."
+    ],
+    "opportunity_categories": [
+      "entrepreneurship training",
+      "self-employment support",
+      "local enterprise"
+    ],
+    "id": "craft-enterprise",
+    "record_status": "starter prototype data; content requires Member 4 review"
+  }
+]

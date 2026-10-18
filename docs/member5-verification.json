@@ -1,0 +1,151 @@
+{
+  "executed_at_utc": "2026-10-18T11:58:53.045849+00:00",
+  "sources": {
+    "uploaded_zip_sha256": "aca9b68ec2e0e2e7a5627e46329cc8585c16016efeeec69990ced73efb76eeeb",
+    "guide_sha256": "095c702c44431b670212b03b13e8e140fea2e75ee2dbf39c129855fd828b0871",
+    "guide_pages": 15
+  },
+  "runtime": {
+    "python": "3.13.7",
+    "node": "22.19.0",
+    "npm": "10.9.3"
+  },
+  "backend": {
+    "tests": 89,
+    "passed": 89,
+    "skipped": 0,
+    "errors": 0,
+    "includes_real_postgresql_tests": 24,
+    "database": {
+      "startup": {
+        "exit_code": 0
+      },
+      "connection": {
+        "status": "connected",
+        "server": "PostgreSQL 17.5 on x86_64-windows, compiled by msvc-19.43.34808, 64-bit"
+      },
+      "database_restart_persistence": {
+        "passed": true,
+        "score_before": 87,
+        "score_after": 87
+      },
+      "shutdown": {
+        "exit_code": 0
+      }
+    },
+    "first_attempt": {
+      "passed": 87,
+      "errors": 2,
+      "observed": "Two identity-test setup connections failed with OperationalError while other work ran. PostgreSQL logged host-aborted client connections. Unchanged full suite then passed; no automatic production write retries were added.",
+      "log": "member5-backend-first-attempt.txt"
+    }
+  },
+  "frontend_unit": {
+    "files": 8,
+    "tests": 73,
+    "passed": 73,
+    "note": "Ran supplied unchanged frontend; jsdom emitted two scrollTo not-implemented messages."
+  },
+  "frontend_live": {
+    "transport": "Real Uvicorn + supplied Vitest live suite",
+    "checks": [],
+    "uvicorn_started": true,
+    "live_tests_exit_code": 0,
+    "status": "passed",
+    "tests": 6,
+    "passed": 6
+  },
+  "frontend_build": {
+    "passed": true,
+    "vite": "8.3.4",
+    "pwa": "2.0.0",
+    "precache_entries": 10,
+    "precache_kib": 321.58
+  },
+  "actual_module_bridge": {
+    "passed": 10,
+    "checks": [
+      "health",
+      "dashboard normalizers/catalogs",
+      "recommendation adapter",
+      "profile envelope/ID",
+      "offline double-tap deduplication",
+      "actual queue upload/confirmation",
+      "facilitator persisted score",
+      "created-profile progress",
+      "404 permanent failure without false success",
+      "422 validation mapping"
+    ],
+    "transport": "Actual frontend API/queue modules, fake-indexeddb and real FastAPI ASGI handlers; no TCP/browser."
+  },
+  "live_server_smoke": {
+    "executed_at_utc": "2026-10-18T11:54:07.849413+00:00",
+    "python": "3.13.7",
+    "base_url": "http://127.0.0.1:58174",
+    "checks": [
+      {
+        "name": "documented Uvicorn command starts and health returns 200",
+        "passed": true
+      },
+      {
+        "name": "profile is accepted over HTTP",
+        "passed": true
+      },
+      {
+        "name": "recommendation endpoint returns fixture careers",
+        "passed": true
+      },
+      {
+        "name": "courses endpoint returns fixture modules",
+        "passed": true
+      },
+      {
+        "name": "opportunity filters work over HTTP",
+        "passed": true
+      },
+      {
+        "name": "progress is saved",
+        "passed": true
+      },
+      {
+        "name": "facilitator observes demo progress",
+        "passed": true
+      },
+      {
+        "name": "invalid profile returns 422 over HTTP",
+        "passed": true
+      },
+      {
+        "name": "progress survives actual server process restart",
+        "passed": true
+      }
+    ],
+    "status": "passed"
+  },
+  "shared_interfaces": "Seven default routes and JSON formats unchanged. Auth/account routes opt-in; timestamp/version proposal not implemented.",
+  "source_preservation": {
+    "frontend_files": 62,
+    "qa_files": 3,
+    "exact_uploaded_bytes_preserved": true,
+    "engines_catalogs_shared_models_and_old_sql_preserved": true,
+    "root_readme_and_configuration_preserved": true
+  },
+  "not_verified": [
+    "Actual hosted Supabase Auth/user sessions",
+    "Actual Member 1 screens/login",
+    "Real Member 2 engine/roadmap",
+    "Real Member 4 sourced data",
+    "Real low-end Android/TalkBack",
+    "Multi-device conflict-safe ordering",
+    "Shared repository or deployment"
+  ],
+  "guarded_upload_upgrade": {
+    "dry_run_cli": true,
+    "apply_cli": true,
+    "backup_verified": true,
+    "idempotent": true,
+    "modified_source_rejected": true,
+    "protected_sources_and_runtime_preserved": true,
+    "files_added_or_updated": 39
+  }
+}

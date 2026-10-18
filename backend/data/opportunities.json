@@ -1,0 +1,14 @@
+[
+  {
+    "id": "demo-training-001", "title": "FICTIONAL DEMO: Practical learning programme", "category": "training",
+    "description": "Mock record for API integration only. No real programme, provider, deadline or eligibility has been verified.",
+    "education_levels": ["Class 12"], "locations": ["Tamil Nadu"], "eligibility_requirements": [],
+    "deadline": null, "official_url": "", "source_name": "Fictional backend fixture", "last_verified": null
+  },
+  {
+    "id": "demo-scholarship-001", "title": "FICTIONAL DEMO: Learning support", "category": "scholarship",
+    "description": "Mock search record. All eligibility information is unknown. Do not use to make application decisions.",
+    "education_levels": [], "locations": [], "eligibility_requirements": [],
+    "deadline": null, "official_url": "", "source_name": "Fictional backend fixture", "last_verified": null
+  }
+]

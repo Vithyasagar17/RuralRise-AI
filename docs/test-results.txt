@@ -1,0 +1,47 @@
+RuralRise AI Member 3 backend — recorded independent verification
+Date: 2026-10-17
+Runtime: Python 3.13.7, FastAPI 0.137.1, Pydantic 2.12.5, Uvicorn 0.49.0, HTTPX 0.28.1
+Command (repository root, backend on PYTHONPATH):
+python -u -m unittest discover -s backend/tests -v
+
+Recorded from the successful execution transcript. TestClient used the supplied
+test-only InProcessEventLoop. Application/server code was unchanged.
+
+test_all_seven_paths_present ... ok
+test_broken_career_adapter ... ok
+test_broken_opportunity_adapter ... ok
+test_career_adapter_receives_original_profile_and_catalog ... ok
+test_catalog_failures_leave_health_up ... ok
+test_concurrent_json_writes ... ok
+test_configuration_paths_and_explicit_origins ... ok
+test_corrupt_store_not_overwritten ... ok
+test_cors_preflight ... ok
+test_courses ... ok
+test_disk_error ... ok
+test_duplicate_dataset_ids_rejected ... ok
+test_health ... ok
+test_invalid_json_and_no_raw_error_values ... ok
+test_new_profile_can_store_progress_but_is_not_in_facilitator ... ok
+test_opportunity_filtering ... ok
+test_optional_profile_fields ... ok
+test_profile_contract_and_disk_persistence ... ok
+test_profile_validation ... ok
+test_progress_is_upserted_and_survives_app_restart ... ok
+test_progress_validation_and_missing_ids ... ok
+test_recommendation_contract ... ok
+test_unexpected_backend_failure ... ok
+test_unknown_eligibility_is_not_global ... ok
+
+Ran 24 tests in 2.343s
+OK
+
+Expected negative-case logs occurred for invalid engine output, simulated engine
+failure, missing/malformed catalogs, corrupt storage and simulated disk failure.
+
+Limits: this is in-memory ASGI HTTP transport plus real local-disk persistence,
+app/store re-creation, and same-process thread concurrency. It does not exercise
+a listening network server. Standard Windows asyncio socketpair initialization
+stalled in this sandbox; real Uvicorn startup timed out. The unsuccessful live
+attempt is preserved in smoke-results.json. No real process-restart HTTP test,
+fresh pip installation, PostgreSQL, teammate integration, Android or cloud
+deployment is claimed as passed.

@@ -1,0 +1,205 @@
+[
+  {
+    "path": "MEMBER2_REVIEW_START_HERE.md",
+    "sha256": "aa06c49693f79dd6443cd6b11d9820253a68384ff533edfe31ed9e2d473e5148"
+  },
+  {
+    "path": "Procfile",
+    "sha256": "40d98795962d697291c1adc379e60fb0d29b398c3c4e9aba655302f2e49ff767"
+  },
+  {
+    "path": "REVIEW_START_HERE.md",
+    "sha256": "fed01acbf9caec0c43103308f64b4e7d5c254b88883ef434ad90073c48b1535f"
+  },
+  {
+    "path": "STAGE2_SETUP.md",
+    "sha256": "0ef53274b82acf55755d64d1f4a512004536230a5f559e12e6304a9023555c75",
+    "stage1_sha256": "5a71ae495231387f91c755a8ad71f2be39541de6e2353e33fadf684c4445261b"
+  },
+  {
+    "path": "START_HERE.md",
+    "sha256": "9be1551d9191d42525ae376a35eab8c822b2a706f3d808be8cd8ac231d66cf70"
+  },
+  {
+    "path": "backend-upgrade-manifest.json",
+    "sha256": "c21799ad5119a498bbf04f810b40c2ce0c2907ae2ff7ed87674d675806c7a33b"
+  },
+  {
+    "path": "backend/.env.example",
+    "sha256": "a3af01e66745827633327bec737c842f59e585bf45f96ac7aba8751769622d8e",
+    "stage1_sha256": "dd857bf86f8dc42ab662200980b5d7dcca475c3de30330f40bce01e13fa89c18"
+  },
+  {
+    "path": "backend/app/account_schemas.py",
+    "sha256": "c75b50d580b91752ba01c5efc735dbaa25472078e6c21bc0ca1d9809ebd5116a"
+  },
+  {
+    "path": "backend/app/auth.py",
+    "sha256": "d9aa2e16a438d99a10d0e81ac799f8952ed81413907de56681d5cdd548d21ec6"
+  },
+  {
+    "path": "backend/app/config.py",
+    "sha256": "564268121a174ba770035ca1a0046d75c2c4d54a9cbdbf2bc5af7e2da5c1cac6",
+    "stage1_sha256": "e2cb697f16824586432322b22ee2f15c647f0a8f1340fb2e516d8402542c1be6"
+  },
+  {
+    "path": "backend/app/configure_auth.py",
+    "sha256": "57f642b1abb037f47b4dbfc97c746ca2cd4382bf60778686badb91ec206f84d4"
+  },
+  {
+    "path": "backend/app/db_tools.py",
+    "sha256": "608e039480d0f24990dc9534ddccbe9a7aac18b8db76fa836c6891292e9bb931",
+    "stage1_sha256": "b050c20c3a4aad3fca2ebcc268dadf10d2a0785b2df135a02397225d8c12b9d0"
+  },
+  {
+    "path": "backend/app/identity_store.py",
+    "sha256": "dc61e1c6fc515b3c47fb9951aa7f319a6b29971b9b7b26114fa5a8b190aabccb"
+  },
+  {
+    "path": "backend/app/main.py",
+    "sha256": "a8d06df443cea7fe7261a86fd3094e8385d578a5f6cbf0bf67ecb28e1343c994",
+    "stage1_sha256": "42bb99674aa467805bdd1fc51be173925f2789fe4295dee538c0aa5c75a5a0bb"
+  },
+  {
+    "path": "backend/app/postgres_store.py",
+    "sha256": "ed450caad906566b57c5092689f365805f154857477bd4e0903b4b8510adc8be",
+    "stage1_sha256": "3b91f2f700deff8192d78dc93f7c2219a737b8dc89b946ab578e71b3ee7d1065"
+  },
+  {
+    "path": "backend/app/recommendation_adapter.py",
+    "sha256": "325b33420dbbdad2e94ca39ab2210792690cbe9fc6a35fdf280f9aea7d73fcd8"
+  },
+  {
+    "path": "backend/requirements.txt",
+    "sha256": "2ad8d0e9ca64d1e76a3c0c760f075c4a75697cd8c45061c44f4f9832aa07c1dd",
+    "stage1_sha256": "9580fc4830bc137b6383f0760c7d10ccfef90e4c2edaff8d0c63931315b40ad0"
+  },
+  {
+    "path": "backend/start_server.py",
+    "sha256": "5e75c14d745348915019208f6833ebcf1d1b8f67bb47962f27c9c478e451ac70"
+  },
+  {
+    "path": "backend/tests/member5_contract.mjs",
+    "sha256": "21381d95f52c13a76246c83d78fad55e3b48efa804dce207fa8336a08f5b7734"
+  },
+  {
+    "path": "backend/tests/test_auth_access.py",
+    "sha256": "c7146840ee8f66f1a1692041ed67fb2d4ff1ee5394cc3094df972409dc3da39b"
+  },
+  {
+    "path": "backend/tests/test_identity_integration.py",
+    "sha256": "b0b8dd35c2324051432c60c98c181e862e0494afd23e616ef756bfbb287482ae"
+  },
+  {
+    "path": "backend/tests/test_member2_boundary.py",
+    "sha256": "b2d9e23b47e13615fc2e80d259bb434fbed20a65261206a35006f24501cebc11"
+  },
+  {
+    "path": "backend/tests/test_postgres_integration.py",
+    "sha256": "97be293a2e5a4d0be8b55afb7f19bb71cadf3c5d73dfd6a2f3b1dd515a8b5364",
+    "stage1_sha256": "cb38b4db2162067890c1a7bb7d1dd6433cdaee2f956ed48cbe0c7e026c77d101"
+  },
+  {
+    "path": "backend/tests/verify_member5.py",
+    "sha256": "f40355aa395b7a11bc6a790319ba4348973643f0f6d6d33219e6c129155948be"
+  },
+  {
+    "path": "database/migrations/002_identity_access.sql",
+    "sha256": "3e0b78ef8b5343c841645fe0c80ffbc5a1950e2579c0166a4bb9b9826918b302"
+  },
+  {
+    "path": "docs/README_TEAM_REVIEW.md",
+    "sha256": "7dd7dc49acda8f21f2de75a9afb282fc6b5744c152bdc587108e539850c8d034"
+  },
+  {
+    "path": "docs/TEAM_INPUTS.md",
+    "sha256": "534066f767d037a9379feb9e1efc005e544a4ae311b920fac45fd833eeb5e382"
+  },
+  {
+    "path": "docs/auth-contract-proposal.md",
+    "sha256": "45fc548ff0d9cdadefe8442ccdc3ebce25128f69745c1d0eee89a5e1c5db9747"
+  },
+  {
+    "path": "docs/backend-handoff.md",
+    "sha256": "9b6968ef34342050cae082c7cfac0120517df2e5c8c9324635eff57a8c08caad"
+  },
+  {
+    "path": "docs/member2-backend-test-results.txt",
+    "sha256": "8f85ff5da5d45cc9d7d5a746a9ed5d63a34eaa052d801e066a23a23ba5b9eec4"
+  },
+  {
+    "path": "docs/member2-backend-verification.json",
+    "sha256": "8f82939612610388fb4096dc126ca909f389880ce003ac8e0adf76ed304469bb"
+  },
+  {
+    "path": "docs/member2-current-integration.md",
+    "sha256": "46d6a5ad232a209bb60b9883981351cc6b4c523e95aee456c394acc4e3d41780"
+  },
+  {
+    "path": "docs/member2-live-tests.txt",
+    "sha256": "53ef5a59e81a03d7fb7c3e6f0d9573991b5ca4be04447faf3b695696bf957a61"
+  },
+  {
+    "path": "docs/member5-backend-first-attempt.txt",
+    "sha256": "57676096c1684e70401483663c8792feb3b3007e714cb9faca728ce63ac3a8bd"
+  },
+  {
+    "path": "docs/member5-frontend-results.txt",
+    "sha256": "a035e0a08ad77dc820c895a8deda323a659f78dc7943097b51778e908aac4e8f"
+  },
+  {
+    "path": "docs/member5-integration-review.md",
+    "sha256": "422ac50770d2425b227af466456b1be019ca250935bbfee3379f5f1580b80537"
+  },
+  {
+    "path": "docs/member5-live-tests.txt",
+    "sha256": "c055b954956be3421eef5473b53bada0bbd26a1731aa3ae901b7166aaf61f3e8"
+  },
+  {
+    "path": "docs/offline-sync-contract-proposal.md",
+    "sha256": "12358d8af62d060262cc844ab49819489d80bfcf0396e1c0e6e56e7879345fb4"
+  },
+  {
+    "path": "docs/roadmap-integration-proposal.md",
+    "sha256": "1304de11d652315cafd331621cdeee958ddc632e0ce8f17601d53e469acc663f"
+  },
+  {
+    "path": "docs/server-smoke.log",
+    "sha256": "b278cf7ba75f1e5840f8996524be48476891169d4808166dce42d3af76a14caa",
+    "stage1_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "docs/smoke-results.json",
+    "sha256": "ba3b9dfcb9adb2947b430261725fc9b7b82cc314803757b118b4d5b345b26f1e",
+    "stage1_sha256": "60cce57a6c78a6fa851d36242a538a04e3d1dde9329f330f814ff3ec96bd3248"
+  },
+  {
+    "path": "docs/stage2-handoff.md",
+    "sha256": "88eb3892f0a95875462ce167cb04183bd83a7ab555f1ea24bec101d761b2ae51",
+    "stage1_sha256": "b3964357f1373ad6610e5bd0f9301476594b886cd7dd97a7c2c8be6e577f9e31"
+  },
+  {
+    "path": "docs/stage3-test-results.txt",
+    "sha256": "e651e4efcfbbd844cee828f018a6665bddd5d8e287d428161e30d4e921399ca7"
+  },
+  {
+    "path": "docs/stage3-verification.json",
+    "sha256": "f343036bd18e744ef7f59ac22a67bae336eb9917340f7b4c3ada2b061985eb96"
+  },
+  {
+    "path": "review_member2_upgrade.py",
+    "sha256": "ddb427cae9e60f2a72376c7080b61544c758ed6fca2d265e7edee1ab6e53ef4f"
+  },
+  {
+    "path": "review_upload_upgrade.py",
+    "sha256": "7536bc2fa570ab1ec5b9441d5bbc249302d5687d8336db8db0549cd65dff95a0"
+  },
+  {
+    "path": "upgrade_backend.py",
+    "sha256": "51378d199834777a5ee16c918253406d0cb9d02fe45dbe3e06ec6c32c2535496"
+  },
+  {
+    "path": "docs/member2-current-verification.json",
+    "sha256": "d4800c93c78f1b822d57e1c09731dbf4168bc1a239aef3ed164c086d303c04c6"
+  }
+]

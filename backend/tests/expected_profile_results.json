@@ -1,0 +1,205 @@
+{
+  "note": "Generated from the merged Member 2 engine and the current starter datasets. Scores are deterministic rule-based indicators, not probabilities. Regenerate if the dataset or scoring changes.",
+  "results": [
+    {
+      "profile_id": "class10_practical_technical",
+      "recommendations": [
+        {
+          "career_id": "solar-technician",
+          "title": "Solar PV Technician",
+          "match_score": 100,
+          "missing_skills": [
+            "electrical safety",
+            "basic circuit knowledge",
+            "safe tool handling"
+          ],
+          "evidence_strength": "strong"
+        },
+        {
+          "career_id": "electrician",
+          "title": "Electrician",
+          "match_score": 85,
+          "missing_skills": [
+            "electrical safety",
+            "basic circuit knowledge",
+            "safe tool handling"
+          ],
+          "evidence_strength": "strong"
+        },
+        {
+          "career_id": "electronics-technician",
+          "title": "Electronics Technician",
+          "match_score": 70,
+          "missing_skills": [
+            "basic circuit knowledge",
+            "safe tool handling",
+            "measurement basics"
+          ],
+          "evidence_strength": "strong"
+        }
+      ],
+      "warnings": [],
+      "message": "Recommendations are ranked using the profile fields supplied. Review prerequisites and missing skills before choosing a path."
+    },
+    {
+      "profile_id": "class12_electronics",
+      "recommendations": [
+        {
+          "career_id": "electronics-technician",
+          "title": "Electronics Technician",
+          "match_score": 100,
+          "missing_skills": [
+            "basic circuit knowledge",
+            "safe tool handling",
+            "measurement basics"
+          ],
+          "evidence_strength": "strong"
+        },
+        {
+          "career_id": "solar-technician",
+          "title": "Solar PV Technician",
+          "match_score": 62,
+          "missing_skills": [
+            "electrical safety",
+            "basic circuit knowledge",
+            "safe tool handling"
+          ],
+          "evidence_strength": "strong"
+        },
+        {
+          "career_id": "electrician",
+          "title": "Electrician",
+          "match_score": 62,
+          "missing_skills": [
+            "electrical safety",
+            "basic circuit knowledge",
+            "safe tool handling"
+          ],
+          "evidence_strength": "strong"
+        }
+      ],
+      "warnings": [],
+      "message": "Recommendations are ranked using the profile fields supplied. Review prerequisites and missing skills before choosing a path."
+    },
+    {
+      "profile_id": "agriculture_sustainability",
+      "recommendations": [
+        {
+          "career_id": "agriculture-assistant",
+          "title": "Agriculture Assistant",
+          "match_score": 92,
+          "missing_skills": [
+            "basic crop or farm-system awareness",
+            "basic digital literacy"
+          ],
+          "evidence_strength": "strong"
+        },
+        {
+          "career_id": "solar-technician",
+          "title": "Solar PV Technician",
+          "match_score": 48,
+          "missing_skills": [
+            "electrical safety",
+            "basic circuit knowledge",
+            "safe tool handling"
+          ],
+          "evidence_strength": "strong"
+        },
+        {
+          "career_id": "craft-enterprise",
+          "title": "Craft Enterprise",
+          "match_score": 40,
+          "missing_skills": [
+            "basic cost tracking",
+            "customer understanding",
+            "simple planning"
+          ],
+          "evidence_strength": "strong"
+        }
+      ],
+      "warnings": [],
+      "message": "Recommendations are ranked using the profile fields supplied. Review prerequisites and missing skills before choosing a path."
+    },
+    {
+      "profile_id": "art_and_design",
+      "recommendations": [
+        {
+          "career_id": "graphic-designer",
+          "title": "Graphic Designer",
+          "match_score": 100,
+          "missing_skills": [
+            "visual hierarchy basics",
+            "layout basics",
+            "audience awareness"
+          ],
+          "evidence_strength": "strong"
+        },
+        {
+          "career_id": "web-developer",
+          "title": "Web Developer",
+          "match_score": 40,
+          "missing_skills": [
+            "HTML basics",
+            "CSS basics",
+            "JavaScript fundamentals"
+          ],
+          "evidence_strength": "strong"
+        },
+        {
+          "career_id": "agriculture-assistant",
+          "title": "Agriculture Assistant",
+          "match_score": 30,
+          "missing_skills": [
+            "basic crop or farm-system awareness",
+            "record keeping"
+          ],
+          "evidence_strength": "strong"
+        }
+      ],
+      "warnings": [],
+      "message": "Recommendations are ranked using the profile fields supplied. Review prerequisites and missing skills before choosing a path."
+    },
+    {
+      "profile_id": "incomplete_profile",
+      "recommendations": [
+        {
+          "career_id": "solar-technician",
+          "title": "Solar PV Technician",
+          "match_score": 22,
+          "missing_skills": [
+            "electrical safety",
+            "basic circuit knowledge",
+            "safe tool handling"
+          ],
+          "evidence_strength": "limited"
+        },
+        {
+          "career_id": "electronics-technician",
+          "title": "Electronics Technician",
+          "match_score": 22,
+          "missing_skills": [
+            "basic circuit knowledge",
+            "safe tool handling",
+            "measurement basics"
+          ],
+          "evidence_strength": "limited"
+        },
+        {
+          "career_id": "electrician",
+          "title": "Electrician",
+          "match_score": 22,
+          "missing_skills": [
+            "electrical safety",
+            "basic circuit knowledge",
+            "safe tool handling"
+          ],
+          "evidence_strength": "limited"
+        }
+      ],
+      "warnings": [
+        "The profile has only one matching-information category; rankings are low-confidence and exploratory."
+      ],
+      "message": "Recommendations are ranked using the profile fields supplied. Review prerequisites and missing skills before choosing a path."
+    }
+  ]
+}

@@ -1,0 +1,802 @@
+[
+  {
+    "path": ".env.example",
+    "size_bytes": 122,
+    "sha256": "8d15393a4ec0d706a9375284b28f0fd4dc876aa6440853baf41d4b442878e33d"
+  },
+  {
+    "path": ".gitignore",
+    "size_bytes": 149,
+    "sha256": "e6c99c5f890f91117ec991f1ee5ec56493656533381edf54cca8abaab685b68c"
+  },
+  {
+    "path": "MEMBER2_REVIEW_START_HERE.md",
+    "size_bytes": 5442,
+    "sha256": "aa06c49693f79dd6443cd6b11d9820253a68384ff533edfe31ed9e2d473e5148"
+  },
+  {
+    "path": "Procfile",
+    "size_bytes": 36,
+    "sha256": "40d98795962d697291c1adc379e60fb0d29b398c3c4e9aba655302f2e49ff767"
+  },
+  {
+    "path": "QUICKSTART.md",
+    "size_bytes": 2664,
+    "sha256": "30de1fd70d311a2945dd23050aca701e5150c0eeafaa06bda8e08fb253ce1226"
+  },
+  {
+    "path": "README.md",
+    "size_bytes": 3547,
+    "sha256": "5d064982b465d84d96ad19adf791bd5521ee17a549375385594c9b0c533ada85"
+  },
+  {
+    "path": "REVIEW_START_HERE.md",
+    "size_bytes": 4252,
+    "sha256": "fed01acbf9caec0c43103308f64b4e7d5c254b88883ef434ad90073c48b1535f"
+  },
+  {
+    "path": "STAGE2_SETUP.md",
+    "size_bytes": 13535,
+    "sha256": "0ef53274b82acf55755d64d1f4a512004536230a5f559e12e6304a9023555c75"
+  },
+  {
+    "path": "START_HERE.md",
+    "size_bytes": 12157,
+    "sha256": "9be1551d9191d42525ae376a35eab8c822b2a706f3d808be8cd8ac231d66cf70"
+  },
+  {
+    "path": "backend-upgrade-manifest.json",
+    "size_bytes": 17522,
+    "sha256": "c21799ad5119a498bbf04f810b40c2ce0c2907ae2ff7ed87674d675806c7a33b"
+  },
+  {
+    "path": "backend/.env.example",
+    "size_bytes": 995,
+    "sha256": "a3af01e66745827633327bec737c842f59e585bf45f96ac7aba8751769622d8e"
+  },
+  {
+    "path": "backend/app/__init__.py",
+    "size_bytes": 61,
+    "sha256": "0d525efe814961cf48e1a139277ccbca3ac03d5180a9d6c82b92945f77a9a784"
+  },
+  {
+    "path": "backend/app/account_schemas.py",
+    "size_bytes": 326,
+    "sha256": "c75b50d580b91752ba01c5efc735dbaa25472078e6c21bc0ca1d9809ebd5116a"
+  },
+  {
+    "path": "backend/app/auth.py",
+    "size_bytes": 1615,
+    "sha256": "d9aa2e16a438d99a10d0e81ac799f8952ed81413907de56681d5cdd548d21ec6"
+  },
+  {
+    "path": "backend/app/career_engine.py",
+    "size_bytes": 26180,
+    "sha256": "493fb46a79d980e96021dc1f2c998a0f186b94a5abe87c2097552906eca1f96a"
+  },
+  {
+    "path": "backend/app/config.py",
+    "size_bytes": 5342,
+    "sha256": "564268121a174ba770035ca1a0046d75c2c4d54a9cbdbf2bc5af7e2da5c1cac6"
+  },
+  {
+    "path": "backend/app/configure_auth.py",
+    "size_bytes": 1398,
+    "sha256": "57f642b1abb037f47b4dbfc97c746ca2cd4382bf60778686badb91ec206f84d4"
+  },
+  {
+    "path": "backend/app/configure_db.py",
+    "size_bytes": 2059,
+    "sha256": "99cfada65ecb0edd3afdc5341a0657dcd2fee494e87f2aaf5bf628ce8e907edd"
+  },
+  {
+    "path": "backend/app/database.py",
+    "size_bytes": 4697,
+    "sha256": "a2750f1060054db023ad0f639c9984c34affc418bcb7fa9504f9f2dfbadaba6c"
+  },
+  {
+    "path": "backend/app/db_tools.py",
+    "size_bytes": 4591,
+    "sha256": "608e039480d0f24990dc9534ddccbe9a7aac18b8db76fa836c6891292e9bb931"
+  },
+  {
+    "path": "backend/app/identity_store.py",
+    "size_bytes": 9130,
+    "sha256": "dc61e1c6fc515b3c47fb9951aa7f319a6b29971b9b7b26114fa5a8b190aabccb"
+  },
+  {
+    "path": "backend/app/main.py",
+    "size_bytes": 9477,
+    "sha256": "a8d06df443cea7fe7261a86fd3094e8385d578a5f6cbf0bf67ecb28e1343c994"
+  },
+  {
+    "path": "backend/app/opportunity_engine.py",
+    "size_bytes": 1001,
+    "sha256": "5eac285fcf84de370414f22134be9e2b454e02d57cc89d4eefc7a2b35a386469"
+  },
+  {
+    "path": "backend/app/postgres_store.py",
+    "size_bytes": 10988,
+    "sha256": "ed450caad906566b57c5092689f365805f154857477bd4e0903b4b8510adc8be"
+  },
+  {
+    "path": "backend/app/recommendation_adapter.py",
+    "size_bytes": 1063,
+    "sha256": "325b33420dbbdad2e94ca39ab2210792690cbe9fc6a35fdf280f9aea7d73fcd8"
+  },
+  {
+    "path": "backend/app/schemas.py",
+    "size_bytes": 3199,
+    "sha256": "a3be373756035259a00bf34f70c7040bf7c03dba267ac8959e889fc5b3754f63"
+  },
+  {
+    "path": "backend/app/storage_import.py",
+    "size_bytes": 1316,
+    "sha256": "e59fb47d7d1edc9ba7a176efe739688e42e89d488a401d8740c0d2431109dc1f"
+  },
+  {
+    "path": "backend/data/career_learning_modules.json",
+    "size_bytes": 21936,
+    "sha256": "fa3c1da5012826d19e5de88145999a919cb0802f7869f575ed79dafc0b59d270"
+  },
+  {
+    "path": "backend/data/careers.json",
+    "size_bytes": 18316,
+    "sha256": "49dc30857e17ac4860a66d99ee72bad2918842647397a161ae207dadcd20540e"
+  },
+  {
+    "path": "backend/data/courses.json",
+    "size_bytes": 791,
+    "sha256": "271ff1295549f74b8897a9e0c6dfc730a49fb265b89d29db8ba9e9b98d63d073"
+  },
+  {
+    "path": "backend/data/opportunities.json",
+    "size_bytes": 887,
+    "sha256": "fb491686618404edf801b9d8a7a7b1299ab0a75119a543c065c792df36b6f0c5"
+  },
+  {
+    "path": "backend/requirements-postgres.txt",
+    "size_bytes": 126,
+    "sha256": "5e230791ea31686edd84f728bfef90e42a35e300710390166c9abd73326291dd"
+  },
+  {
+    "path": "backend/requirements.txt",
+    "size_bytes": 309,
+    "sha256": "2ad8d0e9ca64d1e76a3c0c760f075c4a75697cd8c45061c44f4f9832aa07c1dd"
+  },
+  {
+    "path": "backend/start_server.py",
+    "size_bytes": 1136,
+    "sha256": "5e75c14d745348915019208f6833ebcf1d1b8f67bb47962f27c9c478e451ac70"
+  },
+  {
+    "path": "backend/tests/demo_engine.py",
+    "size_bytes": 1006,
+    "sha256": "8903484d824360c8c9032e85c5da653480a1bc3beb429a03419cf3afbb0c4bb9"
+  },
+  {
+    "path": "backend/tests/demo_output.json",
+    "size_bytes": 10849,
+    "sha256": "d643cad6e50f5e8f5cd012089a3236703026ea1a8618c3ffc23fcf3a281f22e3"
+  },
+  {
+    "path": "backend/tests/demo_output.txt",
+    "size_bytes": 9947,
+    "sha256": "924498b64a7be90ff0cabd1aa6995b0f5a6cd8c25be9164f1c2e91d3e3112414"
+  },
+  {
+    "path": "backend/tests/example_profiles.json",
+    "size_bytes": 2025,
+    "sha256": "274e891b07db1855c92696d8ef89d89bedf9690719fabbf91fce262354b2a3e8"
+  },
+  {
+    "path": "backend/tests/expected_profile_results.json",
+    "size_bytes": 6420,
+    "sha256": "877abda1eaace8c059a6c0e856891f7a40ca1dd9e27f8d08900fbdaebfa49371"
+  },
+  {
+    "path": "backend/tests/inprocess_loop.py",
+    "size_bytes": 1142,
+    "sha256": "bb407f874bb64572e801fd902a9b5c3327d3b224dbd327fa21f371be6f6d9362"
+  },
+  {
+    "path": "backend/tests/member5_contract.mjs",
+    "size_bytes": 5369,
+    "sha256": "21381d95f52c13a76246c83d78fad55e3b48efa804dce207fa8336a08f5b7734"
+  },
+  {
+    "path": "backend/tests/smoke_server.py",
+    "size_bytes": 5866,
+    "sha256": "c0e761d1269ab37f9cf116d8839a91cebc7ebe5fc7e900966cc1b81912ebe641"
+  },
+  {
+    "path": "backend/tests/test_api.py",
+    "size_bytes": 13210,
+    "sha256": "65c13eb3d84bf6649bb23f6b7efefa8bf1325a125865841547c77d8e59abaf4b"
+  },
+  {
+    "path": "backend/tests/test_auth_access.py",
+    "size_bytes": 10288,
+    "sha256": "c7146840ee8f66f1a1692041ed67fb2d4ff1ee5394cc3094df972409dc3da39b"
+  },
+  {
+    "path": "backend/tests/test_career_engine.py",
+    "size_bytes": 6155,
+    "sha256": "4202d468ad36e3659e5faeb86f18f5001b05911db1b4824b30ef904734d3805b"
+  },
+  {
+    "path": "backend/tests/test_identity_integration.py",
+    "size_bytes": 10487,
+    "sha256": "b0b8dd35c2324051432c60c98c181e862e0494afd23e616ef756bfbb287482ae"
+  },
+  {
+    "path": "backend/tests/test_member2_boundary.py",
+    "size_bytes": 5586,
+    "sha256": "b2d9e23b47e13615fc2e80d259bb434fbed20a65261206a35006f24501cebc11"
+  },
+  {
+    "path": "backend/tests/test_postgres_integration.py",
+    "size_bytes": 8503,
+    "sha256": "97be293a2e5a4d0be8b55afb7f19bb71cadf3c5d73dfd6a2f3b1dd515a8b5364"
+  },
+  {
+    "path": "backend/tests/test_stage2_storage.py",
+    "size_bytes": 14389,
+    "sha256": "5d9eede221cde55f07eff8cbe2d1341de8c806a498d8459f9f6e5caf453b97b5"
+  },
+  {
+    "path": "backend/tests/test_stage2_upgrade.py",
+    "size_bytes": 2770,
+    "sha256": "dc47b67f8f44d581bde7ca31acc3e55bdf40e94d6db075012d0f8c8ec04bd418"
+  },
+  {
+    "path": "backend/tests/verify_member5.py",
+    "size_bytes": 4078,
+    "sha256": "f40355aa395b7a11bc6a790319ba4348973643f0f6d6d33219e6c129155948be"
+  },
+  {
+    "path": "database/migrations/001_backend_storage.sql",
+    "size_bytes": 2248,
+    "sha256": "501a10f05e687c84015e14c76ceff0d6f02933ab60d2c4669f65b17f193235f0"
+  },
+  {
+    "path": "database/migrations/002_identity_access.sql",
+    "size_bytes": 1612,
+    "sha256": "3e0b78ef8b5343c841645fe0c80ffbc5a1950e2579c0166a4bb9b9826918b302"
+  },
+  {
+    "path": "database/schema.sql",
+    "size_bytes": 1575,
+    "sha256": "e170913220ea9924472183a67cf07ba828ebda65d9fa02dab7d535dcbc8385b3"
+  },
+  {
+    "path": "docs/README_TEAM_REVIEW.md",
+    "size_bytes": 3387,
+    "sha256": "7dd7dc49acda8f21f2de75a9afb282fc6b5744c152bdc587108e539850c8d034"
+  },
+  {
+    "path": "docs/TEAM_INPUTS.md",
+    "size_bytes": 5117,
+    "sha256": "534066f767d037a9379feb9e1efc005e544a4ae311b920fac45fd833eeb5e382"
+  },
+  {
+    "path": "docs/ai-engine-integration.md",
+    "size_bytes": 15632,
+    "sha256": "e45e8702beb3db38f84f5484a81a36acf42c67f68abb35449d1edf73d4a0bf3d"
+  },
+  {
+    "path": "docs/api-contracts.md",
+    "size_bytes": 10097,
+    "sha256": "6be9c889bf0001d033378b3ee5b8d8161242291d35bee6e8fcf341cca984bb73"
+  },
+  {
+    "path": "docs/architecture.md",
+    "size_bytes": 4246,
+    "sha256": "8e14fc49f5ab4cd1d78c9ecc8c97b31e3c32540ca6d1d2e423729333939f8b71"
+  },
+  {
+    "path": "docs/auth-contract-proposal.md",
+    "size_bytes": 4845,
+    "sha256": "45fc548ff0d9cdadefe8442ccdc3ebce25128f69745c1d0eee89a5e1c5db9747"
+  },
+  {
+    "path": "docs/backend-handoff.md",
+    "size_bytes": 16708,
+    "sha256": "9b6968ef34342050cae082c7cfac0120517df2e5c8c9324635eff57a8c08caad"
+  },
+  {
+    "path": "docs/file-manifest.json",
+    "size_bytes": 4083,
+    "sha256": "48e588180caa794b395b4c00f165d15e5f880d498e6136f6d7483a1c947851e9"
+  },
+  {
+    "path": "docs/integration-guide.md",
+    "size_bytes": 42357,
+    "sha256": "e951db6f0126498eb8e34df343da0b9ebf24eb2901d75db7b5f41564c278c5c9"
+  },
+  {
+    "path": "docs/member2-backend-test-results.txt",
+    "size_bytes": 17263,
+    "sha256": "8f85ff5da5d45cc9d7d5a746a9ed5d63a34eaa052d801e066a23a23ba5b9eec4"
+  },
+  {
+    "path": "docs/member2-backend-verification.json",
+    "size_bytes": 1521,
+    "sha256": "8f82939612610388fb4096dc126ca909f389880ce003ac8e0adf76ed304469bb"
+  },
+  {
+    "path": "docs/member2-current-integration.md",
+    "size_bytes": 4712,
+    "sha256": "46d6a5ad232a209bb60b9883981351cc6b4c523e95aee456c394acc4e3d41780"
+  },
+  {
+    "path": "docs/member2-current-verification.json",
+    "size_bytes": 3441,
+    "sha256": "d4800c93c78f1b822d57e1c09731dbf4168bc1a239aef3ed164c086d303c04c6"
+  },
+  {
+    "path": "docs/member2-integration-test-results.txt",
+    "size_bytes": 1210,
+    "sha256": "19b0425601eb5affe27da50fb2512f279c7887577a1d0ed38c952a5f5bed853e"
+  },
+  {
+    "path": "docs/member2-live-tests.txt",
+    "size_bytes": 393,
+    "sha256": "53ef5a59e81a03d7fb7c3e6f0d9573991b5ca4be04447faf3b695696bf957a61"
+  },
+  {
+    "path": "docs/member2-merge-notes.md",
+    "size_bytes": 2946,
+    "sha256": "3105015ea59371a2101e697d28a247e1c05a6545200d9c116b0347f677084787"
+  },
+  {
+    "path": "docs/member2-upload-upgrade-manifest.json",
+    "size_bytes": 7621,
+    "sha256": "7421c0000cf4f4f36719980d29177269916f78b86f343ac4173fc08853486fa2"
+  },
+  {
+    "path": "docs/member3-upload-upgrade-manifest.json",
+    "size_bytes": 6322,
+    "sha256": "53def51fa00f03c00d85c96c8204da4a10af203a36911f951ffd58e27fbdbcf0"
+  },
+  {
+    "path": "docs/member5-backend-first-attempt.txt",
+    "size_bytes": 16160,
+    "sha256": "57676096c1684e70401483663c8792feb3b3007e714cb9faca728ce63ac3a8bd"
+  },
+  {
+    "path": "docs/member5-frontend-results.txt",
+    "size_bytes": 696,
+    "sha256": "a035e0a08ad77dc820c895a8deda323a659f78dc7943097b51778e908aac4e8f"
+  },
+  {
+    "path": "docs/member5-integration-review.md",
+    "size_bytes": 5734,
+    "sha256": "422ac50770d2425b227af466456b1be019ca250935bbfee3379f5f1580b80537"
+  },
+  {
+    "path": "docs/member5-live-tests.txt",
+    "size_bytes": 393,
+    "sha256": "c055b954956be3421eef5473b53bada0bbd26a1731aa3ae901b7166aaf61f3e8"
+  },
+  {
+    "path": "docs/member5-verification.json",
+    "size_bytes": 4536,
+    "sha256": "f8e5123bebcd4a16d0963bcba976326cde06b8a4cc44b696c1b359169407bfc3"
+  },
+  {
+    "path": "docs/offline-sync-contract-proposal.md",
+    "size_bytes": 3608,
+    "sha256": "12358d8af62d060262cc844ab49819489d80bfcf0396e1c0e6e56e7879345fb4"
+  },
+  {
+    "path": "docs/roadmap-integration-proposal.md",
+    "size_bytes": 3280,
+    "sha256": "1304de11d652315cafd331621cdeee958ddc632e0ce8f17601d53e469acc663f"
+  },
+  {
+    "path": "docs/runtime-versions.txt",
+    "size_bytes": 315,
+    "sha256": "6ed60910241802ff3134996dcddee03ae07d1578aa8a5e44f23425c686122ad1"
+  },
+  {
+    "path": "docs/scoring-algorithm.md",
+    "size_bytes": 4026,
+    "sha256": "68fd1135fca99f85653257b24f084a31729689bedab41a2507c9d54bae3c9071"
+  },
+  {
+    "path": "docs/server-smoke.log",
+    "size_bytes": 1172,
+    "sha256": "b278cf7ba75f1e5840f8996524be48476891169d4808166dce42d3af76a14caa"
+  },
+  {
+    "path": "docs/smoke-results.json",
+    "size_bytes": 1013,
+    "sha256": "ba3b9dfcb9adb2947b430261725fc9b7b82cc314803757b118b4d5b345b26f1e"
+  },
+  {
+    "path": "docs/stage2-handoff.md",
+    "size_bytes": 24173,
+    "sha256": "88eb3892f0a95875462ce167cb04183bd83a7ab555f1ea24bec101d761b2ae51"
+  },
+  {
+    "path": "docs/stage2-release-manifest.json",
+    "size_bytes": 6706,
+    "sha256": "f334c2e76d5c9e1e32bb1f80ccb26d457b3230fdb66adf250f230597f4b5ea16"
+  },
+  {
+    "path": "docs/stage2-test-results.txt",
+    "size_bytes": 9284,
+    "sha256": "5acbccd38475cb059e6ea62a022468abf430f986fdd8ffcd763485406854c285"
+  },
+  {
+    "path": "docs/stage2-verification.json",
+    "size_bytes": 1468,
+    "sha256": "326199c0004abfbad8de289362c0167b538425bbf5802c509231aa9fb34189fb"
+  },
+  {
+    "path": "docs/stage3-test-results.txt",
+    "size_bytes": 13699,
+    "sha256": "e651e4efcfbbd844cee828f018a6665bddd5d8e287d428161e30d4e921399ca7"
+  },
+  {
+    "path": "docs/stage3-verification.json",
+    "size_bytes": 1579,
+    "sha256": "f343036bd18e744ef7f59ac22a67bae336eb9917340f7b4c3ada2b061985eb96"
+  },
+  {
+    "path": "docs/test-results.txt",
+    "size_bytes": 2098,
+    "sha256": "910d7cfbd44ca6cbc4696862175cc01af60dee3f94bd0423f68198507247c78f"
+  },
+  {
+    "path": "frontend/.env.example",
+    "size_bytes": 257,
+    "sha256": "fcc1ccf16068e7ee3622bb6498065e0272bd8a7f86139e255d71e5adc7ddd14a"
+  },
+  {
+    "path": "frontend/index.html",
+    "size_bytes": 824,
+    "sha256": "75040d98e7cce925efd1e61191689f550b639b3195cb071331df82061f23e814"
+  },
+  {
+    "path": "frontend/package-lock.json",
+    "size_bytes": 263521,
+    "sha256": "b6830e52a8dffe6a4130d61f3ba8a7be7a7eb8095101f5437da4a3aa17b48841"
+  },
+  {
+    "path": "frontend/package.json",
+    "size_bytes": 750,
+    "sha256": "b1d5db943c3716159b24c2cee10172867b20faf0bf24b2e993d3dba8adba2e7b"
+  },
+  {
+    "path": "frontend/public/icons/icon-192.png",
+    "size_bytes": 826,
+    "sha256": "219b63f706efd73dea66c8c2ef6f8200564420f321414bc66641288ed5195107"
+  },
+  {
+    "path": "frontend/public/icons/icon-512.png",
+    "size_bytes": 2615,
+    "sha256": "964381a18cd6d29b3d419b380bcb3e3cc40857d5e773b41b6664e6c2a854fb4e"
+  },
+  {
+    "path": "frontend/public/icons/icon-maskable-512.png",
+    "size_bytes": 2340,
+    "sha256": "e5f6d3c1ccd13316be70d20ad96254da9c27b665602de9e429a39a5a4dd1f414"
+  },
+  {
+    "path": "frontend/public/icons/icon.svg",
+    "size_bytes": 427,
+    "sha256": "44ce43f9a8948f48b86c81389f814728dd67f9492ea7108c813860734d3cf727"
+  },
+  {
+    "path": "frontend/public/manifest.webmanifest",
+    "size_bytes": 626,
+    "sha256": "697cae54cd2584cc081c294ccf0b9a05667cd212092f77a6b5df4b9e05ca5b7b"
+  },
+  {
+    "path": "frontend/public/offline.html",
+    "size_bytes": 1323,
+    "sha256": "a7452927d2d2c1a18f7d7f43b74006580db2ab2acd42713e830f14617886eed5"
+  },
+  {
+    "path": "frontend/scripts/e2e-offline-journey.mjs",
+    "size_bytes": 11658,
+    "sha256": "91453318c3fafc7345e88770666e1772cb26804a10cee334ab1e22e307b839d8"
+  },
+  {
+    "path": "frontend/src/App.jsx",
+    "size_bytes": 3538,
+    "sha256": "2727bc67f8f26275948fb8d3312cfc2fea4036bedf59efa4d14a1e8634036e0c"
+  },
+  {
+    "path": "frontend/src/App.test.jsx",
+    "size_bytes": 1810,
+    "sha256": "edca387b501bf622f96b3273f6a86ee30314cc14ee255b033836aea5df8d0d31"
+  },
+  {
+    "path": "frontend/src/features/common/apiClient.js",
+    "size_bytes": 4043,
+    "sha256": "b1682679318c0abce44378203789ed69b7f81f373f0006b9fe27e4b97586e6ac"
+  },
+  {
+    "path": "frontend/src/features/common/apiClient.test.js",
+    "size_bytes": 3557,
+    "sha256": "2799f11de2a3058c0ba9e45e3179553927999af649d30c77ff3c99024db1f8e2"
+  },
+  {
+    "path": "frontend/src/features/common/normalizeCourses.js",
+    "size_bytes": 1072,
+    "sha256": "9bc09c650c24cf96400eada9f8da5a3a0d1aad27c2f59fe399969b0a789b2136"
+  },
+  {
+    "path": "frontend/src/features/common/tokens.css",
+    "size_bytes": 2849,
+    "sha256": "6d3b6799dbc964eeca6ec5d1f56acc71b5abac28a6af7bab0637b0c069694a27"
+  },
+  {
+    "path": "frontend/src/features/contract.live.test.js",
+    "size_bytes": 4298,
+    "sha256": "dc396d15b051774fa98be66e654e325f81d30d95dac9a8097fcde3860ffb36e9"
+  },
+  {
+    "path": "frontend/src/features/facilitator/FacilitatorDashboard.jsx",
+    "size_bytes": 9468,
+    "sha256": "9c046fd4a1315dfc69b4a60bd477646919628ccb055733c1477046aea1dfc448"
+  },
+  {
+    "path": "frontend/src/features/facilitator/FacilitatorDashboard.test.jsx",
+    "size_bytes": 7192,
+    "sha256": "8e0b99067bfe96a361e99d077063999ac64725a2bfdeff39bf162ace18b78af0"
+  },
+  {
+    "path": "frontend/src/features/facilitator/OpportunityShareList.jsx",
+    "size_bytes": 4916,
+    "sha256": "e1d516553e87c900e0d05c9e96f5893b051d81d54d00ead288924b07f316d1c8"
+  },
+  {
+    "path": "frontend/src/features/facilitator/ProgressBar.jsx",
+    "size_bytes": 690,
+    "sha256": "00fab9afefc65040e4eac51706368a5342d02276914c7f211de1e1b37a867535"
+  },
+  {
+    "path": "frontend/src/features/facilitator/README.md",
+    "size_bytes": 3801,
+    "sha256": "10bcf7a18c3d6170ed0fa901c1ec4f936802d77299a62fe95268a06b92b964d3"
+  },
+  {
+    "path": "frontend/src/features/facilitator/StudentDetails.jsx",
+    "size_bytes": 7688,
+    "sha256": "d95070da3803c37520d31e82eea6f8944d4479ca6328dad0504120be70b42112"
+  },
+  {
+    "path": "frontend/src/features/facilitator/StudentList.jsx",
+    "size_bytes": 724,
+    "sha256": "2e9e2f8f8253a68095a5422934986bec0a98d44ba3eedad2913dbe70eb1401d3"
+  },
+  {
+    "path": "frontend/src/features/facilitator/StudentProgressCard.jsx",
+    "size_bytes": 2438,
+    "sha256": "61132f48154fd58fc5d6f6984d3b3713c19bd509ac7e0a7108e0558134bf770b"
+  },
+  {
+    "path": "frontend/src/features/facilitator/facilitator.css",
+    "size_bytes": 7138,
+    "sha256": "b58f4ad1ffc9485aa36de7583770f06056b19546352cc40664575ef18f9a377d"
+  },
+  {
+    "path": "frontend/src/features/facilitator/facilitatorApi.js",
+    "size_bytes": 5843,
+    "sha256": "2ca0ce4aa2fd893b014e3e79e7591e5839a92642cddf8fc10a27b588104562f7"
+  },
+  {
+    "path": "frontend/src/features/facilitator/facilitatorApi.test.js",
+    "size_bytes": 4080,
+    "sha256": "18579a36ac4d087180791f2960088fe7fcaf1298cad3d0ba55d931c3b57ac5ab"
+  },
+  {
+    "path": "frontend/src/features/facilitator/facilitatorMockData.js",
+    "size_bytes": 6239,
+    "sha256": "4fdfb17ca4ee7aa0fa90dda6dd61c7ca87e72902c141c6606e7fd25febd2b7c0"
+  },
+  {
+    "path": "frontend/src/features/facilitator/facilitatorUtils.js",
+    "size_bytes": 10408,
+    "sha256": "9ff185a7e1b3ff500366a85be5409f015bd7d8a48bcdfa3275adf8bc96817f30"
+  },
+  {
+    "path": "frontend/src/features/facilitator/facilitatorUtils.test.js",
+    "size_bytes": 7698,
+    "sha256": "27cc7e0c4486563ba2e654b6f69b617b89e20e000da543ad3ae8e1d135d8d842"
+  },
+  {
+    "path": "frontend/src/features/facilitator/index.js",
+    "size_bytes": 734,
+    "sha256": "c1521e6296a0320eb17c2ea16eeb748c6ccdfb3d3d7c32ceab7d0ce13ab6aead"
+  },
+  {
+    "path": "frontend/src/features/facilitator/useFacilitatorData.js",
+    "size_bytes": 1094,
+    "sha256": "9bb4d2dcf88556d8eae84b516a5ce1dabb3fa726acc00c5ceaa024b6d5590828"
+  },
+  {
+    "path": "frontend/src/features/i18n/LanguageContext.jsx",
+    "size_bytes": 2803,
+    "sha256": "aac88484b036fa58f87932c851062ba8b3e8ed2088bf3bd1296a7384694cacea"
+  },
+  {
+    "path": "frontend/src/features/i18n/LanguageSelect.jsx",
+    "size_bytes": 911,
+    "sha256": "ff23f360824fd110a83dcd31f785b0c1c3d9cb4262fa0bbd3f97df479c5c38cd"
+  },
+  {
+    "path": "frontend/src/features/i18n/i18n.test.jsx",
+    "size_bytes": 3163,
+    "sha256": "7c9b6a331a99c3c0f4bacce55258094e6e346b4e58a8861621916ae5bb577cb7"
+  },
+  {
+    "path": "frontend/src/features/i18n/index.js",
+    "size_bytes": 246,
+    "sha256": "db82b775c70808704988dec9b63f1bbc1a0a17045eeb2aacf32a40a5f11cf058"
+  },
+  {
+    "path": "frontend/src/features/i18n/translations.js",
+    "size_bytes": 32468,
+    "sha256": "772ca10dba80d269a3776a693292c55d1b8b21e2dfd1c36ee575360e4b71281c"
+  },
+  {
+    "path": "frontend/src/features/offline/OfflineBanner.jsx",
+    "size_bytes": 1031,
+    "sha256": "c99c1c1d295e363db3b23e0117af8082c57e57e5159e26964dce4e4759a5727d"
+  },
+  {
+    "path": "frontend/src/features/offline/OfflineLessons.jsx",
+    "size_bytes": 9989,
+    "sha256": "227ed4068e62b7f062541860468d8d016e1b9bcfc966c557c3f9ba1b92ca0ce7"
+  },
+  {
+    "path": "frontend/src/features/offline/OfflineLessons.test.jsx",
+    "size_bytes": 6276,
+    "sha256": "faf41254a4c9e0f40ab8b7ad1c3830f8c0da8b814ab08450a3470ef609420f6a"
+  },
+  {
+    "path": "frontend/src/features/offline/README.md",
+    "size_bytes": 5113,
+    "sha256": "fbdb7b0e747e4700ea47e3d0dd46bc65841bf56ae711fcacf6d6f10c97a43a49"
+  },
+  {
+    "path": "frontend/src/features/offline/SyncStatusBadge.jsx",
+    "size_bytes": 1320,
+    "sha256": "4b32fdb7dc494fe4f18af7dba8881188125ff5a68c18b7890888cbedb7c3d2d7"
+  },
+  {
+    "path": "frontend/src/features/offline/index.js",
+    "size_bytes": 957,
+    "sha256": "ef5de966199bfff329e0f508d146d5d4984b2a6395a0035fd28911ed7f136d87"
+  },
+  {
+    "path": "frontend/src/features/offline/lessonStore.js",
+    "size_bytes": 2590,
+    "sha256": "0199d4f9750c9c24a39a37fb6eaa924a3291e25896272092cfbab80e5c5adc1b"
+  },
+  {
+    "path": "frontend/src/features/offline/offline.css",
+    "size_bytes": 3535,
+    "sha256": "3df7a3ce0cf0ad3a1d9d224370dc2dc3c8e0ac6fe6a9161ccc545cc71fcbceef"
+  },
+  {
+    "path": "frontend/src/features/offline/offlineDb.js",
+    "size_bytes": 3526,
+    "sha256": "dfe62daf69edd61bf28ff6d7c9d04b9da50c625851a670d0783608c8ba46d8fe"
+  },
+  {
+    "path": "frontend/src/features/offline/offlineSync.test.js",
+    "size_bytes": 8044,
+    "sha256": "8bf9c939b0d419538bc5bd005c9c35db8faa5f5ab88c81e90e9fa8e91e41bd72"
+  },
+  {
+    "path": "frontend/src/features/offline/progressQueue.js",
+    "size_bytes": 5704,
+    "sha256": "b9e35cf8a4799107ae8e1211f02fc1fa559e06a5fccaa94d56fb2664a57b544a"
+  },
+  {
+    "path": "frontend/src/features/offline/pwaStatus.js",
+    "size_bytes": 1267,
+    "sha256": "6a0c931bb47d351c8ecec1038d7a4888c8e3bfcafe854edbd147da60a54b5fed"
+  },
+  {
+    "path": "frontend/src/features/offline/registerPWA.js",
+    "size_bytes": 1013,
+    "sha256": "3bb4775f44f69b081c00ec072704de4a33493577316388030d09efac4e95c855"
+  },
+  {
+    "path": "frontend/src/features/offline/syncManager.js",
+    "size_bytes": 4246,
+    "sha256": "8fbd2ee422e10477b550c687dff033e51fb81786830c87e2ce09da7e679a9d31"
+  },
+  {
+    "path": "frontend/src/features/offline/useOnlineStatus.js",
+    "size_bytes": 781,
+    "sha256": "22c2cf7a0bdce2006360feb6d73bd1a0a73dddf7e96e7f5935e97bc3eb1165b3"
+  },
+  {
+    "path": "frontend/src/features/offline/useProgressSync.js",
+    "size_bytes": 3382,
+    "sha256": "ded64313302ef85017ace5f546be59ee716a5e0ae9e29e389d66a76c15629934"
+  },
+  {
+    "path": "frontend/src/index.css",
+    "size_bytes": 2677,
+    "sha256": "3eb5a9b1d1d2dc809395f7a60bf01531fdf31bf8632c6f2b64837180256f336b"
+  },
+  {
+    "path": "frontend/src/main.jsx",
+    "size_bytes": 668,
+    "sha256": "0735e073a3a9d2cf0d9ad548cdb27838c5b3ce44553ca2ba13e19405a3841c9e"
+  },
+  {
+    "path": "frontend/src/test/helpers.js",
+    "size_bytes": 1940,
+    "sha256": "e45c43a5951807abcb7552245d7f677b5f9f0e4216802769a1918d0f0fff942d"
+  },
+  {
+    "path": "frontend/src/test/setup.js",
+    "size_bytes": 269,
+    "sha256": "f418bd32320cb4d7a5b3804dde696174c8df25cc8bfa89fd0f1d2d6c621a2ed4"
+  },
+  {
+    "path": "frontend/vite.config.js",
+    "size_bytes": 2645,
+    "sha256": "45202225934dcc999751cc7196e64a9a0542ead10a5752d7b381c52218cf6885"
+  },
+  {
+    "path": "frontend/vitest.config.js",
+    "size_bytes": 392,
+    "sha256": "a118d8d732991dd6a84ddef7fffbe9caeebe03e7fe5ebaf4732e4f56a6e0c4eb"
+  },
+  {
+    "path": "frontend/vitest.live.config.js",
+    "size_bytes": 350,
+    "sha256": "653d104e691409e36b88ce0ce9f30816036de296e8a34232c734ee97cee9efa5"
+  },
+  {
+    "path": "review_member2_upgrade.py",
+    "size_bytes": 1245,
+    "sha256": "ddb427cae9e60f2a72376c7080b61544c758ed6fca2d265e7edee1ab6e53ef4f"
+  },
+  {
+    "path": "review_upload_upgrade.py",
+    "size_bytes": 1286,
+    "sha256": "7536bc2fa570ab1ec5b9441d5bbc249302d5687d8336db8db0549cd65dff95a0"
+  },
+  {
+    "path": "stage2-upgrade-manifest.json",
+    "size_bytes": 3934,
+    "sha256": "c60a45fc03810fbf15cd3fa40043697dbb22b60a65bc329f050675f47b6958ad"
+  },
+  {
+    "path": "tests/test_demo_journey.md",
+    "size_bytes": 6739,
+    "sha256": "6ef18b20f368b121f4d807b729149f6dffabbb685282e5f8958d3da22ff9ff40"
+  },
+  {
+    "path": "tests/test_mobile_ui.md",
+    "size_bytes": 2439,
+    "sha256": "ea759433f20a1f2420c27ed854d35284d97d7f1e489def62c8718b7b8e7e6686"
+  },
+  {
+    "path": "tests/test_offline_mode.md",
+    "size_bytes": 4454,
+    "sha256": "90896da3fa2a28b7385c76ef114314b796f35b8381ae4accaf1b10bfb377cb92"
+  },
+  {
+    "path": "upgrade_backend.py",
+    "size_bytes": 1810,
+    "sha256": "51378d199834777a5ee16c918253406d0cb9d02fe45dbe3e06ec6c32c2535496"
+  },
+  {
+    "path": "upgrade_stage1.py",
+    "size_bytes": 4105,
+    "sha256": "49ead1f474a9e3099648e536313b96d147d9cdf70af5e662e42a49fd6c7f8f84"
+  }
+]

@@ -1,0 +1,95 @@
+Stage 2 executed verification 2026-10-18T09:57:11.766220+00:00
+Command equivalent: python -m unittest discover -s backend/tests -v
+test_all_seven_paths_present (test_api.ApiTests.test_all_seven_paths_present) ... ok
+test_broken_career_adapter (test_api.ApiTests.test_broken_career_adapter) ... Career adapter failed: ValidationError
+Career adapter failed: ValidationError
+Career adapter failed: RuntimeError
+ok
+test_broken_opportunity_adapter (test_api.ApiTests.test_broken_opportunity_adapter) ... Opportunity adapter failed: ValidationError
+ok
+test_career_adapter_receives_original_profile_and_catalog (test_api.ApiTests.test_career_adapter_receives_original_profile_and_catalog) ... ok
+test_catalog_failures_leave_health_up (test_api.ApiTests.test_catalog_failures_leave_health_up) ... Catalog careers.json unavailable: FileNotFoundError
+Catalog careers.json unavailable: JSONDecodeError
+Catalog careers.json unavailable: ValueError
+Catalog careers.json unavailable: ValueError
+Catalog courses.json unavailable: FileNotFoundError
+Catalog courses.json unavailable: JSONDecodeError
+Catalog courses.json unavailable: ValueError
+Catalog courses.json unavailable: ValidationError
+Catalog opportunities.json unavailable: FileNotFoundError
+Catalog opportunities.json unavailable: JSONDecodeError
+Catalog opportunities.json unavailable: ValueError
+Catalog opportunities.json unavailable: ValidationError
+ok
+test_concurrent_json_writes (test_api.ApiTests.test_concurrent_json_writes) ... ok
+test_configuration_paths_and_explicit_origins (test_api.ApiTests.test_configuration_paths_and_explicit_origins) ... ok
+test_corrupt_store_not_overwritten (test_api.ApiTests.test_corrupt_store_not_overwritten) ... Demo storage could not be read or written: JSONDecodeError
+Demo storage could not be read or written: JSONDecodeError
+Demo storage could not be read or written: ValidationError
+Demo storage could not be read or written: ValidationError
+Demo storage could not be read or written: ValidationError
+Demo storage could not be read or written: ValidationError
+ok
+test_cors_preflight (test_api.ApiTests.test_cors_preflight) ... ok
+test_courses (test_api.ApiTests.test_courses) ... ok
+test_disk_error (test_api.ApiTests.test_disk_error) ... Demo storage could not be read or written: PermissionError
+ok
+test_duplicate_dataset_ids_rejected (test_api.ApiTests.test_duplicate_dataset_ids_rejected) ... Catalog courses.json unavailable: ValueError
+ok
+test_health (test_api.ApiTests.test_health) ... ok
+test_invalid_json_and_no_raw_error_values (test_api.ApiTests.test_invalid_json_and_no_raw_error_values) ... ok
+test_new_profile_can_store_progress_but_is_not_in_facilitator (test_api.ApiTests.test_new_profile_can_store_progress_but_is_not_in_facilitator) ... ok
+test_opportunity_filtering (test_api.ApiTests.test_opportunity_filtering) ... ok
+test_optional_profile_fields (test_api.ApiTests.test_optional_profile_fields) ... ok
+test_profile_contract_and_disk_persistence (test_api.ApiTests.test_profile_contract_and_disk_persistence) ... ok
+test_profile_validation (test_api.ApiTests.test_profile_validation) ... ok
+test_progress_is_upserted_and_survives_app_restart (test_api.ApiTests.test_progress_is_upserted_and_survives_app_restart) ... ok
+test_progress_validation_and_missing_ids (test_api.ApiTests.test_progress_validation_and_missing_ids) ... ok
+test_recommendation_contract (test_api.ApiTests.test_recommendation_contract) ... ok
+test_unexpected_backend_failure (test_api.ApiTests.test_unexpected_backend_failure) ... Unexpected backend error: RuntimeError
+ok
+test_unknown_eligibility_is_not_global (test_api.ApiTests.test_unknown_eligibility_is_not_global) ... ok
+test_concurrent_progress_writes_have_one_row (test_postgres_integration.PostgresIntegrationTests.test_concurrent_progress_writes_have_one_row) ... ok
+test_database_score_constraint_and_rollback (test_postgres_integration.PostgresIntegrationTests.test_database_score_constraint_and_rollback) ... PostgreSQL storage unavailable: CheckViolation
+ok
+test_http_contract_with_real_database (test_postgres_integration.PostgresIntegrationTests.test_http_contract_with_real_database) ... ok
+test_import_fk_failure_rolls_back_earlier_profile_insert (test_postgres_integration.PostgresIntegrationTests.test_import_fk_failure_rolls_back_earlier_profile_insert) ... PostgreSQL storage unavailable: ForeignKeyViolation
+ok
+test_import_keeps_ids_and_is_repeatable_without_overwrite (test_postgres_integration.PostgresIntegrationTests.test_import_keeps_ids_and_is_repeatable_without_overwrite) ... ok
+test_migration_rerun_and_schema_check (test_postgres_integration.PostgresIntegrationTests.test_migration_rerun_and_schema_check) ... ok
+test_profile_roundtrip_with_unicode_and_sql_punctuation (test_postgres_integration.PostgresIntegrationTests.test_profile_roundtrip_with_unicode_and_sql_punctuation) ... ok
+test_progress_upsert_and_recreated_connection_store (test_postgres_integration.PostgresIntegrationTests.test_progress_upsert_and_recreated_connection_store) ... ok
+test_rows_are_not_public_and_rls_is_enabled (test_postgres_integration.PostgresIntegrationTests.test_rows_are_not_public_and_rls_is_enabled) ... ok
+test_unknown_student_and_course (test_postgres_integration.PostgresIntegrationTests.test_unknown_student_and_course) ... ok
+test_create_profile_uses_parameters_and_closes_connection (test_stage2_storage.AdapterTests.test_create_profile_uses_parameters_and_closes_connection) ... ok
+test_database_exception_is_sanitized_and_transaction_closed (test_stage2_storage.AdapterTests.test_database_exception_is_sanitized_and_transaction_closed) ... ok
+test_database_outage_is_503_with_live_health_and_no_json_fallback (test_stage2_storage.AdapterTests.test_database_outage_is_503_with_live_health_and_no_json_fallback) ... PostgreSQL storage unavailable: OperationalError
+ok
+test_facilitator_reads_only_fictional_ids (test_stage2_storage.AdapterTests.test_facilitator_reads_only_fictional_ids) ... ok
+test_import_keeps_existing_rows_and_timestamp (test_stage2_storage.AdapterTests.test_import_keeps_existing_rows_and_timestamp) ... ok
+test_internal_retrieval_validates_profile_and_progress (test_stage2_storage.AdapterTests.test_internal_retrieval_validates_profile_and_progress) ... ok
+test_migration_apply_idempotency_and_checksum_conflict (test_stage2_storage.AdapterTests.test_migration_apply_idempotency_and_checksum_conflict) ... ok
+test_migration_refuses_untracked_schema (test_stage2_storage.AdapterTests.test_migration_refuses_untracked_schema) ... ok
+test_missing_student_rolls_back_and_closes (test_stage2_storage.AdapterTests.test_missing_student_rolls_back_and_closes) ... ok
+test_progress_upsert_contract_and_utc_timestamp (test_stage2_storage.AdapterTests.test_progress_upsert_contract_and_utc_timestamp) ... ok
+test_seed_demo_is_non_overwriting (test_stage2_storage.AdapterTests.test_seed_demo_is_non_overwriting) ... ok
+test_selected_postgres_store_and_no_fallback (test_stage2_storage.AdapterTests.test_selected_postgres_store_and_no_fallback) ... ok
+test_configuration_writer_preserves_unrelated_values (test_stage2_storage.ConfigImportTests.test_configuration_writer_preserves_unrelated_values) ... ok
+test_db_cli_refuses_json_mode_and_sanitizes_bad_input (test_stage2_storage.ConfigImportTests.test_db_cli_refuses_json_mode_and_sanitizes_bad_input) ... ok
+test_demo_progress_without_saved_profile_is_importable (test_stage2_storage.ConfigImportTests.test_demo_progress_without_saved_profile_is_importable) ... ok
+test_dotenv_literal_values_and_environment_precedence (test_stage2_storage.ConfigImportTests.test_dotenv_literal_values_and_environment_precedence) ... ok
+test_duplicate_keys_reserved_ids_and_corrupt_file (test_stage2_storage.ConfigImportTests.test_duplicate_keys_reserved_ids_and_corrupt_file) ... ok
+test_env_parsing_and_no_secret_error (test_stage2_storage.ConfigImportTests.test_env_parsing_and_no_secret_error) ... ok
+test_import_dry_run_needs_no_database_and_writes_no_store (test_stage2_storage.ConfigImportTests.test_import_dry_run_needs_no_database_and_writes_no_store) ... ok
+test_import_unknown_student_course_or_naive_timestamp (test_stage2_storage.ConfigImportTests.test_import_unknown_student_course_or_naive_timestamp) ... ok
+test_invalid_backend_url_ssl_and_timeouts (test_stage2_storage.ConfigImportTests.test_invalid_backend_url_ssl_and_timeouts) ... ok
+test_json_default_and_secret_not_in_repr (test_stage2_storage.ConfigImportTests.test_json_default_and_secret_not_in_repr) ... ok
+test_valid_snapshot_preserves_ids_and_source_file (test_stage2_storage.ConfigImportTests.test_valid_snapshot_preserves_ids_and_source_file) ... ok
+test_modified_file_conflict_stops_before_writes (test_stage2_upgrade.UpgradeTests.test_modified_file_conflict_stops_before_writes) ... ok
+test_new_filename_collision_and_path_escape_are_rejected (test_stage2_upgrade.UpgradeTests.test_new_filename_collision_and_path_escape_are_rejected) ... ok
+test_upgrade_backs_up_source_and_preserves_env_and_store (test_stage2_upgrade.UpgradeTests.test_upgrade_backs_up_source_and_preserves_env_and_store) ... ok
+
+----------------------------------------------------------------------
+Ran 60 tests in 12.051s
+
+OK

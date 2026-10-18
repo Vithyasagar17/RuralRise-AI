@@ -1,0 +1,9 @@
+Executed on 18 October 2026 with Node 22.19.0 / npm 10.9.3.
+
+npm ci --ignore-scripts --no-audit --no-fund: exit 0, installed 416 packages. No new vulnerability audit was run.
+npm test: exit 0; 8 test files passed, 73 tests passed; duration 16.79 seconds.
+Warnings: jsdom scrollTo is not implemented (twice); no failed assertions.
+npm run build: exit 0; Vite 8.3.4; 51 modules; PWA generateSW; 10 precache entries, 321.58 KiB.
+npm run test:live: exit 0; 6 tests passed against isolated real Uvicorn on 127.0.0.1:58173.
+verify_member5.py: exit 0; 10 actual-module ASGI/IndexedDB integration checks passed.
+Frontend files used for execution match the supplied/project copies byte for byte.

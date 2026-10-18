@@ -1,0 +1,132 @@
+[
+  {
+    "path": "README.md",
+    "size_bytes": 2273,
+    "sha256": "dc27d26fd630579bf450adf358ca9698a39b3b4fa60cc6a92e71ef51a8bcd6b0"
+  },
+  {
+    "path": ".gitignore",
+    "size_bytes": 89,
+    "sha256": "53f2a81f1503b2b7e03d2c12577ac81379db75563260ec26d11615ac3a4942ab"
+  },
+  {
+    "path": ".env.example",
+    "size_bytes": 122,
+    "sha256": "8d15393a4ec0d706a9375284b28f0fd4dc876aa6440853baf41d4b442878e33d"
+  },
+  {
+    "path": "backend/.env.example",
+    "size_bytes": 255,
+    "sha256": "b375550c7ed459f61866fbd67061043b5a7e74d269517314f80b2b2968a00206"
+  },
+  {
+    "path": "backend/requirements.txt",
+    "size_bytes": 202,
+    "sha256": "d986434e81d40bf4e74da26272f564cfcce21f62b7d79274c1c371132c2c7319"
+  },
+  {
+    "path": "backend/app/__init__.py",
+    "size_bytes": 61,
+    "sha256": "0d525efe814961cf48e1a139277ccbca3ac03d5180a9d6c82b92945f77a9a784"
+  },
+  {
+    "path": "backend/app/config.py",
+    "size_bytes": 935,
+    "sha256": "8a8d715e4a7e2684f546ee5ce35557eedfeb44ecefb76414cadabc8a3d8562a0"
+  },
+  {
+    "path": "backend/app/main.py",
+    "size_bytes": 6110,
+    "sha256": "6d40aad48f74bc087d2dc6e3f65c1b8c0f5eb81c5e7584572a4e0f0e3e7bacf8"
+  },
+  {
+    "path": "backend/app/schemas.py",
+    "size_bytes": 3199,
+    "sha256": "a3be373756035259a00bf34f70c7040bf7c03dba267ac8959e889fc5b3754f63"
+  },
+  {
+    "path": "backend/app/database.py",
+    "size_bytes": 4410,
+    "sha256": "6397e5603da9262d5f3b4540c5898c26506f5c7f721aec6361f2fec12c01cdba"
+  },
+  {
+    "path": "backend/app/career_engine.py",
+    "size_bytes": 717,
+    "sha256": "bb421a714548037158c376e484065548df2dc3b06c0a653b7bedc17138cc6e15"
+  },
+  {
+    "path": "backend/app/opportunity_engine.py",
+    "size_bytes": 1001,
+    "sha256": "5eac285fcf84de370414f22134be9e2b454e02d57cc89d4eefc7a2b35a386469"
+  },
+  {
+    "path": "backend/data/careers.json",
+    "size_bytes": 193,
+    "sha256": "98fd2418119fd67a466d02257f13c571aa7d8a9f2c185f07dffa8c27e0633737"
+  },
+  {
+    "path": "backend/data/courses.json",
+    "size_bytes": 791,
+    "sha256": "271ff1295549f74b8897a9e0c6dfc730a49fb265b89d29db8ba9e9b98d63d073"
+  },
+  {
+    "path": "backend/data/opportunities.json",
+    "size_bytes": 887,
+    "sha256": "fb491686618404edf801b9d8a7a7b1299ab0a75119a543c065c792df36b6f0c5"
+  },
+  {
+    "path": "backend/tests/test_api.py",
+    "size_bytes": 12952,
+    "sha256": "8a1bbd6007b85e9e5716fc04676e699107e021a6e244d572b3738c1f97dc7adf"
+  },
+  {
+    "path": "backend/tests/inprocess_loop.py",
+    "size_bytes": 1142,
+    "sha256": "bb407f874bb64572e801fd902a9b5c3327d3b224dbd327fa21f371be6f6d9362"
+  },
+  {
+    "path": "backend/tests/smoke_server.py",
+    "size_bytes": 5866,
+    "sha256": "c0e761d1269ab37f9cf116d8839a91cebc7ebe5fc7e900966cc1b81912ebe641"
+  },
+  {
+    "path": "database/schema.sql",
+    "size_bytes": 1575,
+    "sha256": "e170913220ea9924472183a67cf07ba828ebda65d9fa02dab7d535dcbc8385b3"
+  },
+  {
+    "path": "docs/architecture.md",
+    "size_bytes": 3774,
+    "sha256": "eb25b38269a718e019e39ff8d52846ea6a77fdebe72d850655e607ca604ea4f1"
+  },
+  {
+    "path": "docs/api-contracts.md",
+    "size_bytes": 7950,
+    "sha256": "c709fec861b633517ec690774a5586757a6e8a07eea4163e67a4e2791f00b260"
+  },
+  {
+    "path": "docs/integration-guide.md",
+    "size_bytes": 41992,
+    "sha256": "65133c42567fd6375a95abd5cfe3574227e30b47213bca254bb744cad3c8f1f2"
+  },
+  {
+    "path": "docs/test-results.txt",
+    "size_bytes": 2098,
+    "sha256": "910d7cfbd44ca6cbc4696862175cc01af60dee3f94bd0423f68198507247c78f"
+  },
+  {
+    "path": "docs/smoke-results.json",
+    "size_bytes": 511,
+    "sha256": "60cce57a6c78a6fa851d36242a538a04e3d1dde9329f330f814ff3ec96bd3248"
+  },
+  {
+    "path": "docs/server-smoke.log",
+    "size_bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "docs/runtime-versions.txt",
+    "size_bytes": 315,
+    "sha256": "6ed60910241802ff3134996dcddee03ae07d1578aa8a5e44f23425c686122ad1"
+  }
+]

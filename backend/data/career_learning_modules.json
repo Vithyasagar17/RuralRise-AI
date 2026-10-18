@@ -1,0 +1,553 @@
+{
+  "schema_version": "1.0",
+  "dataset_name": "RuralRise AI prototype learning modules",
+  "dataset_status": "starter roadmap data; not a list of external or accredited courses",
+  "important_note": "Modules are internal prototype learning activities. They do not represent official courses, accreditation, certification, or training-provider availability. Member 4 should review educational quality and local relevance.",
+  "courses": [
+    {
+      "module_id": "solar-001",
+      "career_ids": [
+        "solar-technician"
+      ],
+      "sequence": 1,
+      "title": "Safety and Electrical Awareness",
+      "description": "Foundation concepts for identifying common electrical hazards and understanding why supervised practice matters.",
+      "level": "foundation",
+      "estimated_hours": 2,
+      "skills_taught": [
+        "electrical safety",
+        "hazard awareness"
+      ],
+      "practical_task": "Create a labelled list of common electrical hazards in a fictional workshop scene.",
+      "completion_criteria": "Identify at least five hazards and describe a safe response for each.",
+      "source_status": "prototype-authored learning activity; not an accredited course"
+    },
+    {
+      "module_id": "solar-002",
+      "career_ids": [
+        "solar-technician"
+      ],
+      "sequence": 2,
+      "title": "Basic Circuits and Measurement",
+      "description": "Introduction to circuit concepts, simple diagrams, units, and measurement terminology.",
+      "level": "beginner",
+      "estimated_hours": 3,
+      "skills_taught": [
+        "basic circuit knowledge",
+        "measurement basics"
+      ],
+      "practical_task": "Label a low-risk paper circuit diagram and match symbols to their meanings.",
+      "completion_criteria": "Correctly explain the purpose of the main symbols in the practice diagram.",
+      "source_status": "prototype-authored learning activity; not an accredited course"
+    },
+    {
+      "module_id": "solar-003",
+      "career_ids": [
+        "solar-technician"
+      ],
+      "sequence": 3,
+      "title": "Solar PV System Basics",
+      "description": "Introduction to solar energy components and the roles they play in a basic system.",
+      "level": "beginner",
+      "estimated_hours": 3,
+      "skills_taught": [
+        "solar system basics",
+        "component identification"
+      ],
+      "practical_task": "Draw a simple block diagram of a solar PV system and label its main components.",
+      "completion_criteria": "Submit a labelled diagram and explain each component in plain language.",
+      "source_status": "prototype-authored learning activity; not an accredited course"
+    },
+    {
+      "module_id": "electronics-001",
+      "career_ids": [
+        "electronics-technician"
+      ],
+      "sequence": 1,
+      "title": "Electronic Components",
+      "description": "Recognise common electronic components and describe their basic purpose.",
+      "level": "foundation",
+      "estimated_hours": 2,
+      "skills_taught": [
+        "component identification",
+        "basic science"
+      ],
+      "practical_task": "Match component names with simple pictures or symbols.",
+      "completion_criteria": "Identify the components in the provided practice sheet.",
+      "source_status": "prototype-authored learning activity; not an accredited course"
+    },
+    {
+      "module_id": "electronics-002",
+      "career_ids": [
+        "electronics-technician"
+      ],
+      "sequence": 2,
+      "title": "Circuit and Measurement Basics",
+      "description": "Learn safe, introductory circuit reading and measurement vocabulary.",
+      "level": "beginner",
+      "estimated_hours": 3,
+      "skills_taught": [
+        "basic circuit knowledge",
+        "measurement basics"
+      ],
+      "practical_task": "Annotate a simple circuit diagram and write down the units used for basic measurements.",
+      "completion_criteria": "Complete the diagram labels and measurement questions accurately.",
+      "source_status": "prototype-authored learning activity; not an accredited course"
+    },
+    {
+      "module_id": "electronics-003",
+      "career_ids": [
+        "electronics-technician"
+      ],
+      "sequence": 3,
+      "title": "Structured Troubleshooting",
+      "description": "Use a simple observe-check-record process to reason about a fictional device fault.",
+      "level": "beginner",
+      "estimated_hours": 3,
+      "skills_taught": [
+        "troubleshooting",
+        "record keeping"
+      ],
+      "practical_task": "Work through a paper-based fault scenario and record possible causes before choosing a check.",
+      "completion_criteria": "Record observations, possible causes, and a justified next check.",
+      "source_status": "prototype-authored learning activity; not an accredited course"
+    },
+    {
+      "module_id": "electrician-001",
+      "career_ids": [
+        "electrician"
+      ],
+      "sequence": 1,
+      "title": "Electrical Safety Foundations",
+      "description": "Learn hazard recognition, safe boundaries, and when to call a qualified person.",
+      "level": "foundation",
+      "estimated_hours": 2,
+      "skills_taught": [
+        "electrical safety",
+        "hazard awareness"
+      ],
+      "practical_task": "Review a fictional home-safety scenario and mark hazards without touching equipment.",
+      "completion_criteria": "Identify hazards and state when qualified help is required.",
+      "source_status": "prototype-authored learning activity; not an accredited course"
+    },
+    {
+      "module_id": "electrician-002",
+      "career_ids": [
+        "electrician"
+      ],
+      "sequence": 2,
+      "title": "Basic Circuits and Diagrams",
+      "description": "Learn simple circuit ideas, diagram symbols, and measurement vocabulary.",
+      "level": "beginner",
+      "estimated_hours": 3,
+      "skills_taught": [
+        "basic circuit knowledge",
+        "diagram reading"
+      ],
+      "practical_task": "Label a simple paper circuit diagram.",
+      "completion_criteria": "Correctly label the main components and explain the circuit path.",
+      "source_status": "prototype-authored learning activity; not an accredited course"
+    },
+    {
+      "module_id": "electrician-003",
+      "career_ids": [
+        "electrician"
+      ],
+      "sequence": 3,
+      "title": "Tools and Measurement Awareness",
+      "description": "Identify common tools and learn why correct supervision and procedures matter.",
+      "level": "beginner",
+      "estimated_hours": 3,
+      "skills_taught": [
+        "safe tool handling",
+        "measurement"
+      ],
+      "practical_task": "Complete a tool-identification and safe-use worksheet; do not perform live electrical work.",
+      "completion_criteria": "Match tools to their general purposes and list essential precautions.",
+      "source_status": "prototype-authored learning activity; not an accredited course"
+    },
+    {
+      "module_id": "healthcare-001",
+      "career_ids": [
+        "healthcare-support-assistant"
+      ],
+      "sequence": 1,
+      "title": "Respectful Care and Communication",
+      "description": "Practise respectful communication, consent awareness, privacy, and dignity.",
+      "level": "foundation",
+      "estimated_hours": 2,
+      "skills_taught": [
+        "communication",
+        "respectful care"
+      ],
+      "practical_task": "Write a short response to a fictional person requesting assistance.",
+      "completion_criteria": "Response is respectful, clear, and protects the person’s privacy.",
+      "source_status": "prototype-authored learning activity; not an accredited course"
+    },
+    {
+      "module_id": "healthcare-002",
+      "career_ids": [
+        "healthcare-support-assistant"
+      ],
+      "sequence": 2,
+      "title": "Hygiene and Safety Awareness",
+      "description": "Learn general hygiene principles and why role-specific training matters.",
+      "level": "beginner",
+      "estimated_hours": 3,
+      "skills_taught": [
+        "hygiene and safety awareness",
+        "carefulness"
+      ],
+      "practical_task": "Create a checklist for a fictional non-clinical support setting.",
+      "completion_criteria": "Checklist includes basic hygiene and escalation to trained staff when needed.",
+      "source_status": "prototype-authored learning activity; not an accredited course"
+    },
+    {
+      "module_id": "healthcare-003",
+      "career_ids": [
+        "healthcare-support-assistant"
+      ],
+      "sequence": 3,
+      "title": "Teamwork and Record Keeping",
+      "description": "Practise clear handover notes and role-boundary awareness.",
+      "level": "beginner",
+      "estimated_hours": 2,
+      "skills_taught": [
+        "teamwork",
+        "record keeping"
+      ],
+      "practical_task": "Write a fictional, non-sensitive handover note from a support scenario.",
+      "completion_criteria": "Note is factual, clear, and avoids unnecessary personal details.",
+      "source_status": "prototype-authored learning activity; not an accredited course"
+    },
+    {
+      "module_id": "agri-001",
+      "career_ids": [
+        "agriculture-assistant"
+      ],
+      "sequence": 1,
+      "title": "Farm Observation and Records",
+      "description": "Learn how to make consistent observations and keep a simple field log.",
+      "level": "foundation",
+      "estimated_hours": 2,
+      "skills_taught": [
+        "observation",
+        "record keeping"
+      ],
+      "practical_task": "Create a one-week observation log for a plant using fictional or safely observed data.",
+      "completion_criteria": "Entries are dated, readable, and distinguish observations from guesses.",
+      "source_status": "prototype-authored learning activity; not an accredited course"
+    },
+    {
+      "module_id": "agri-002",
+      "career_ids": [
+        "agriculture-assistant"
+      ],
+      "sequence": 2,
+      "title": "Agriculture and Sustainability Basics",
+      "description": "Explore basic concepts around soil, water, crops, and resource awareness.",
+      "level": "beginner",
+      "estimated_hours": 3,
+      "skills_taught": [
+        "basic crop or farm-system awareness",
+        "water conservation"
+      ],
+      "practical_task": "Make a concept map showing how water use can affect a crop-growing activity.",
+      "completion_criteria": "Concept map clearly links the main factors without unsupported yield claims.",
+      "source_status": "prototype-authored learning activity; not an accredited course"
+    },
+    {
+      "module_id": "agri-003",
+      "career_ids": [
+        "agriculture-assistant"
+      ],
+      "sequence": 3,
+      "title": "Introduction to Farm Technology",
+      "description": "Understand the purpose of simple sensors, digital records, and data collection.",
+      "level": "beginner",
+      "estimated_hours": 3,
+      "skills_taught": [
+        "sensor awareness",
+        "data collection",
+        "basic digital literacy"
+      ],
+      "practical_task": "Design a paper form for recording a simple farm observation.",
+      "completion_criteria": "Form has clear fields, units where needed, and a date or time field.",
+      "source_status": "prototype-authored learning activity; not an accredited course"
+    },
+    {
+      "module_id": "data-001",
+      "career_ids": [
+        "data-analyst"
+      ],
+      "sequence": 1,
+      "title": "Questions, Tables, and Data Quality",
+      "description": "Learn to turn a question into a small table and check for missing or inconsistent values.",
+      "level": "foundation",
+      "estimated_hours": 2,
+      "skills_taught": [
+        "data interpretation",
+        "careful observation"
+      ],
+      "practical_task": "Inspect a tiny fictional dataset and note blank, duplicate, or inconsistent entries.",
+      "completion_criteria": "List the issues found and explain why each one matters.",
+      "source_status": "prototype-authored learning activity; not an accredited course"
+    },
+    {
+      "module_id": "data-002",
+      "career_ids": [
+        "data-analyst"
+      ],
+      "sequence": 2,
+      "title": "Spreadsheet Basics and Summary Statistics",
+      "description": "Practise sorting, filtering, totals, and simple summary calculations.",
+      "level": "beginner",
+      "estimated_hours": 3,
+      "skills_taught": [
+        "spreadsheet basics",
+        "basic statistics"
+      ],
+      "practical_task": "Create a small spreadsheet from fictional, non-sensitive data and calculate a total and average.",
+      "completion_criteria": "Calculations are correct and column headings are clear.",
+      "source_status": "prototype-authored learning activity; not an accredited course"
+    },
+    {
+      "module_id": "data-003",
+      "career_ids": [
+        "data-analyst"
+      ],
+      "sequence": 3,
+      "title": "Charts and Explaining Findings",
+      "description": "Choose a simple chart and explain a finding without claiming more than the data supports.",
+      "level": "beginner",
+      "estimated_hours": 3,
+      "skills_taught": [
+        "data visualisation",
+        "communication"
+      ],
+      "practical_task": "Create or sketch a suitable chart and write two evidence-based observations.",
+      "completion_criteria": "Chart matches the data and observations do not overstate causation.",
+      "source_status": "prototype-authored learning activity; not an accredited course"
+    },
+    {
+      "module_id": "web-001",
+      "career_ids": [
+        "web-developer"
+      ],
+      "sequence": 1,
+      "title": "HTML Page Structure",
+      "description": "Learn how HTML organises headings, paragraphs, links, and simple page sections.",
+      "level": "foundation",
+      "estimated_hours": 2,
+      "skills_taught": [
+        "HTML basics",
+        "page structure"
+      ],
+      "practical_task": "Create a simple page about a fictional community activity.",
+      "completion_criteria": "Page has a clear heading, meaningful sections, and working links where provided.",
+      "source_status": "prototype-authored learning activity; not an accredited course"
+    },
+    {
+      "module_id": "web-002",
+      "career_ids": [
+        "web-developer"
+      ],
+      "sequence": 2,
+      "title": "CSS and Responsive Layout",
+      "description": "Use CSS to improve readability and adapt a page to smaller screens.",
+      "level": "beginner",
+      "estimated_hours": 3,
+      "skills_taught": [
+        "CSS basics",
+        "responsive design"
+      ],
+      "practical_task": "Style the page and check the layout at a narrow viewport width.",
+      "completion_criteria": "Text remains readable and content does not require horizontal scrolling on a narrow screen.",
+      "source_status": "prototype-authored learning activity; not an accredited course"
+    },
+    {
+      "module_id": "web-003",
+      "career_ids": [
+        "web-developer"
+      ],
+      "sequence": 3,
+      "title": "JavaScript and Interaction Basics",
+      "description": "Add a small interaction and practise checking behaviour in the browser.",
+      "level": "beginner",
+      "estimated_hours": 4,
+      "skills_taught": [
+        "JavaScript fundamentals",
+        "debugging"
+      ],
+      "practical_task": "Add a simple button interaction to the practice page.",
+      "completion_criteria": "The interaction works and the browser console has no unaddressed errors.",
+      "source_status": "prototype-authored learning activity; not an accredited course"
+    },
+    {
+      "module_id": "design-001",
+      "career_ids": [
+        "graphic-designer"
+      ],
+      "sequence": 1,
+      "title": "Audience and Visual Hierarchy",
+      "description": "Learn to identify the message, audience, and most important information in a design.",
+      "level": "foundation",
+      "estimated_hours": 2,
+      "skills_taught": [
+        "audience awareness",
+        "visual hierarchy basics"
+      ],
+      "practical_task": "Sketch a poster layout for a fictional community event.",
+      "completion_criteria": "The event name, date, and main action are easy to locate.",
+      "source_status": "prototype-authored learning activity; not an accredited course"
+    },
+    {
+      "module_id": "design-002",
+      "career_ids": [
+        "graphic-designer"
+      ],
+      "sequence": 2,
+      "title": "Layout, Colour, and Typography",
+      "description": "Explore spacing, contrast, colour choices, and readable text.",
+      "level": "beginner",
+      "estimated_hours": 3,
+      "skills_taught": [
+        "layout basics",
+        "colour theory",
+        "typography"
+      ],
+      "practical_task": "Produce two variations of the same simple poster and compare readability.",
+      "completion_criteria": "Both designs have clear hierarchy and readable text.",
+      "source_status": "prototype-authored learning activity; not an accredited course"
+    },
+    {
+      "module_id": "design-003",
+      "career_ids": [
+        "graphic-designer"
+      ],
+      "sequence": 3,
+      "title": "Feedback and Portfolio Practice",
+      "description": "Use feedback to revise an original design and document the changes.",
+      "level": "beginner",
+      "estimated_hours": 3,
+      "skills_taught": [
+        "portfolio building",
+        "attention to detail"
+      ],
+      "practical_task": "Ask a reviewer two specific questions and revise the design based on feedback.",
+      "completion_criteria": "Save the final design with a short note explaining the changes.",
+      "source_status": "prototype-authored learning activity; not an accredited course"
+    },
+    {
+      "module_id": "hospitality-001",
+      "career_ids": [
+        "hospitality-associate"
+      ],
+      "sequence": 1,
+      "title": "Guest Communication Basics",
+      "description": "Practise welcoming language, clarifying questions, and clear directions.",
+      "level": "foundation",
+      "estimated_hours": 2,
+      "skills_taught": [
+        "customer communication",
+        "communication"
+      ],
+      "practical_task": "Role-play a fictional guest question and write a clear response.",
+      "completion_criteria": "Response is polite, relevant, and easy to follow.",
+      "source_status": "prototype-authored learning activity; not an accredited course"
+    },
+    {
+      "module_id": "hospitality-002",
+      "career_ids": [
+        "hospitality-associate"
+      ],
+      "sequence": 2,
+      "title": "Teamwork, Organisation, and Hygiene",
+      "description": "Understand coordination, clean work habits, and following site-specific procedures.",
+      "level": "beginner",
+      "estimated_hours": 3,
+      "skills_taught": [
+        "teamwork",
+        "hygiene awareness",
+        "time management"
+      ],
+      "practical_task": "Create a fictional task checklist for a service shift.",
+      "completion_criteria": "Checklist is ordered and includes checking relevant site procedures.",
+      "source_status": "prototype-authored learning activity; not an accredited course"
+    },
+    {
+      "module_id": "hospitality-003",
+      "career_ids": [
+        "hospitality-associate"
+      ],
+      "sequence": 3,
+      "title": "Handling Questions and Feedback",
+      "description": "Practise listening to a concern, acknowledging it, and escalating when appropriate.",
+      "level": "beginner",
+      "estimated_hours": 2,
+      "skills_taught": [
+        "customer service",
+        "problem solving"
+      ],
+      "practical_task": "Write a response to a fictional customer concern.",
+      "completion_criteria": "Response is respectful and does not promise something outside the worker’s authority.",
+      "source_status": "prototype-authored learning activity; not an accredited course"
+    },
+    {
+      "module_id": "business-001",
+      "career_ids": [
+        "craft-enterprise"
+      ],
+      "sequence": 1,
+      "title": "Identify a Community Need",
+      "description": "Explore how to describe a customer problem before deciding on a product or service.",
+      "level": "foundation",
+      "estimated_hours": 2,
+      "skills_taught": [
+        "customer understanding",
+        "planning"
+      ],
+      "practical_task": "Write down a problem, who experiences it, and three questions to ask potential customers.",
+      "completion_criteria": "Problem and target customer are clearly described; assumptions are labelled.",
+      "source_status": "prototype-authored learning activity; not an accredited course"
+    },
+    {
+      "module_id": "business-002",
+      "career_ids": [
+        "craft-enterprise"
+      ],
+      "sequence": 2,
+      "title": "Simple Costs and Record Keeping",
+      "description": "Learn to list costs and track hypothetical sales and expenses.",
+      "level": "beginner",
+      "estimated_hours": 3,
+      "skills_taught": [
+        "basic cost tracking",
+        "record keeping",
+        "basic mathematics"
+      ],
+      "practical_task": "Complete a worksheet with fictional costs, quantities, and totals.",
+      "completion_criteria": "Calculations are correct and costs are not presented as guaranteed market prices.",
+      "source_status": "prototype-authored learning activity; not an accredited course"
+    },
+    {
+      "module_id": "business-003",
+      "career_ids": [
+        "craft-enterprise"
+      ],
+      "sequence": 3,
+      "title": "Test an Idea and Communicate It",
+      "description": "Plan a small, low-cost way to seek feedback before making a large commitment.",
+      "level": "beginner",
+      "estimated_hours": 3,
+      "skills_taught": [
+        "simple planning",
+        "basic marketing",
+        "communication"
+      ],
+      "practical_task": "Draft a one-page idea summary and a short feedback questionnaire.",
+      "completion_criteria": "Summary explains the problem, proposed solution, assumptions, and next test.",
+      "source_status": "prototype-authored learning activity; not an accredited course"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+/* Offline lessons + banner. All classes are prefixed rr-off-. */
+
+.rr-off {
+  color: var(--rr5-text);
+  font-size: 1.05rem;
+  line-height: 1.55;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+.rr-off__title { font-size: 1.6rem; margin: 0 0 4px; }
+.rr-off__who { margin: 0 0 8px; color: var(--rr5-muted); }
+.rr-off__list-title { font-size: 1.25rem; margin: 20px 0 8px; }
+
+.rr-off-banner__ready {
+  margin: 0;
+  padding: 6px 12px;
+  font-size: 0.95rem;
+  color: var(--rr5-primary);
+}
+.rr-off-banner .rr5-notice { margin: 0; }
+
+.rr-off-sync {
+  border: 1px solid var(--rr5-border);
+  background: var(--rr5-surface);
+  border-radius: var(--rr5-radius);
+  padding: 12px 14px;
+  margin: 12px 0;
+}
+.rr-off-sync__title { font-size: 1.1rem; margin: 0 0 4px; }
+.rr-off-sync p { margin: 0 0 8px; }
+.rr-off-sync__actions { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.rr-off-sync__hint { color: var(--rr5-muted); font-size: 0.95rem; }
+.rr-off-sync__result { margin: 8px 0 0; font-weight: 600; }
+.rr-off-sync__result--ok { color: var(--rr5-primary); }
+.rr-off-sync__result--warn { color: var(--rr5-warn-text); }
+.rr-off-sync__result--error { color: var(--rr5-error-text); }
+
+.rr-off-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.rr-off-list__item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--rr5-border);
+  border-radius: var(--rr5-radius);
+  padding: 12px 14px;
+  background: var(--rr5-bg);
+}
+.rr-off-list__text { flex: 1 1 14rem; min-width: 0; }
+.rr-off-list__name { font-size: 1.1rem; margin: 0; overflow-wrap: anywhere; }
+.rr-off-list__meta { margin: 2px 0; color: var(--rr5-muted); font-size: 0.95rem; }
+.rr-off-list__done { margin: 2px 0; color: var(--rr5-primary); font-weight: 600; }
+
+.rr-off-reader {
+  border: 1px solid var(--rr5-border);
+  border-radius: var(--rr5-radius);
+  padding: 14px;
+  margin-top: 12px;
+  background: var(--rr5-bg);
+}
+.rr-off-reader h2 { font-size: 1.4rem; margin: 14px 0 4px; }
+.rr-off-reader h2:focus { outline: none; }
+.rr-off-reader h2:focus-visible { outline: 3px solid var(--rr5-focus); outline-offset: 2px; }
+.rr-off-reader h3 { font-size: 1.15rem; margin: 16px 0 6px; }
+.rr-off-reader__meta { color: var(--rr5-muted); margin: 0 0 8px; }
+.rr-off-reader__body p { margin: 0 0 10px; }
+.rr-off-reader__lang-note { font-size: 0.9rem; color: var(--rr5-muted); }
+.rr-off-reader__complete {
+  border-top: 1px solid var(--rr5-border);
+  margin-top: 16px;
+  padding-top: 4px;
+}
+.rr-off-reader__msg { font-weight: 600; margin: 10px 0 6px; }
+.rr-off-reader__msg--ok { color: var(--rr5-primary); }
+.rr-off-reader__msg--error { color: var(--rr5-error-text); }
+
+.rr-off-badge {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: 1px solid currentColor;
+}
+.rr-off-badge__hint { font-weight: 400; }
+.rr-off-badge--pending { background: var(--rr5-warn-bg); color: var(--rr5-warn-text); }
+.rr-off-badge--syncing { background: var(--rr5-info-bg); color: var(--rr5-info-text); }
+.rr-off-badge--synced { background: var(--rr5-primary-soft); color: var(--rr5-primary); }
+.rr-off-badge--failed { background: var(--rr5-error-bg); color: var(--rr5-error-text); }
+
+.rr-off h1:focus { outline: none; }
+.rr-off h1:focus-visible { outline: 3px solid var(--rr5-focus); outline-offset: 2px; }
+
+@media (max-width: 420px) {
+  .rr-off-list__item .rr5-btn { width: 100%; }
+  .rr-off-reader { padding: 12px 10px; }
+}

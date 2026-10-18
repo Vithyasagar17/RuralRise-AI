@@ -1,0 +1,85 @@
+{
+  "executed_at_utc": "2026-10-18T12:25:42.418181+00:00",
+  "sources": {
+    "member2_zip_sha256": "12d4b262ef9ddc373675f39acdf178d2f1d5adc6441caf90648df0a167a92502",
+    "prior_member3_member5_zip_sha256": "7a32cbff4560f1fc5aabc6913138192dbc1689184c24f4d4adba9926328fd464"
+  },
+  "backend": {
+    "tests": 110,
+    "passed": 110,
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "member2_engine_tests_included": 14,
+    "new_boundary_tests_included": 7,
+    "real_postgresql_tests_included": 24,
+    "actual_database_restart": {
+      "passed": true,
+      "score_before": 87,
+      "score_after": 87
+    },
+    "full_log": "member2-backend-test-results.txt"
+  },
+  "frontend_live": {
+    "transport": "Real Uvicorn + supplied Vitest live suite",
+    "checks": [],
+    "uvicorn_started": true,
+    "live_tests_exit_code": 0,
+    "status": "passed",
+    "tests": 6,
+    "passed": 6,
+    "execution": "new run against the merged engine/current backend"
+  },
+  "actual_module_bridge": {
+    "passed": 10,
+    "executed_at_utc": "2026-10-18T12:23:42.448831+00:00",
+    "transport": "Actual Member 5 API/queue modules, IndexedDB emulator, real ASGI handlers; no TCP/browser.",
+    "execution": "new run after actual engine integration; profile/progress/dedup/404/422/dashboard checks"
+  },
+  "unchanged_frontend_evidence": {
+    "execution": "Carried forward from previous same-day review; not rerun unnecessarily.",
+    "all_frontend_source_and_lockfile_byte_identical": true,
+    "unit_tests": {
+      "files": 8,
+      "tests": 73,
+      "passed": 73,
+      "note": "Ran supplied unchanged frontend; jsdom emitted two scrollTo not-implemented messages."
+    },
+    "build": {
+      "passed": true,
+      "vite": "8.3.4",
+      "pwa": "2.0.0",
+      "precache_entries": 10,
+      "precache_kib": 321.58
+    },
+    "previous_report": "member5-verification.json"
+  },
+  "source_preservation": {
+    "member2_owned_files_byte_identical": 13,
+    "frontend_files_byte_identical": 62,
+    "qa_files_byte_identical": 3,
+    "public_schemas_courses_opportunities_and_migrations_unchanged": true,
+    "latest_backend_authentication_and_role_permissions_retained": true,
+    "root_readme": "Latest Member 2 supplied README preserved; current setup/status in MEMBER2_REVIEW_START_HERE.md"
+  },
+  "shared_contract": "Seven default routes and public JSON formats unchanged; no roadmap route or progress ordering field enabled.",
+  "dependencies": "No extra dependency/environment variable/AI account needed by Member 2.",
+  "known_gaps": [
+    "No public roadmap route; requires shared request/response approval",
+    "Thirty roadmap module IDs are not the two trackable course IDs; content/mapping agreement needed",
+    "Member 1 student screens/login are absent",
+    "Member 4 verification and sourced content pending",
+    "Supplied frontend lacks auth headers/session recovery and active-account queue scoping",
+    "Offline ordering is still arrival order",
+    "Hosted Supabase login, physical Android/TalkBack and deployment unverified"
+  ],
+  "guarded_upgrade": {
+    "baseline": "Exact uploaded Member 2 ZIP",
+    "dry_run_and_apply_cli_passed": true,
+    "backup_verified": true,
+    "idempotent": true,
+    "conflict_rejected": true,
+    "engines_datasets_models_frontend_environment_runtime_preserved": true,
+    "files_added_or_updated": 48
+  }
+}

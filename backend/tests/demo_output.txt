@@ -1,0 +1,258 @@
+TOP CAREER RECOMMENDATIONS
+{
+  "careers": [
+    {
+      "career_id": "solar-technician",
+      "title": "Solar PV Technician",
+      "description": "A technical pathway focused on learning how solar photovoltaic systems are planned, installed, checked, and maintained under suitable supervision.",
+      "match_score": 100,
+      "reasons": [
+        "Interest match: hands-on work, electrical systems, renewable energy.",
+        "Related existing skills: basic mathematics.",
+        "Goal alignment: find vocational training.",
+        "The practical learning preference is supported by this pathway's learning modes."
+      ],
+      "matched_interests": [
+        "hands-on work",
+        "electrical systems",
+        "renewable energy"
+      ],
+      "matched_skills": [
+        "basic mathematics"
+      ],
+      "missing_skills": [
+        "electrical safety",
+        "basic circuit knowledge",
+        "safe tool handling"
+      ],
+      "prerequisites": [],
+      "prerequisite_status": "not_specified",
+      "prerequisite_note": "No universal minimum is encoded in this prototype dataset. Verify course, employer, and safety requirements with the relevant provider before enrolment or field work.",
+      "evidence_strength": "strong",
+      "next_steps": [
+        "Start by learning: electrical safety.",
+        "Explore a beginner solar-energy lesson from a verifiable learning provider.",
+        "Practise electrical-safety concepts using supervised, low-risk learning activities."
+      ],
+      "opportunity_categories": [
+        "vocational training",
+        "renewable-energy maintenance",
+        "technical apprenticeship"
+      ]
+    },
+    {
+      "career_id": "electrician",
+      "title": "Electrician",
+      "description": "A skilled-trade pathway focused on electrical fundamentals, safety, interpreting simple diagrams, and learning installation or maintenance tasks through appropriate training.",
+      "match_score": 85,
+      "reasons": [
+        "Interest match: hands-on work, electrical systems.",
+        "Related existing skills: basic mathematics.",
+        "Goal alignment: find vocational training.",
+        "The practical learning preference is supported by this pathway's learning modes."
+      ],
+      "matched_interests": [
+        "hands-on work",
+        "electrical systems"
+      ],
+      "matched_skills": [
+        "basic mathematics"
+      ],
+      "missing_skills": [
+        "electrical safety",
+        "basic circuit knowledge",
+        "safe tool handling"
+      ],
+      "prerequisites": [],
+      "prerequisite_status": "not_specified",
+      "prerequisite_note": "Licensing, training, and permitted work vary by location and role. Confirm local rules and provider requirements; never attempt unsafe electrical work.",
+      "evidence_strength": "strong",
+      "next_steps": [
+        "Start by learning: electrical safety.",
+        "Study electrical hazards and safety rules before practical work.",
+        "Ask a verified training provider about recognised training routes and requirements."
+      ],
+      "opportunity_categories": [
+        "vocational training",
+        "apprenticeship",
+        "electrical maintenance"
+      ]
+    },
+    {
+      "career_id": "electronics-technician",
+      "title": "Electronics Technician",
+      "description": "A technical pathway involving basic electronic components, circuit understanding, testing, troubleshooting, and safe handling of equipment.",
+      "match_score": 70,
+      "reasons": [
+        "Interest match: hands-on work.",
+        "Related existing skills: basic mathematics.",
+        "Goal alignment: find vocational training.",
+        "The practical learning preference is supported by this pathway's learning modes."
+      ],
+      "matched_interests": [
+        "hands-on work"
+      ],
+      "matched_skills": [
+        "basic mathematics"
+      ],
+      "missing_skills": [
+        "basic circuit knowledge",
+        "safe tool handling",
+        "measurement basics"
+      ],
+      "prerequisites": [],
+      "prerequisite_status": "not_specified",
+      "prerequisite_note": "Formal requirements vary by course and role. Verify the chosen training provider and workplace safety requirements.",
+      "evidence_strength": "strong",
+      "next_steps": [
+        "Start by learning: basic circuit knowledge.",
+        "Learn component names and their basic functions.",
+        "Use supervised practice and follow safety instructions before handling equipment."
+      ],
+      "opportunity_categories": [
+        "technical training",
+        "repair services",
+        "apprenticeship"
+      ]
+    }
+  ],
+  "warnings": [],
+  "message": "Recommendations are ranked using the profile fields supplied. Review prerequisites and missing skills before choosing a path.",
+  "score_note": "Scores are rule-based fit indicators from 0 to 100, not probabilities of success or job-placement chances."
+}
+
+LEARNING ROADMAP FOR TOP MATCH
+{
+  "career_id": "solar-technician",
+  "career_title": "Solar PV Technician",
+  "learning_goals": [
+    "Develop or demonstrate electrical safety.",
+    "Develop or demonstrate basic circuit knowledge.",
+    "Develop or demonstrate safe tool handling."
+  ],
+  "required_skills": [
+    "electrical safety",
+    "basic circuit knowledge",
+    "safe tool handling"
+  ],
+  "missing_skills": [
+    "electrical safety",
+    "basic circuit knowledge",
+    "safe tool handling"
+  ],
+  "modules": [
+    {
+      "module_id": "solar-001",
+      "title": "Safety and Electrical Awareness",
+      "description": "Foundation concepts for identifying common electrical hazards and understanding why supervised practice matters.",
+      "level": "foundation",
+      "estimated_hours": 2.0,
+      "skills_taught": [
+        "electrical safety",
+        "hazard awareness"
+      ],
+      "practical_task": "Create a labelled list of common electrical hazards in a fictional workshop scene.",
+      "completion_criteria": "Identify at least five hazards and describe a safe response for each."
+    },
+    {
+      "module_id": "solar-002",
+      "title": "Basic Circuits and Measurement",
+      "description": "Introduction to circuit concepts, simple diagrams, units, and measurement terminology.",
+      "level": "beginner",
+      "estimated_hours": 3.0,
+      "skills_taught": [
+        "basic circuit knowledge",
+        "measurement basics"
+      ],
+      "practical_task": "Label a low-risk paper circuit diagram and match symbols to their meanings.",
+      "completion_criteria": "Correctly explain the purpose of the main symbols in the practice diagram."
+    },
+    {
+      "module_id": "solar-003",
+      "title": "Solar PV System Basics",
+      "description": "Introduction to solar energy components and the roles they play in a basic system.",
+      "level": "beginner",
+      "estimated_hours": 3.0,
+      "skills_taught": [
+        "solar system basics",
+        "component identification"
+      ],
+      "practical_task": "Draw a simple block diagram of a solar PV system and label its main components.",
+      "completion_criteria": "Submit a labelled diagram and explain each component in plain language."
+    }
+  ],
+  "weekly_plan": [
+    {
+      "week": 1,
+      "planned_hours": 4.0,
+      "items": [
+        {
+          "module_id": "solar-001",
+          "title": "Safety and Electrical Awareness",
+          "hours_this_week": 2.0,
+          "continues_next_week": false,
+          "practical_task": "Create a labelled list of common electrical hazards in a fictional workshop scene."
+        },
+        {
+          "module_id": "solar-002",
+          "title": "Basic Circuits and Measurement",
+          "hours_this_week": 2.0,
+          "continues_next_week": true,
+          "practical_task": "Continue the module; finish its practical task when the module is complete."
+        }
+      ],
+      "focus": "Safety and Electrical Awareness, Basic Circuits and Measurement"
+    },
+    {
+      "week": 2,
+      "planned_hours": 4.0,
+      "items": [
+        {
+          "module_id": "solar-002",
+          "title": "Basic Circuits and Measurement",
+          "hours_this_week": 1.0,
+          "continues_next_week": false,
+          "practical_task": "Label a low-risk paper circuit diagram and match symbols to their meanings."
+        },
+        {
+          "module_id": "solar-003",
+          "title": "Solar PV System Basics",
+          "hours_this_week": 3.0,
+          "continues_next_week": false,
+          "practical_task": "Draw a simple block diagram of a solar PV system and label its main components."
+        }
+      ],
+      "focus": "Basic Circuits and Measurement, Solar PV System Basics"
+    }
+  ],
+  "estimated_learning_time": {
+    "total_hours": 8.0,
+    "available_hours_per_week": 4.0,
+    "estimated_weeks": 2,
+    "note": "Estimates are planning guidance based on the curated module data, not a promise of mastery or accreditation."
+  },
+  "assessment_criteria": [
+    {
+      "module_id": "solar-001",
+      "title": "Safety and Electrical Awareness",
+      "completion_criteria": "Identify at least five hazards and describe a safe response for each."
+    },
+    {
+      "module_id": "solar-002",
+      "title": "Basic Circuits and Measurement",
+      "completion_criteria": "Correctly explain the purpose of the main symbols in the practice diagram."
+    },
+    {
+      "module_id": "solar-003",
+      "title": "Solar PV System Basics",
+      "completion_criteria": "Submit a labelled diagram and explain each component in plain language."
+    }
+  ],
+  "next_steps": [
+    "Begin with 'Safety and Electrical Awareness' and complete its practical task.",
+    "Explore a beginner solar-energy lesson from a verifiable learning provider.",
+    "Practise electrical-safety concepts using supervised, low-risk learning activities.",
+    "Verify any formal course, certification, or employer requirements before paying for training."
+  ],
+  "warnings": []
+}

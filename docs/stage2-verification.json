@@ -1,0 +1,43 @@
+{
+  "executed_at_utc": "2026-10-18T09:57:29.265665+00:00",
+  "python": "3.13.7",
+  "dependencies": {
+    "fastapi": "0.137.1",
+    "pydantic": "2.12.5",
+    "uvicorn": "0.49.0",
+    "httpx": "0.28.1",
+    "python-dotenv": "1.0.1",
+    "psycopg2-binary": "2.9.12"
+  },
+  "tests_run": 60,
+  "passed": 60,
+  "failures": 0,
+  "errors": 0,
+  "skipped": [],
+  "successful": true,
+  "public_api_changes": "None: same seven paths and request/response schemas",
+  "database_status": "Real SQL tests and actual PostgreSQL restart checked on private local PostgreSQL 17.5; hosted Supabase remains unconfigured.",
+  "hosted_supabase": "Not configured: no account, credentials or hosted database supplied.",
+  "stage1_user_evidence": "User independently confirmed live Uvicorn startup, JSON persistence after restart, and 24 passing tests on 18 October 2026.",
+  "limits": [
+    "Unit adapter tests use controlled mocks, not an actual SQL server.",
+    "No cloud database, authentication, teacher authorization or teammate integration verified."
+  ],
+  "local_database_attempt": {
+    "startup": {
+      "exit_code": 0
+    },
+    "connection": {
+      "status": "connected",
+      "server": "PostgreSQL 17.5 on x86_64-windows, compiled by msvc-19.43.34808, 64-bit"
+    },
+    "database_restart_persistence": {
+      "passed": true,
+      "score_before": 87,
+      "score_after": 87
+    },
+    "shutdown": {
+      "exit_code": 0
+    }
+  }
+}

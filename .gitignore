@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+backend/var/
+node_modules/
+dist/
+
+# Local browser-test screenshots
+frontend/e2e-screenshots/
