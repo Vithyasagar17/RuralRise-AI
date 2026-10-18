@@ -1,95 +1,197 @@
-// ============================================================================
-// TEMPORARY INTEGRATION HARNESS — created by Member 5 because Member 1's
-// App.jsx did not exist yet in this folder.
-//
-// Member 1 OWNS this file. When Member 1's App.jsx is merged, KEEP MEMBER 1'S
-// VERSION and add only: <OfflineBanner/>, a route/tab for <FacilitatorDashboard/>,
-// and <OfflineLessons studentId=…/> (see frontend/src/features/*/README.md).
-// ============================================================================
-import { useEffect, useState } from 'react';
-import { FacilitatorDashboard } from './features/facilitator';
-import { LanguageSelect, useTranslation } from './features/i18n';
-import { OfflineBanner, OfflineLessons } from './features/offline';
 
-// Only these two fictional IDs are accepted by the backend's POST /progress
-// without first creating a profile (see backend/app/database.py).
+import { useState } from "react";
+import { LanguageSelect } from "./features/i18n";
+import { FacilitatorDashboard } from "./features/facilitator";
+import { OfflineBanner, OfflineLessons } from "./features/offline";
+
+import Dashboard from "./pages/Dashboard";
+import Careers from "./pages/Careers";
+import Recommendations from "./pages/Recommendations";
+import Learning from "./pages/Learning";
+import Opportunities from "./pages/Opportunities";
+import Profile from "./pages/Profile";
+
+import "./index.css";
+
 const DEMO_STUDENTS = [
-  { id: 'demo-student-001', name: 'Demo Student' },
-  { id: 'demo-student-002', name: 'Fictional Learner' },
+  { id: "demo-student-001", name: "Demo Student" },
+  { id: "demo-student-002", name: "Fictional Learner" },
 ];
 
-const VIEWS = ['facilitator', 'lessons'];
+const navigation = [
+  { id: "dashboard", label: "Dashboard", icon: "⌂" },
+  { id: "careers", label: "Explore careers", icon: "◎" },
+  { id: "recommendations", label: "Career recommendations", icon: "✦" },
+  { id: "learning", label: "Learning roadmap", icon: "▤" },
+  { id: "opportunities", label: "Opportunities", icon: "↗" },
+  { id: "profile", label: "My profile", icon: "○" },
+  { id: "facilitator", label: "Facilitator dashboard", icon: "♧" },
+  { id: "lessons", label: "Offline lessons", icon: "▣" },
+];
 
-function readInitialView() {
-  const fromHash = window.location.hash.replace('#', '');
-  return VIEWS.includes(fromHash) ? fromHash : 'facilitator';
-}
-
-export default function App() {
-  const { t } = useTranslation();
-  const [view, setView] = useState(readInitialView);
+function App() {
+  const [activePage, setActivePage] = useState("dashboard");
   const [studentId, setStudentId] = useState(DEMO_STUDENTS[0].id);
-  const student = DEMO_STUDENTS.find((s) => s.id === studentId);
 
-  // Keep the tab in sync with the URL (#facilitator / #lessons), including the Back button.
-  useEffect(() => {
-    const onHash = () => setView(readInitialView());
-    window.addEventListener('hashchange', onHash);
-    return () => window.removeEventListener('hashchange', onHash);
-  }, []);
+  const activeNavigation = navigation.find(
+    (item) => item.id === activePage
+  );
 
-  const go = (next) => {
-    setView(next);
-    if (window.location.hash !== `#${next}`) window.location.hash = next;
-  };
+  const student = DEMO_STUDENTS.find(
+    (item) => item.id === studentId
+  );
 
-  return (
-    <>
-      <a className="app-skip" href="#main">
-        {t('app.skip')}
-      </a>
-      <header className="app-header">
-        <div className="app-header__row">
-          <p className="app-header__name">{t('app.name')}</p>
-          <LanguageSelect />
-        </div>
-        <nav aria-label={t('app.navLabel')}>
-          <ul className="app-nav">
-            {VIEWS.map((v) => (
-              <li key={v}>
-                <button
-                  type="button"
-                  className="app-nav__btn"
-                  aria-current={view === v ? 'page' : undefined}
-                  onClick={() => go(v)}
-                >
-                  {t(v === 'facilitator' ? 'app.navFacilitator' : 'app.navLessons')}
-                </button>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      </header>
-      <OfflineBanner />
-      <main id="main" className="app-main" tabIndex={-1}>
-        {view === 'facilitator' ? (
-          <FacilitatorDashboard />
-        ) : (
+  function renderPage() {
+    switch (activePage) {
+      case "dashboard":
+        return <Dashboard />;
+
+      case "careers":
+        return <Careers />;
+
+      case "recommendations":
+        return <Recommendations />;
+
+      case "learning":
+        return <Learning />;
+
+      case "opportunities":
+        return <Opportunities />;
+
+      case "profile":
+        return <Profile />;
+
+      case "facilitator":
+        return <FacilitatorDashboard />;
+
+      case "lessons":
+        return (
           <>
             <div className="app-student-picker">
-              <label htmlFor="app-student">{t('app.demoStudent')}</label>
-              <select id="app-student" value={studentId} onChange={(e) => setStudentId(e.target.value)}>
-                {DEMO_STUDENTS.map((s) => (
-                  <option key={s.id} value={s.id}>
-                    {s.name} ({s.id})
+              <label htmlFor="app-student">Select demo student</label>
+              <select
+                id="app-student"
+                value={studentId}
+                onChange={(event) => setStudentId(event.target.value)}
+              >
+                {DEMO_STUDENTS.map((item) => (
+                  <option key={item.id} value={item.id}>
+                    {item.name} ({item.id})
                   </option>
                 ))}
               </select>
             </div>
-            <OfflineLessons key={studentId} studentId={student.id} studentName={student.name} />
+
+            <OfflineLessons
+              key={studentId}
+              studentId={student.id}
+              studentName={student.name}
+            />
           </>
-        )}
+        );
+
+      default:
+        return <Dashboard />;
+    }
+  }
+
+  return (
+    <div className="app-shell">
+      <a className="app-skip" href="#main">
+  Skip to main content
+</a>
+      <aside className="sidebar">
+        <a
+          className="brand"
+          href="#dashboard"
+          onClick={(event) => {
+            event.preventDefault();
+            setActivePage("dashboard");
+          }}
+        >
+          <span className="brand-mark">R</span>
+          <span>
+            <strong>RuralRise</strong>
+            <small>AI-powered growth</small>
+          </span>
+        </a>
+
+        <div className="sidebar-label">YOUR SPACE</div>
+
+        <nav className="navigation" aria-label="Main navigation">
+          {navigation.map((item) => (
+            <button
+              key={item.id}
+              type="button"
+              className={`nav-item ${
+                activePage === item.id ? "active" : ""
+              }`}
+              onClick={() => setActivePage(item.id)}
+              aria-current={
+                activePage === item.id ? "page" : undefined
+              }
+            >
+              <span className="nav-icon" aria-hidden="true">
+                {item.icon}
+              </span>
+              <span>{item.label}</span>
+            </button>
+          ))}
+        </nav>
+
+        <div className="sidebar-footer">
+          <div className="support-icon">✦</div>
+          <strong>Your future, your way.</strong>
+          <p>
+            Small steps today can open new doors tomorrow.
+          </p>
+        </div>
+      </aside>
+
+      <main className="main-area" id="main" tabIndex={-1}>
+        <OfflineBanner />
+
+        <header className="topbar">
+          <div className="mobile-brand">
+            <span className="brand-mark">R</span>
+            <strong>RuralRise</strong>
+          </div>
+
+          <span className="topbar-message">
+            A little progress every day adds up.
+          </span>
+
+          <LanguageSelect />
+
+          <button
+            type="button"
+            className="avatar"
+            onClick={() => setActivePage("profile")}
+            aria-label="Open profile"
+          >
+            S
+          </button>
+        </header>
+
+        <section className="page-content">
+          <div className="eyebrow">YOUR JOURNEY STARTS HERE</div>
+
+          <h1>{activeNavigation?.label ?? "Dashboard"}</h1>
+
+          <p className="page-subtitle">
+            Discover your strengths, build useful skills, and explore
+            new possibilities.
+          </p>
+
+          {renderPage()}
+
+          <footer className="page-footer">
+            RuralRise AI - Learn, grow, and rise together.
+          </footer>
+        </section>
       </main>
-    </>
+    </div>
   );
 }
+
+export default App;
