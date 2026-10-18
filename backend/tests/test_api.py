@@ -116,20 +116,49 @@ class ApiTests(unittest.TestCase):
         self.assertEqual([x["id"] for x in response.json()], ["demo-safety", "demo-planning"])
 
     def test_opportunity_filtering(self):
-        self.assertEqual(len(self.client.get("/opportunities").json()), 2)
-        filters = {"category": "TRAINING", "education_level": "class 12", "location": "Tamil Nadu", "search": "practical"}
+        ids = lambda response: [x["id"] for x in response.json()]
+        everything = self.client.get("/opportunities")
+        self.assertEqual(everything.status_code, 200)
+        self.assertEqual(len(everything.json()), 6)
+
+        # category filter ignores letter case
+        self.assertEqual(len(self.client.get("/opportunities", params={"category": "TRAINING"}).json()), 3)
+        self.assertEqual(ids(self.client.get("/opportunities", params={"category": "apprenticeship"})), ["naps2-001"])
+        self.assertEqual(len(self.client.get("/opportunities", params={"category": "scholarship"}).json()), 2)
+
+        # education level filter ignores letter case
+        class10 = self.client.get("/opportunities", params={"education_level": "class 10"})
+        self.assertCountEqual(ids(class10), ["tn-iti-001", "naps2-001", "pudhumai-penn-001"])
+
+        # combined filters
+        filters = {"category": "TRAINING", "education_level": "class 12", "location": "Tamil Nadu", "search": "trade"}
         response = self.client.get("/opportunities", params=filters)
         self.assertEqual(response.status_code, 200)
-        self.assertEqual([x["id"] for x in response.json()], ["demo-training-001"])
+        self.assertEqual(ids(response), ["tn-iti-001"])
+
+        # search and no-match cases
+        self.assertEqual(ids(self.client.get("/opportunities", params={"search": "stipend"})), ["naps2-001"])
         self.assertEqual(self.client.get("/opportunities", params={"location": "Kerala"}).json(), [])
         self.assertEqual(self.client.get("/opportunities", params={"search": ""}).status_code, 422)
 
     def test_unknown_eligibility_is_not_global(self):
+        # DDU-GKY and RSETI have no class tags, so a class filter must not return them
         response = self.client.get("/opportunities", params={"education_level": "Class 12"})
-        self.assertEqual(len(response.json()), 1)
-        unknown = self.client.get("/opportunities", params={"category": "scholarship"}).json()[0]
-        self.assertEqual(unknown["official_url"], "")
-        self.assertIsNone(unknown["last_verified"])
+        found = [x["id"] for x in response.json()]
+        self.assertCountEqual(found, ["tn-iti-001", "naps2-001", "pudhumai-penn-001", "tamil-pudhalvan-001"])
+        self.assertNotIn("ddu-gky-001", found)
+        self.assertNotIn("rseti-001", found)
+
+        # without a class filter they are still listed
+        training = [x["id"] for x in self.client.get("/opportunities", params={"category": "training"}).json()]
+        self.assertIn("ddu-gky-001", training)
+        self.assertIn("rseti-001", training)
+
+        # unverified records keep last_verified empty
+        by_id = {x["id"]: x for x in self.client.get("/opportunities").json()}
+        self.assertIsNone(by_id["tn-iti-001"]["last_verified"])
+        self.assertIsNone(by_id["tamil-pudhalvan-001"]["last_verified"])
+        self.assertEqual(by_id["naps2-001"]["last_verified"], "2026-10-18")
 
     def test_broken_opportunity_adapter(self):
         with patch("app.opportunity_engine.filter_opportunities", return_value=[{"id": "broken"}]):

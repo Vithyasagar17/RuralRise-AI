@@ -94,7 +94,7 @@ def main():
                     status, courses = call("/courses")
                     check("courses endpoint returns fixture modules", status == 200 and len(courses) == 2)
                     status, opportunities = call("/opportunities?category=training&location=Tamil%20Nadu")
-                    check("opportunity filters work over HTTP", status == 200 and len(opportunities) == 1)
+                    check("opportunity filters work over HTTP", status == 200 and sorted(x["id"] for x in opportunities) == ["ddu-gky-001", "rseti-001", "tn-iti-001"])
                     update = {"student_id": "demo-student-001", "course_id": "demo-safety", "completed": True, "score": 80}
                     status, result = call("/progress", update)
                     check("progress is saved", status == 200 and result["saved"])

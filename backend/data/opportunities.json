@@ -1,14 +1,101 @@
 [
   {
-    "id": "demo-training-001", "title": "FICTIONAL DEMO: Practical learning programme", "category": "training",
-    "description": "Mock record for API integration only. No real programme, provider, deadline or eligibility has been verified.",
-    "education_levels": ["Class 12"], "locations": ["Tamil Nadu"], "eligibility_requirements": [],
-    "deadline": null, "official_url": "", "source_name": "Fictional backend fixture", "last_verified": null
+    "id": "tn-iti-001",
+    "title": "Tamil Nadu Government ITI trade training (DET)",
+    "category": "training",
+    "description": "Trade training at Industrial Training Institutes run by the Directorate of Employment and Training, Tamil Nadu. Admission is online and based on marks in the qualifying exam. Trades, required class and dates vary by year and trade, so check the official prospectus.",
+    "education_levels": ["Class 10", "Class 12"],
+    "locations": ["Tamil Nadu"],
+    "eligibility_requirements": [
+      "Completed or appeared for the class required for the trade in the prospectus",
+      "Admission is on merit; there is no entrance exam"
+    ],
+    "deadline": null,
+    "official_url": "https://skilltraining.tn.gov.in/",
+    "source_name": "Directorate of Employment and Training, Tamil Nadu",
+    "last_verified": null
   },
   {
-    "id": "demo-scholarship-001", "title": "FICTIONAL DEMO: Learning support", "category": "scholarship",
-    "description": "Mock search record. All eligibility information is unknown. Do not use to make application decisions.",
-    "education_levels": [], "locations": [], "eligibility_requirements": [],
-    "deadline": null, "official_url": "", "source_name": "Fictional backend fixture", "last_verified": null
+    "id": "ddu-gky-001",
+    "title": "DDU-GKY skill training and placement for rural youth",
+    "category": "training",
+    "description": "Placement-linked skill training for rural poor youth under a Ministry of Rural Development scheme. Courses and training centres vary by place and time, so check the scheme portal.",
+    "education_levels": [],
+    "locations": ["Tamil Nadu"],
+    "eligibility_requirements": [
+      "Rural youth aged 18 to 35",
+      "Youth from families below the poverty line"
+    ],
+    "deadline": null,
+    "official_url": "https://tncdw.org/pages/view/DDU-GKY",
+    "source_name": "Tamil Nadu Corporation for Development of Women (DDU-GKY page)",
+    "last_verified": "2026-10-18"
+  },
+  {
+    "id": "rseti-001",
+    "title": "RSETI self-employment training for rural youth",
+    "category": "training",
+    "description": "Self-employment training at Rural Self Employment Training Institutes, which banks run with the Ministry of Rural Development, to help unemployed youth start self-employment or find wage work. Hand-holding support is given after training.",
+    "education_levels": [],
+    "locations": ["Tamil Nadu"],
+    "eligibility_requirements": [
+      "Unemployed youth aged 18 to 45 with an aptitude for self-employment or wage employment"
+    ],
+    "deadline": null,
+    "official_url": "https://tncdw.org/pages/view/RSETI",
+    "source_name": "Tamil Nadu Corporation for Development of Women (RSETI page)",
+    "last_verified": "2026-10-18"
+  },
+  {
+    "id": "naps2-001",
+    "title": "NAPS-2 apprenticeship with employer stipend support",
+    "category": "apprenticeship",
+    "description": "Apprenticeship with an employer under the Apprentices Act, 1961. Under NAPS-2 the Government of India shares 25% of the stipend with the employer, up to Rs. 1,500 per month per apprentice. Apprentices and employers register on the Apprenticeship India portal.",
+    "education_levels": ["Class 10", "Class 12"],
+    "locations": ["Tamil Nadu"],
+    "eligibility_requirements": [
+      "Minimum age 14; 18 for trades in hazardous industries",
+      "Must meet the minimum education and physical standard set for the trade"
+    ],
+    "deadline": null,
+    "official_url": "https://www.apprenticeshipindia.gov.in/",
+    "source_name": "Ministry of Skill Development and Entrepreneurship (NAPS-2)",
+    "last_verified": "2026-10-18"
+  },
+  {
+    "id": "pudhumai-penn-001",
+    "title": "Pudhumai Penn: Rs. 1,000 a month for girls in higher education",
+    "category": "scholarship",
+    "description": "Moovalur Ramamirtham Ammaiyar Higher Education Assurance Scheme of the Tamil Nadu Social Welfare and Women Empowerment Department. Girls from government schools get Rs. 1,000 a month while they study a higher education course. Applications are made on the Pen Kalvi portal.",
+    "education_levels": ["Class 10", "Class 12"],
+    "locations": ["Tamil Nadu"],
+    "eligibility_requirements": [
+      "Girl students who studied Classes 6 to 12 in Tamil Nadu government schools, then joined higher education after Class 10 or Class 12",
+      "Must reside in Tamil Nadu",
+      "Admitted to a recognised institution in Tamil Nadu, including ITI, diploma or higher education courses",
+      "Documents required are listed on the Pen Kalvi portal; keep the school study certificate, bank passbook and admission proof ready"
+    ],
+    "deadline": null,
+    "official_url": "https://penkalvi.tn.gov.in/index.php",
+    "source_name": "Social Welfare and Women Empowerment Department, Tamil Nadu (Pen Kalvi portal)",
+    "last_verified": "2026-10-18"
+  },
+  {
+    "id": "tamil-pudhalvan-001",
+    "title": "Tamil Pudhalvan: Rs. 1,000 a month for boys in higher education",
+    "category": "scholarship",
+    "description": "Tamil Nadu scheme, on the lines of Pudhumai Penn, that gives boys from government schools Rs. 1,000 a month while they study a degree, diploma, ITI or equivalent course. Students apply online through UMIS after joining the course.",
+    "education_levels": ["Class 12"],
+    "locations": ["Tamil Nadu"],
+    "eligibility_requirements": [
+      "Male students who studied Classes 6 to 12 in government schools",
+      "Boys from government-aided schools qualify if they studied in Tamil medium from Classes 6 to 12",
+      "Studying a degree, diploma, ITI or equivalent course at a recognised institution in Tamil Nadu",
+      "Needs school study certificate, bank passbook, Aadhaar and admission proof"
+    ],
+    "deadline": null,
+    "official_url": "https://tils.tn.gov.in/schemes",
+    "source_name": "Government of Tamil Nadu (scheme page on tils.tn.gov.in)",
+    "last_verified": null
   }
 ]
