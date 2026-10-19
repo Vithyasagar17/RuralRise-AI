@@ -11,6 +11,7 @@ from .config import Settings
 from .database import StorageUnavailable
 from .schemas import Course
 from .storage_import import load_snapshot
+from .learning_service import extend_courses
 
 
 def main(argv=None):
@@ -42,7 +43,8 @@ def main(argv=None):
         state = None
         if args.command == "import-json":
             raw = json.loads((settings.data_dir / "courses.json").read_text(encoding="utf-8"))
-            course_ids = {Course.model_validate(item).id for item in raw}
+            original = [Course.model_validate(item).model_dump() for item in raw]
+            course_ids = {item['id'] for item in extend_courses(settings, original)}
             state = load_snapshot(args.file or settings.storage_file, course_ids)
             if args.dry_run:
                 print(json.dumps({"valid": True, "dry_run": True,

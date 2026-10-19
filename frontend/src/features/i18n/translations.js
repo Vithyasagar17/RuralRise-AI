@@ -18,6 +18,7 @@ export const LANGUAGES = [
 ];
 
 const en = {
+  'error.signIn': 'Sign in again or ask your coordinator to check access. Your saved progress remains on this device.',
   // App harness
   'app.name': 'RuralRise AI',
   'app.skip': 'Skip to main content',
@@ -212,6 +213,7 @@ const en = {
 
 // DRAFT — requires review by a fluent Tamil speaker before any real use.
 const ta = {
+  'error.signIn': 'மீண்டும் உள்நுழையவும் அல்லது அணுகலைச் சரிபார்க்க ஒருங்கிணைப்பாளரிடம் கேட்கவும். சேமித்த முன்னேற்றம் இந்தச் சாதனத்தில் இருக்கும்.',
   'app.name': 'RuralRise AI',
   'app.skip': 'முதன்மை உள்ளடக்கத்திற்குச் செல்லவும்',
   'app.navLabel': 'முதன்மைப் பகுதிகள்',

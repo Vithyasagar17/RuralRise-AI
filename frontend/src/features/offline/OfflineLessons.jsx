@@ -13,6 +13,7 @@
 //   fetchImpl   (function, optional) – custom fetch, used by tests
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { errorMessageKey } from '../common/apiClient.js';
+import { ReadAloud } from '../common/VoiceControls.jsx';
 import { useTranslation } from '../i18n/LanguageContext.jsx';
 import { loadLessons } from './lessonStore.js';
 import { countByStatus } from './progressQueue.js';
@@ -21,10 +22,10 @@ import { useProgressSync } from './useProgressSync.js';
 import '../common/tokens.css';
 import './offline.css';
 
-export default function OfflineLessons({ studentId, studentName, fetchImpl }) {
+export default function OfflineLessons({ studentId, studentName, fetchImpl, initialCourseId = null, courseIds = null }) {
   const { t, formatDate } = useTranslation();
   const [lessonState, setLessonState] = useState({ status: 'loading', lessons: [], source: null, savedAt: null, error: null });
-  const [openId, setOpenId] = useState(null);
+  const [openId, setOpenId] = useState(initialCourseId);
   const [saveMessage, setSaveMessage] = useState(null);
   const { online, records, recordFor, saveProgress, syncNow, syncing, lastResult, storageError } = useProgressSync({
     studentId,
@@ -66,6 +67,7 @@ export default function OfflineLessons({ studentId, studentName, fetchImpl }) {
   }, [openId]);
 
   const lesson = lessonState.lessons.find((l) => l.id === openId) ?? null;
+  const visibleLessons = courseIds ? lessonState.lessons.filter((item) => courseIds.includes(item.id)) : lessonState.lessons;
   const counts = countByStatus(records);
   const waiting = counts.pending + counts.failed + counts.syncing;
 
@@ -172,6 +174,7 @@ export default function OfflineLessons({ studentId, studentName, fetchImpl }) {
             {[lesson.skill, lesson.difficulty].filter(Boolean).join(' · ')}
           </p>
           <div className="rr-off-reader__body">
+            <ReadAloud text={`${lesson.title}. ${lesson.lesson}. Practice: ${lesson.practical_task || ''}`} />
             {lesson.lesson.split(/\n+/).map((para, i) => (
               <p key={i}>{para}</p>
             ))}
@@ -207,11 +210,11 @@ export default function OfflineLessons({ studentId, studentName, fetchImpl }) {
           )}
         </article>
       ) : (
-        lessonState.lessons.length > 0 && (
+        visibleLessons.length > 0 && (
           <>
-            <h2 className="rr-off__list-title">{t('lessons.listTitle', { count: lessonState.lessons.length })}</h2>
+            <h2 className="rr-off__list-title">{t('lessons.listTitle', { count: visibleLessons.length })}</h2>
             <ul className="rr-off-list">
-              {lessonState.lessons.map((l) => {
+              {visibleLessons.map((l) => {
                 const record = recordFor(l.id);
                 return (
                   <li key={l.id} className="rr-off-list__item">

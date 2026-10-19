@@ -1,6 +1,7 @@
 
 import { useState } from "react";
-const PROFILE_STORAGE_KEY = "ruralrise_student_profile";
+import { useStudent } from '../features/student/StudentContext.jsx';
+import { VoiceInput } from '../features/common/VoiceControls.jsx';
 
 const initialProfile = {
   name: "",
@@ -35,20 +36,15 @@ const goalOptions = [
 ];
 
 function Profile() {
+  const session = useStudent();
   const [profile, setProfile] = useState(() => {
-    try {
-      const storedProfile = localStorage.getItem(PROFILE_STORAGE_KEY);
-
-      return storedProfile
-        ? { ...initialProfile, ...JSON.parse(storedProfile) }
-        : initialProfile;
-    } catch {
-      return initialProfile;
-    }
+    const saved = session?.student?.profile;
+    return saved ? { ...initialProfile, ...saved, skills: (saved.skills || []).join(', '), weekly_learning_hours: String(saved.weekly_learning_hours) } : initialProfile;
   });
 
   const [errorMessage, setErrorMessage] = useState("");
   const [saved, setSaved] = useState(false);
+  const [saving, setSaving] = useState(false);
 
   function updateField(event) {
   const { name, value } = event.target;
@@ -80,7 +76,7 @@ function Profile() {
   setErrorMessage("");
 }
 
-  function handleSubmit(event) {
+  async function handleSubmit(event) {
   event.preventDefault();
 
   setErrorMessage("");
@@ -88,11 +84,6 @@ function Profile() {
 
   if (profile.interests.length === 0) {
     setErrorMessage("Please select at least one interest.");
-    return;
-  }
-
-  if (profile.goals.length === 0) {
-    setErrorMessage("Please select at least one goal.");
     return;
   }
 
@@ -113,10 +104,8 @@ function Profile() {
   }
 
   try {
-    localStorage.setItem(
-      PROFILE_STORAGE_KEY,
-      JSON.stringify(normalizedProfile)
-    );
+    setSaving(true);
+    await session.save(normalizedProfile);
 
     setProfile((current) => ({
       ...current,
@@ -127,12 +116,8 @@ function Profile() {
 
     setSaved(true);
 
-    console.log("Demo profile saved locally:", normalizedProfile);
-  } catch {
-    setErrorMessage(
-      "Unable to save this profile in your browser. Check your browser storage settings and try again."
-    );
-  }
+  } catch (error) { setErrorMessage(error.message || 'The server could not save your profile. Try again.'); }
+  finally { setSaving(false); }
 }
 
   return (
@@ -159,16 +144,16 @@ function Profile() {
         <div className="profile-success" role="status">
           <span className="success-icon">✓</span>
           <div>
-            <strong>Profile saved for this session!</strong>
+            <strong>Profile saved to the server.</strong>
             <p>
-  Your profile is saved in this browser. You can return to it
-  after refreshing the page. It has not been sent to the backend.
+  Your student ID is {session.student?.student_id}. Open Career recommendations to see your results.
 </p>
           </div>
         </div>
       )}
 
       <form className="profile-form" onSubmit={handleSubmit}>
+        {!session.secure && session.student && <p className="rr-notice">Demo saves create a new fictional student ID. Progress remains attached to the earlier ID. Secure accounts update their existing profile.</p>}
         <section className="profile-form-section">
           <div className="form-section-heading">
             <span className="form-step">01</span>
@@ -291,6 +276,9 @@ function Profile() {
               rows={3}
             />
           </label>
+          <VoiceInput language={profile.language === 'Tamil' ? 'ta-IN' : 'en-IN'} onResult={(text) => {
+            setProfile((current) => ({ ...current, skills: [current.skills, text].filter(Boolean).join(', ') })); setSaved(false);
+          }} />
         </section>
 
         <section className="profile-form-section">
@@ -407,8 +395,8 @@ function Profile() {
             Your answers help personalize your journey. You can change them
             whenever you need to.
           </p>
-          <button type="submit" className="profile-submit-button">
-            Save my profile <span aria-hidden="true">→</span>
+          <button type="submit" className="profile-submit-button" disabled={saving}>
+            {saving ? 'Saving to server…' : 'Save my profile'} <span aria-hidden="true">→</span>
           </button>
         </div>
       </form>

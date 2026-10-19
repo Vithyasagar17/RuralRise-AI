@@ -1,0 +1,22 @@
+.rr-notice,.rr-error{padding:1rem 1.2rem;border-radius:12px;margin:1rem 0;overflow-wrap:anywhere;background:#edf5ef;color:#173e2d;border:1px solid #bdd6c5}
+.page-content>.eyebrow,.page-subtitle,.page-footer{color:#4d6255}
+.app-skip{position:fixed;top:8px;left:8px;transform:translateY(-200%);z-index:2000;padding:12px;background:#fff;color:#173e2d;border:2px solid #286847;border-radius:8px}.app-skip:focus{transform:none}
+.sidebar{overflow-y:auto}
+.action-card button,.recommendation-card button,.recommendations-toolbar>button,.learning-hero button,.learning-page>button,.rr-actions>button{min-height:44px;padding:.65rem 1rem;border:1px solid #2e654a;border-radius:9px;background:#225d40;color:#fff;font-weight:600;line-height:1.4}
+.recommendation-card button{margin-block:.3rem}.action-card button:hover,.recommendation-card button:hover,.learning-hero button:hover{background:#17452f}
+.rr-error{background:#fff1ee;color:#762c23;border-color:#d5aaa2}
+.rr-card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:1.2rem;margin-block:1.2rem}
+.rr-card{padding:1.3rem;border:1px solid #cad8cd;border-radius:16px;background:#fff;color:#183b2b;overflow-wrap:anywhere}
+.rr-card h3{margin-block:.5rem .8rem}.rr-actions{display:flex;gap:.65rem;flex-wrap:wrap;margin-block:1rem}
+.rr-filter-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:1rem;margin-block:1.2rem}
+.rr-filter-grid label,.rr-account label{display:grid;gap:.4rem;font-weight:600}
+.rr-filter-grid input,.rr-filter-grid select,.rr-account input{padding:.75rem;border:1px solid #a2b4a8;border-radius:8px;width:100%;min-width:0;background:#fff;color:#163a29}
+.rr-account{max-width:520px;margin:2rem auto;padding:1.5rem;background:#fff;border:1px solid #b8ccbe;border-radius:16px;color:#173d2a}.rr-account form{display:grid;gap:1rem;margin-block:1.2rem}
+.rr-actions button,.rr-card button,.rr-notice button,.rr-error button,.rr-account button,.rr-dialog button,.rr-filter-grid button{min-height:44px;padding:.65rem 1rem;border:1px solid #2e654a;border-radius:9px;background:#225d40;color:#fff;cursor:pointer}
+button:disabled{opacity:.65;cursor:wait}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #bd7a13;outline-offset:3px}
+.rr-dialog-backdrop{position:fixed;inset:0;z-index:1000;background:#102b20a8;display:flex;align-items:center;justify-content:center;padding:1rem}
+.rr-dialog{background:#fff;color:#183c2a;padding:1.5rem;max-width:720px;width:100%;max-height:88dvh;overflow:auto;border-radius:16px;box-shadow:0 10px 60px #0005;overflow-wrap:anywhere}.rr-dialog-close{float:right;margin:0 0 1rem 1rem}
+.recommendation-match progress{display:block;width:100%;height:1rem;accent-color:#287249}.recommendation-card ul{padding-left:1.2rem}.recommendation-card h4{margin-block:1rem .5rem}
+.rr-steps{display:grid;gap:1rem;list-style:none;padding:0}.rr-steps>li{padding:1rem;border-left:4px solid #2d7651;background:#f1f6f0;border-radius:9px}.rr-steps h3{margin:0 0 .5rem}.rr-status-line{display:flex;gap:1rem;flex-wrap:wrap;align-items:center}
+@media(max-width:680px){.sidebar{display:flex;position:sticky;inset:0 0 auto;width:100%;padding:8px;background:#fff;border-bottom:1px solid #cad8cd}.sidebar .brand,.sidebar-label,.sidebar-footer{display:none}.navigation{display:flex;gap:5px;overflow-x:auto;max-width:100%;padding:3px}.nav-item{flex:0 0 auto;min-height:44px;padding:10px 12px;white-space:nowrap}.nav-icon{display:none}.topbar{height:auto;min-height:65px;flex-wrap:wrap;padding-block:10px}.rr5-language{max-width:100%}.mobile-brand{font-size:14px}.page-content{overflow-wrap:anywhere}}
+@media(prefers-color-scheme:dark){.rr-notice{background:#1c3527;color:#e1eee4;border-color:#456c53}.rr-error{background:#462622;color:#ffe4de;border-color:#bd8379}.rr-card,.rr-account,.rr-dialog{background:#1d2c23;color:#edf4ef;border-color:#56735e}.rr-steps>li{background:#22382a}.rr-filter-grid input,.rr-filter-grid select,.rr-account input{background:#192d21;color:#edf4ef;border-color:#779b81}}

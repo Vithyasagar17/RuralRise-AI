@@ -1,37 +1,40 @@
-# RuralRise AI — Member 3 backend
+# RuralRise AI
 
-> **Stage 2 (database storage) is included. Start with [STAGE2_SETUP.md](STAGE2_SETUP.md).** It documents PostgreSQL/Supabase setup, a guarded upgrade for your existing folder, JSON import and the new tests. The original Stage 1 instructions below remain useful for JSON mode; Stage 2 now loads `backend/.env` automatically. All seven API paths and request/response schemas are preserved. Authentication and real teacher permissions remain unfinished.
+Integrated local prototype: React/Vite/PWA frontend, FastAPI backend, Member 2's rule-based career engine, career-linked practice lessons, opportunity filters, facilitator dashboard, offline progress, and optional Supabase login with PostgreSQL ownership and teacher assignments.
 
-Runnable FastAPI integration component using the agreed Python/FastAPI/Pydantic/Uvicorn stack. This package contains no frontend and does not replace the work of Members 1, 2, 4 or 5.
+Start with [QUICKSTART.md](QUICKSTART.md). The phase-by-phase implementation and team responsibilities are in [docs/completion-phases.md](docs/completion-phases.md). Current test results and remaining launch checks are in [docs/completion-handoff.md](docs/completion-handoff.md).
 
-Career recommendations now use Member 2's deterministic rule-based engine and a ten-pathway starter catalog. Career and roadmap content still requires review by Member 4; opportunity records are fictional fixtures, facilitator mode exposes only two fictional identities, and production authentication/authorisation remains unfinished. PostgreSQL storage support is included as described in STAGE2_SETUP.md. The roadmap function is implemented internally, but there is not yet a public roadmap HTTP endpoint.
+## What works
 
-## Start on Windows PowerShell
+- Save a profile through the backend and use the returned student ID throughout the student journey.
+- Request real profile-based career rankings, inspect reasons and skill gaps, and choose a pathway.
+- Generate a weekly roadmap using the unchanged Member 2 engine; every one of its 30 modules maps to a readable practice lesson and valid progress ID.
+- Read saved lessons offline, mark completion locally, reopen the app offline after its first online visit, and synchronize on reconnection.
+- Search and filter the supplied opportunities; inspect recorded source, eligibility and verification status, and open an official HTTPS link.
+- Use optional microphone input for skills and lesson read-aloud where browser support exists. Text input and reading always remain available.
+- In secure mode, sign up/sign in through Supabase Auth, restore an owned profile/progress, update the same profile, and sign out. Teachers see assigned students through backend permissions. Roles cannot be selected by a student.
 
-Open PowerShell in this `ruralrise-ai` folder:
+Demo mode uses fictional information only. Its facilitator view deliberately contains only the two built-in fictional learners; newly created demo profiles are not added to that roster. A demo profile save creates a new ID. Secure mode updates the authenticated student's existing profile.
+
+## Interfaces and source responsibilities
+
+The original seven API paths and their JSON models remain compatible. `/roadmap` and the extra practice catalog are enabled only by `ENABLE_LEARNING_ROUTES=true`; the supplied backend environment template enables this for the integrated UI. Secure frontend restore also requires `ENABLE_ACCOUNT_ROUTES=true`. Defaults in `Settings` retain the original seven-route baseline for existing consumers and tests. Review [docs/completion-contracts.md](docs/completion-contracts.md) with Members 1/2/3/5 before merging shared additions.
+
+`frontend/src/pages` owns screens; `services` owns API/Auth calls; `features/student` owns current student state; existing `features/offline`, `facilitator` and `i18n` retain their responsibilities. Backend HTTP routing stays in `app/main.py`, original schemas in `app/schemas.py`, with the additive roadmap validation in `learning_schemas.py` and `learning_service.py`. Existing SQL migrations and Member 2's engine are unchanged.
+
+## Verification
 
 ```powershell
-python --version
-python -m venv .venv
-.\.venv\Scripts\python.exe -m pip install -r backend/requirements.txt
-.\.venv\Scripts\python.exe -m uvicorn app.main:app --app-dir backend --host 127.0.0.1 --port 8000
+.\.venv\Scripts\python.exe backend/run_tests.py
+cd frontend
+npm test
+npm run build
 ```
 
-Verified with Python 3.13.7. Activation is unnecessary. Open <http://127.0.0.1:8000/docs> or <http://127.0.0.1:8000/health>. Stop with Ctrl+C. Use one server process; the JSON storage lock is process-local. No database, Node, API key or external AI service is needed.
+The runner configures both Python import paths. Database integration tests require an explicitly configured disposable PostgreSQL database; they skip otherwise. The optional real Chrome journey is `frontend/scripts/e2e-project-journey.mjs`. See the handoff for prerequisites and current executed evidence.
 
-## Test
+## Launch boundary
 
-From the same folder:
+The source provides a working integrated prototype. Hosted Supabase credentials, email settings, database migrations/roles, HTTPS origins and hosting must be configured by the project owner before real users can use it. Local SQL checks do not establish hosted deployment. Tamil remains a visibly labelled draft; student screens and lesson content currently include English. Practice worksheets are introductory prototype content, not accredited training. Opportunity deadlines and eligibility must be checked with providers.
 
-```powershell
-$env:PYTHONPATH = (Resolve-Path 'backend').Path
-.\.venv\Scripts\python.exe -m unittest discover -s backend/tests -v
-```
-
-After the Member 2 engine merge, the combined suite discovered 74 tests: 52 passed and 22 were skipped because real PostgreSQL integration was not configured and the optional PostgreSQL test dependency was unavailable. See `docs/member2-integration-test-results.txt`. `docs/test-results.txt` is the historical pre-merge Stage 2 baseline. Tests use a test-only event loop for in-process API checks. A live Uvicorn browser/HTTP smoke test still needs to be run on a machine permitting localhost sockets; see `docs/smoke-results.json` for the earlier baseline attempt.
-
-## Integration
-
-Read `docs/integration-guide.md` for the original 20-section backend handoff and its Member 2 integration addendum, `docs/ai-engine-integration.md` for the career engine, `docs/scoring-algorithm.md` for the scoring method, `docs/api-contracts.md` for requests and responses, and `docs/architecture.md` for ownership boundaries. Merge files individually on a feature branch. The PostgreSQL migration and fixture opportunity/course data remain development artefacts and require their documented review before production use.
-
-The seven specified endpoint paths and the six-field career response contract are preserved. Member 2's full engine is in `backend/app/career_engine.py`; career roadmap modules are in `backend/data/career_learning_modules.json`. The existing `backend/data/courses.json` was kept unchanged because it backs the strict `/courses` and progress contracts. See `docs/ai-engine-integration.md` and `docs/scoring-algorithm.md`. This merged ZIP is a working copy only; it has not been pushed to the team GitHub repository.
+Older handoff files, upgrade tools, manifests and test evidence are retained as historical records. Use the current README and `docs/completion-*` for this release. Old incremental upgrade scripts target their recorded older baselines; do not run them against this completed source folder.

@@ -99,6 +99,24 @@ export async function getProgressRecord(studentId, courseId) {
   ).then((r) => r ?? null);
 }
 
+/** Merge owner-only server reads without discarding edits waiting on this device. */
+export async function hydrateServerProgress(studentId, rows) {
+  await runTransaction(STORE_PROGRESS, 'readwrite', async (stores) => {
+    const store = stores[STORE_PROGRESS];
+    for (const row of rows) {
+      const payload = validateProgressPayload(row);
+      if (payload.student_id !== studentId || !Number.isFinite(Date.parse(row.updated_at))) continue;
+      const key = progressKey(studentId, payload.course_id);
+      const existing = await promisifyRequest(store.get(key));
+      if (existing && (existing.status !== 'synced' || Date.parse(existing.serverUpdatedAt || 0) >= Date.parse(row.updated_at))) continue;
+      store.put({ key, studentId, payload, status: 'synced', revision: (existing?.revision ?? 0) + 1,
+        attempts: 0, retryable: false, lastError: null, savedAt: row.updated_at,
+        syncedAt: new Date().toISOString(), serverUpdatedAt: row.updated_at, lastAttemptAt: null });
+    }
+  });
+  notify();
+}
+
 /**
  * Applies `changes` only if the record is still at `revision`. Returns true if
  * applied. This is how the sync manager avoids marking a NEWER local change as

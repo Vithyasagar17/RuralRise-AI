@@ -1,3 +1,5 @@
+> Historical handoff. Current implementation, setup and verification are in [README.md](README.md), [QUICKSTART.md](QUICKSTART.md) and [docs/completion-handoff.md](docs/completion-handoff.md). Do not run older incremental upgraders against this full source release.
+
 # Stage 2 — PostgreSQL/Supabase persistence
 
 > Historical Stage 2 setup. For the current authentication/access candidate, start with START_HERE.md and use upgrade_backend.py. The original Stage 2 upgrader is intended for its original archive; schema version may now be 2 after the separately reviewed authentication migration.

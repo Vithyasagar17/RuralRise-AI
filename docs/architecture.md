@@ -1,3 +1,5 @@
+> Historical baseline. See [completion-phases.md](completion-phases.md), [completion-contracts.md](completion-contracts.md) and [completion-handoff.md](completion-handoff.md) for this release. Earlier missing-component/status statements are historical.
+
 # Architecture and ownership
 
 > Stage 1 baseline below. Stage 2 adds optional PostgreSQL storage in `app/postgres_store.py`, automatic `backend/.env` loading, `app/db_tools.py`, and the isolated `database/migrations/001_backend_storage.sql` migration. Current instructions and limitations are in `../STAGE2_SETUP.md` and `stage2-handoff.md`. The seven public API contracts and fictional-only facilitator behavior remain the same. The earlier database/schema.sql scaffold is not the Stage 2 migration.

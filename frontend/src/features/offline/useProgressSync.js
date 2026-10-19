@@ -9,7 +9,9 @@
 // Automatic sync also runs when the app opens, when the connection returns,
 // and when the app comes back to the foreground.
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { listProgressRecords, saveProgressLocally, subscribeToProgress } from './progressQueue.js';
+import { hydrateServerProgress, listProgressRecords, saveProgressLocally, subscribeToProgress } from './progressQueue.js';
+import { getAuthMode } from '../../services/authClient.js';
+import { loadOwnProgress } from '../../services/api.js';
 import { syncPendingProgress } from './syncManager.js';
 import { useOnlineStatus } from './useOnlineStatus.js';
 
@@ -20,6 +22,8 @@ export function useProgressSync({ studentId, fetchImpl, autoSync = true } = {}) 
   const [lastResult, setLastResult] = useState(null);
   const [storageError, setStorageError] = useState(null);
   const mounted = useRef(true);
+  const currentStudent = useRef(studentId);
+  currentStudent.current = studentId;
 
   useEffect(() => {
     mounted.current = true;
@@ -29,9 +33,10 @@ export function useProgressSync({ studentId, fetchImpl, autoSync = true } = {}) 
   }, []);
 
   const refresh = useCallback(async () => {
+    if (!studentId) { setRecords([]); return; }
     try {
       const rows = await listProgressRecords({ studentId });
-      if (mounted.current) {
+      if (mounted.current && currentStudent.current === studentId) {
         setRecords(rows);
         setStorageError(null);
       }
@@ -41,16 +46,28 @@ export function useProgressSync({ studentId, fetchImpl, autoSync = true } = {}) 
   }, [studentId]);
 
   useEffect(() => {
+    setRecords([]); setLastResult(null); setStorageError(null);
     refresh();
     return subscribeToProgress(refresh);
   }, [refresh]);
 
+  useEffect(() => {
+    let active = true;
+    if (studentId && getAuthMode() === 'supabase') {
+      loadOwnProgress().then((data) => {
+        if (active && currentStudent.current === studentId) return hydrateServerProgress(studentId, data.progress);
+      }).catch(() => { /* cached progress and pending edits remain usable offline */ });
+    }
+    return () => { active = false; };
+  }, [studentId, online]);
+
   const syncNow = useCallback(
     async (options = {}) => {
+      if (!studentId) return null;
       setSyncing(true);
       try {
-        const result = await syncPendingProgress({ fetchImpl, ...options });
-        if (mounted.current) setLastResult(result);
+        const result = await syncPendingProgress({ fetchImpl, ...options, studentId });
+        if (mounted.current && currentStudent.current === studentId) setLastResult(result);
         return result;
       } catch (error) {
         // Storage problem (not a network problem): report it, never claim success.
@@ -60,7 +77,7 @@ export function useProgressSync({ studentId, fetchImpl, autoSync = true } = {}) 
         if (mounted.current) setSyncing(false);
       }
     },
-    [fetchImpl],
+    [fetchImpl, studentId],
   );
 
   // Sync on open and whenever the connection comes back.
