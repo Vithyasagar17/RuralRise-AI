@@ -1,0 +1,10 @@
+{
+  "executed_at_utc": "2026-10-19T04:11:48.324328+00:00",
+  "database": "private local PostgreSQL 17.5",
+  "hosted_auth": "not configured; provider responses mocked in tests",
+  "startup": 0,
+  "suite_exit_code": 0,
+  "restart": 0,
+  "all_30_practice_completions_survive_database_restart": true,
+  "shutdown": 0
+}

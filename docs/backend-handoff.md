@@ -1,3 +1,5 @@
+> Historical baseline. See [completion-phases.md](completion-phases.md), [completion-contracts.md](completion-contracts.md) and [completion-handoff.md](completion-handoff.md) for this release. Earlier missing-component/status statements are historical.
+
 # Member 3 backend handoff — authentication/access review candidate 0.3.0
 
 This handoff covers the backend source in this candidate. The team's actual frontend, engines, researched catalogs, hosted Supabase project and deployment account were not supplied. START_HERE.md contains complete beginner commands; TEAM_INPUTS.md names the outstanding inputs. This is a component review candidate until those integrations and shared-interface decisions are verified.

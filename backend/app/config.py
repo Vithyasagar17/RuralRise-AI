@@ -30,6 +30,7 @@ class Settings:
     auth_timeout_seconds: int = 5
     enable_account_routes: bool = False
     app_env: str = "development"
+    enable_learning_routes: bool = False
 
     def __post_init__(self):
         if self.auth_mode not in {"demo", "supabase"}:
@@ -95,6 +96,7 @@ class Settings:
             _env_int("AUTH_TIMEOUT_SECONDS", 5),
             _env_bool("ENABLE_ACCOUNT_ROUTES", False),
             os.getenv("APP_ENV", "development").strip().lower(),
+            _env_bool("ENABLE_LEARNING_ROUTES", False),
         )
 
 

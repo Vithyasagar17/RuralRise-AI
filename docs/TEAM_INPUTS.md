@@ -1,3 +1,5 @@
+> Historical baseline. See [completion-phases.md](completion-phases.md), [completion-contracts.md](completion-contracts.md) and [completion-handoff.md](completion-handoff.md) for this release. Earlier missing-component/status statements are historical.
+
 # Inputs needed to finish Member 3 integration and final acceptance
 
 > **Member 2 update:** The engine, starter career/module datasets, sample outputs and fourteen unit tests have now been supplied and integrated. Member 5's source is also present. Do not request either component again. Remaining roadmap route/course mapping decisions are in roadmap-integration-proposal.md; current status and final missing inputs are in member2-current-integration.md.

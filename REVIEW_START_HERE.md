@@ -1,3 +1,5 @@
+> Historical handoff. Current implementation, setup and verification are in [README.md](README.md), [QUICKSTART.md](QUICKSTART.md) and [docs/completion-handoff.md](docs/completion-handoff.md). Do not run older incremental upgraders against this full source release.
+
 # Member 3 integration review: uploaded team project
 
 > **Newer Member 2 merge available:** start with MEMBER2_REVIEW_START_HERE.md and docs/member2-current-integration.md. Member 2's engine is now integrated; earlier missing-engine statements and the updater below refer to the previous Member 5-only baseline.

@@ -1,0 +1,340 @@
+{
+  "baseline": "RuralRise-AI-main.zip",
+  "generated_at_utc": "2026-10-19T04:16:47.510849+00:00",
+  "added": 32,
+  "modified": 33,
+  "deleted": [],
+  "protected_unchanged": [
+    "backend/app/career_engine.py",
+    "backend/app/schemas.py",
+    "backend/data/courses.json",
+    "database/migrations"
+  ],
+  "changes": [
+    {
+      "path": ".env.example",
+      "change": "modified",
+      "sha256": "505011ff865debb2f1c369b03f8b61b05edfa775e98128778658e719b0440942"
+    },
+    {
+      "path": "MEMBER1_HANDOFF.md",
+      "change": "modified",
+      "sha256": "623a2ad9f35b662190a8484bddd9f801da8005156880473040bd243ed1f7eb97"
+    },
+    {
+      "path": "MEMBER2_REVIEW_START_HERE.md",
+      "change": "modified",
+      "sha256": "950d37a1562907eb5201ca8eaad057cd77bb6bdcf2d950bd27d79f92c8494849"
+    },
+    {
+      "path": "QUICKSTART.md",
+      "change": "modified",
+      "sha256": "6181e6c73fc39ddfed6b884d699441202db00d22250c2f1950f7cc902edb77f8"
+    },
+    {
+      "path": "README.md",
+      "change": "modified",
+      "sha256": "6b3f82da20463f71d6db434e1e9ac4e1c0aef420a8fd1f6c4082088d733878c1"
+    },
+    {
+      "path": "REVIEW_START_HERE.md",
+      "change": "modified",
+      "sha256": "ee20e4263a02cb4261ba716b81a0bcb587b4368b8a85cd04059bd3b871107461"
+    },
+    {
+      "path": "STAGE2_SETUP.md",
+      "change": "modified",
+      "sha256": "20b75fd0b38ed4e4c78e3e546ddfbb83182f4760b42a8f0d6af2681268feb636"
+    },
+    {
+      "path": "START_HERE.md",
+      "change": "modified",
+      "sha256": "c0420c93b2bd9ad830d035cd1a122bf8d6c7615af6c5cc30769437a579836b5d"
+    },
+    {
+      "path": "START_HERE_MEMBER1.md",
+      "change": "modified",
+      "sha256": "6c707425ec5eb4fb78b3609788b89f0c0125ed20c75343da5f049277bd514b02"
+    },
+    {
+      "path": "backend/.env.example",
+      "change": "modified",
+      "sha256": "e317a623261f734f20b906df3d5e701ce4df0723832728befcded608a190aac7"
+    },
+    {
+      "path": "backend/app/config.py",
+      "change": "modified",
+      "sha256": "d470fdbe7a00b27d7c5be0addca2405b54810041d5567ef02603ae0f09357af9"
+    },
+    {
+      "path": "backend/app/db_tools.py",
+      "change": "modified",
+      "sha256": "f432d9185c4ddfb3c02aeebbcb0ad55a0bf0608fd9dc2442bdb696cb689bc41c"
+    },
+    {
+      "path": "backend/app/learning_schemas.py",
+      "change": "added",
+      "sha256": "dbd94d16af97c12d455f6d34d1eaf1cdfbf88f7a1f54663fa5b7ae6728d06918"
+    },
+    {
+      "path": "backend/app/learning_service.py",
+      "change": "added",
+      "sha256": "b3a72ed3a5833c6e3c0a648c97529e9f2d72e8f31d1e2b656434f6c8fbad86c2"
+    },
+    {
+      "path": "backend/app/main.py",
+      "change": "modified",
+      "sha256": "cc992398d19c262c335077f09f89f98ee77e676b05617b74d59ed3b07c0e2773"
+    },
+    {
+      "path": "backend/data/practice_courses.json",
+      "change": "added",
+      "sha256": "8d21fc30e26065a351abe273791cd64d6dfb16c2b6dbb4762dcf8d33cad9947e"
+    },
+    {
+      "path": "backend/run_tests.py",
+      "change": "added",
+      "sha256": "a06777f5f35efddaa62cca4007cfd96cb90cabe18dc9225a1d74c8c997b5c058"
+    },
+    {
+      "path": "backend/tests/test_learning_routes.py",
+      "change": "added",
+      "sha256": "f06270814b516baa1e8290a53e1ed877839e75bc730d8600e06393bf97cbf356"
+    },
+    {
+      "path": "docs/README_TEAM_REVIEW.md",
+      "change": "modified",
+      "sha256": "f9caf5cf67d80d7b1a16e6e8ee68a230cc23f0eb32b8b011e4c725c42cfdb2c7"
+    },
+    {
+      "path": "docs/TEAM_INPUTS.md",
+      "change": "modified",
+      "sha256": "edbe9cc9a7b1b4584913ea5162f91f7e1b13fd24276398ef17ca45d62e937d31"
+    },
+    {
+      "path": "docs/architecture.md",
+      "change": "modified",
+      "sha256": "fc5453da9c8b237da5659c35f4c0d90c8045984736aadebb43095910e1bd59cd"
+    },
+    {
+      "path": "docs/backend-handoff.md",
+      "change": "modified",
+      "sha256": "1738dfa253a537da991745f8311009f7c437ffc39bd33a38cbdcf7da2b2e764a"
+    },
+    {
+      "path": "docs/completion-backend-postgres-tests.txt",
+      "change": "added",
+      "sha256": "f3adc2c0335ab780c68f76897a932eed3332bef7b42e8256cddf4709bcb74c6d"
+    },
+    {
+      "path": "docs/completion-backend-tests.txt",
+      "change": "added",
+      "sha256": "a3c7ba42bde8005835e3579c52525b2bc90802674d04122318688e7034885575"
+    },
+    {
+      "path": "docs/completion-browser-verification.json",
+      "change": "added",
+      "sha256": "c1cf3a2df2f9e923d6ffcb1b1f7da9015f989376db754add7a3ff3e1fede51e4"
+    },
+    {
+      "path": "docs/completion-build.txt",
+      "change": "added",
+      "sha256": "28f586aa5ffb3d5b5dafcfa3a69dcb2d05199a43c3c6b129f980458a084602de"
+    },
+    {
+      "path": "docs/completion-contracts.md",
+      "change": "added",
+      "sha256": "7e53db1995376f9e2cd7184e54611d2b5ded1c254c827537770bef5eac67da54"
+    },
+    {
+      "path": "docs/completion-database-verification.json",
+      "change": "added",
+      "sha256": "4fe70c39f3d9deaa11faaf699884578052f60ad79288716dcecca500233a8e8a"
+    },
+    {
+      "path": "docs/completion-frontend-tests.txt",
+      "change": "added",
+      "sha256": "2470423fde5b1cc71e7d9777d7f3bcb565213019a11c70bc90161a1aa762479f"
+    },
+    {
+      "path": "docs/completion-handoff.md",
+      "change": "added",
+      "sha256": "9422f191e9fb5b47c497905ab14c693a0a5562a250b00a1b88ed9539aa2b99f2"
+    },
+    {
+      "path": "docs/completion-phases.md",
+      "change": "added",
+      "sha256": "cc7aace868bff084edeb6ef95e21795234bd34c817cd57526a03e42947d9b95c"
+    },
+    {
+      "path": "docs/completion-verification.json",
+      "change": "added",
+      "sha256": "fd7deddd2703a65ae7636fa5d017d63b0f930da694fdc9f1c929bb502cf05a1f"
+    },
+    {
+      "path": "docs/practice-content-provenance.md",
+      "change": "added",
+      "sha256": "b18ef17a510b932e3755189e13c95f53db3a8523a6be24ac12e65bf68a987e54"
+    },
+    {
+      "path": "frontend/.env.example",
+      "change": "modified",
+      "sha256": "06b1b81d92b9b302d8a86cc0d0365e8a17184fa3e1f96496a925d4ed3e37226b"
+    },
+    {
+      "path": "frontend/scripts/e2e-project-journey.mjs",
+      "change": "added",
+      "sha256": "5cc7b7bedc6950ca1cd5af5c26303ee8c04c1712b592c336bb44e1834d939f06"
+    },
+    {
+      "path": "frontend/src/App.jsx",
+      "change": "modified",
+      "sha256": "1ef99dc903a534c6ca888d64de770439f513be56bd66ec3f9d218975808147eb"
+    },
+    {
+      "path": "frontend/src/features/common/Modal.jsx",
+      "change": "added",
+      "sha256": "a00d19e78caa547049e29d80bde9f64cfe19476482cce8c61a5f7c93f58c79fe"
+    },
+    {
+      "path": "frontend/src/features/common/StatusPanel.jsx",
+      "change": "added",
+      "sha256": "950e7520b8cd29346632509d78d59bc801201e9782c56655ebf3e71adec5cba7"
+    },
+    {
+      "path": "frontend/src/features/common/VoiceControls.jsx",
+      "change": "added",
+      "sha256": "29b332ccf57b87b7077ce61a52cb5df41906af4d2b4ca4f75f5f2023f30f1bf7"
+    },
+    {
+      "path": "frontend/src/features/common/VoiceControls.test.jsx",
+      "change": "added",
+      "sha256": "81c569945f5d0ef4fea88708a46197b9df3bb36fe98795911f037df5913a0015"
+    },
+    {
+      "path": "frontend/src/features/common/apiClient.js",
+      "change": "modified",
+      "sha256": "e8bfe7bd44fe9a2dfed6563859be31bcc0a360dd092d4ad0cf7785ed13b7a066"
+    },
+    {
+      "path": "frontend/src/features/i18n/translations.js",
+      "change": "modified",
+      "sha256": "7dea828cbae2d3a59d18c6e5f989f447d9ea4a1e13a37f57051a14710277898a"
+    },
+    {
+      "path": "frontend/src/features/offline/OfflineLessons.jsx",
+      "change": "modified",
+      "sha256": "cbaa96497f190265b863f8dd74b289dd279c5168b9a1bb79c4d287aeae098a7b"
+    },
+    {
+      "path": "frontend/src/features/offline/offlineDb.js",
+      "change": "modified",
+      "sha256": "13bf513a2e081c7c69a3ee5e506c5d1054bdce7013e0cd25e75946ae7b8748e7"
+    },
+    {
+      "path": "frontend/src/features/offline/progressQueue.js",
+      "change": "modified",
+      "sha256": "a7ab0b8a3bd6493b7e627840acafe2534c950c0f4c66cc0ddbd5ffd3a2797d06"
+    },
+    {
+      "path": "frontend/src/features/offline/roadmapStore.js",
+      "change": "added",
+      "sha256": "2a55ce6d088a5dcf430ee2dcdd4af686c059beede8a0678bb34d838438dc064b"
+    },
+    {
+      "path": "frontend/src/features/offline/syncManager.js",
+      "change": "modified",
+      "sha256": "8810077ea99f7b3ea84a5591c487015224c8d0e7e59dc73926695e51294321fd"
+    },
+    {
+      "path": "frontend/src/features/offline/useProgressSync.js",
+      "change": "modified",
+      "sha256": "c06a13a4bf77ee3a3dd1ee0066d18728bc2e66e8b2b35640956829213c70df6d"
+    },
+    {
+      "path": "frontend/src/features/student/StudentContext.jsx",
+      "change": "added",
+      "sha256": "2104576ea0d3fa506064cc9b169448f6b8b0967d90210daebc3f64d1e72606cc"
+    },
+    {
+      "path": "frontend/src/index.css",
+      "change": "modified",
+      "sha256": "49b1a2c3dd6518565cebc469ed8276e0e714e4aaae93d2277312c30403622c98"
+    },
+    {
+      "path": "frontend/src/integration.css",
+      "change": "added",
+      "sha256": "9ce6213ba67b47e5c4067f511678111b83d91287ed9fbb88b07bd59c137643fb"
+    },
+    {
+      "path": "frontend/src/pages/Account.jsx",
+      "change": "added",
+      "sha256": "aa7ef6fd7873555110158f5664d0f59f37f47581d05af680ccb3bdad703a0f32"
+    },
+    {
+      "path": "frontend/src/pages/Careers.jsx",
+      "change": "modified",
+      "sha256": "f9a269c2b6f2b9484edb8c67fc394de8362e54fcc4ab5087e58a681be2c4420b"
+    },
+    {
+      "path": "frontend/src/pages/Dashboard.jsx",
+      "change": "modified",
+      "sha256": "279e5f9e2397281aff705b77649a5de759dd6fb5ff46901d789b4e0757cdcd2b"
+    },
+    {
+      "path": "frontend/src/pages/Learning.jsx",
+      "change": "modified",
+      "sha256": "c7d41ecd8e20e180c62e638c092fed2dc11cb50d31cac70e21df1b19b9becf25"
+    },
+    {
+      "path": "frontend/src/pages/Opportunities.jsx",
+      "change": "modified",
+      "sha256": "37de42472205b20fa8a2c572e5705dbe74cbe49bbf7e3d33ca22b79802a519ab"
+    },
+    {
+      "path": "frontend/src/pages/Profile.jsx",
+      "change": "modified",
+      "sha256": "3d9304c5df38c6de1b39dea0a7cd98c9a23564b50dd5f7fccc3f9da64f0d2bf6"
+    },
+    {
+      "path": "frontend/src/pages/Recommendations.jsx",
+      "change": "modified",
+      "sha256": "076cc818f8f23d0f4c5940e9e77d5c0327e5ad6972791e8fd0cca3d8c1c9803a"
+    },
+    {
+      "path": "frontend/src/services/api.js",
+      "change": "added",
+      "sha256": "efb4313608bd64d03b3ef6e3cc20f8c63b6735fdb241cc05aa17bc53902a8e57"
+    },
+    {
+      "path": "frontend/src/services/authClient.js",
+      "change": "added",
+      "sha256": "1ad7309f75af1516c06451e87b751bac6288fb68e7c94d460f2bc7486a930563"
+    },
+    {
+      "path": "frontend/src/services/authClient.test.js",
+      "change": "added",
+      "sha256": "b2748fdff6703ebcc6f3adfa3b1537e7e9bd663bb402b6e488c6f9b257a9531c"
+    },
+    {
+      "path": "frontend/src/test/accountScope.test.js",
+      "change": "added",
+      "sha256": "9cd664e066c8841a2dcf28f05446d3f5d9ddc1491702bd2737463739ee130733"
+    },
+    {
+      "path": "frontend/src/test/secureSession.test.jsx",
+      "change": "added",
+      "sha256": "4e57d281b69e9464def49b2a6fdbc32d0f3a65bef622680c26cdd2c68bf7f3fc"
+    },
+    {
+      "path": "frontend/src/test/studentJourney.test.jsx",
+      "change": "added",
+      "sha256": "1729d7466dd67348bc94b66f5da00d695462df1d63fd0545799f26865a79dacc"
+    },
+    {
+      "path": "setup.ps1",
+      "change": "added",
+      "sha256": "8d62665cb6ad5a8747309030178c48bcbbb2c022ae163c27679cb20aa0c3259e"
+    }
+  ]
+}

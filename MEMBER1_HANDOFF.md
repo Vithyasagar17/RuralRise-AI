@@ -1,3 +1,5 @@
+> Historical handoff. Current implementation, setup and verification are in [README.md](README.md), [QUICKSTART.md](QUICKSTART.md) and [docs/completion-handoff.md](docs/completion-handoff.md). Do not run older incremental upgraders against this full source release.
+
 # RuralRise AI — Member 3 backend handoff to Member 1
 
 Prepared 18 October 2026. **Member 3 owns the backend component. Member 1 owns project integration.** This allocation supersedes earlier notes that assigned overall integration to Member 3. Member 2 owns the career engine; Member 4 owns verified knowledge/content; Member 5 owns facilitator/offline/PWA/accessibility features.

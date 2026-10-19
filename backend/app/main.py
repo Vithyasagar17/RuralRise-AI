@@ -16,6 +16,7 @@ from .config import Settings
 from .auth import AuthUnavailable, InvalidToken, PermissionDenied, SupabaseAuthenticator
 from .database import create_store, MissingStudent, StorageUnavailable
 from .recommendation_adapter import public_recommendations
+from .learning_service import extend_courses, build_roadmap
 from .schemas import (Course, FacilitatorResponse, Opportunity, ProfileResponse, ProgressResponse,
                       ProgressUpdate, RecommendationResponse, StudentProfile)
 
@@ -138,7 +139,10 @@ def create_app(settings: Settings | None = None):
 
     @api.get("/courses", response_model=list[Course])
     def courses():
-        return read_catalog(settings.data_dir, "courses.json", Course)
+        try:
+            return extend_courses(settings, read_catalog(settings.data_dir, "courses.json", Course))
+        except (OSError, ValueError, TypeError, ValidationError):
+            raise DatasetUnavailable from None
 
     @api.get("/opportunities", response_model=list[Opportunity])
     def opportunities(category: FilterText = None, education_level: FilterText = None,
@@ -155,7 +159,7 @@ def create_app(settings: Settings | None = None):
     @api.post("/progress", response_model=ProgressResponse)
     def progress(payload: ProgressUpdate, actor=Depends(current_actor)):
         student_only(actor)
-        entries = read_catalog(settings.data_dir, "courses.json", Course)
+        entries = courses()
         if payload.course_id not in {x["id"] for x in entries}:
             raise HTTPException(404, "Unknown course_id.")
         try:
@@ -174,6 +178,24 @@ def create_app(settings: Settings | None = None):
                 raise PermissionDenied
             return {"students": api.state.identities.assigned_students(actor.user_id)}
         return {"students": api.state.store.facilitator_students()}
+
+    if settings.enable_learning_routes:
+        from .learning_schemas import RoadmapRequest, RoadmapResponse
+
+        @api.post('/roadmap', response_model=RoadmapResponse)
+        def roadmap(payload: RoadmapRequest, actor=Depends(current_actor)):
+            careers = read_catalog(settings.data_dir, 'careers.json')
+            try:
+                return build_roadmap(settings, payload.profile.model_dump(), payload.career_id, careers, courses())
+            except KeyError:
+                raise HTTPException(404, 'Unknown career_id.') from None
+            except (OSError, ValueError, TypeError, ValidationError):
+                raise DatasetUnavailable from None
+            except DatasetUnavailable:
+                raise
+            except Exception as exc:
+                logger.error('Roadmap engine failed: %s', type(exc).__name__)
+                raise EngineUnavailable from exc
 
     # Proposed additions are disabled until frontend/facilitator owners review them.
     if settings.enable_account_routes:

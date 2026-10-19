@@ -7,7 +7,10 @@
 //
 // If you change the stores, bump DB_VERSION and add an upgrade step.
 
-export const DB_NAME = 'ruralrise-offline';
+import { getApiBaseUrl } from '../common/apiClient.js';
+// Scope public lessons and progress to the configured backend. Legacy queues
+// remain untouched and are never silently replayed to a different server.
+export const DB_NAME = `ruralrise-offline-v2:${getApiBaseUrl()}`;
 export const DB_VERSION = 1;
 export const STORE_LESSONS = 'lessons';
 export const STORE_PROGRESS = 'pendingProgress';

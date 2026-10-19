@@ -5,6 +5,9 @@
 // Base URL comes from VITE_API_BASE_URL in frontend/.env (see .env.example).
 
 const DEFAULT_BASE_URL = 'http://127.0.0.1:8000';
+let requestAuth = null;
+export function configureRequestAuth(provider) { requestAuth = provider; }
+export function getRequestIdentity() { return requestAuth ? requestAuth.identity() : 'demo'; }
 
 export function getApiBaseUrl() {
   const fromEnv = import.meta.env?.VITE_API_BASE_URL;
@@ -51,28 +54,45 @@ export function describeDetail(detail) {
  * Sends a JSON request and returns the parsed JSON body.
  * Throws ApiError for network failures, timeouts, non-2xx responses and unreadable JSON.
  */
-export async function requestJson(path, { method = 'GET', body, timeoutMs = 10000, fetchImpl, baseUrl } = {}) {
+export async function requestJson(path, { method = 'GET', body, timeoutMs = 10000, fetchImpl, baseUrl, signal, expectedIdentity } = {}) {
   const doFetch = fetchImpl || globalThis.fetch;
   const url = `${baseUrl ?? getApiBaseUrl()}${path}`;
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), timeoutMs);
+  const onAbort = () => controller.abort();
+  if (signal?.aborted) controller.abort();
+  signal?.addEventListener('abort', onAbort, { once: true });
+  const privateRequest = !['/health', '/courses', '/opportunities'].includes(path.split('?')[0]);
+  const identity = getRequestIdentity();
   let response;
   let text;
   try {
-    response = await doFetch(url, {
+    if (expectedIdentity !== undefined && expectedIdentity !== identity) throw new ApiError('The active account changed. Please sign in again.', { kind: 'http', status: 401 });
+    let token = privateRequest && requestAuth ? await requestAuth.token() : null;
+    if (privateRequest && getRequestIdentity() !== identity) throw new ApiError('The active account changed. Please try again.', { kind: 'http', status: 401 });
+    if (privateRequest && requestAuth && !token) throw new ApiError('Please sign in to continue.', { kind: 'http', status: 401 });
+    const send = () => doFetch(url, {
       method,
-      headers: body !== undefined ? { 'Content-Type': 'application/json' } : undefined,
+      headers: { ...(body !== undefined ? { 'Content-Type': 'application/json' } : {}), ...(token ? { Authorization: `Bearer ${token}` } : {}) },
       body: body !== undefined ? JSON.stringify(body) : undefined,
       signal: controller.signal,
     });
+    response = await send();
+    if (response.status === 401 && privateRequest && requestAuth && getRequestIdentity() === identity) {
+      token = await requestAuth.refresh();
+      if (token && getRequestIdentity() === identity) response = await send();
+    }
+    if (privateRequest && requestAuth && getRequestIdentity() !== identity) throw new ApiError('The active account changed. Please try again.', { kind: 'http', status: 401 });
     text = await response.text();
-  } catch {
+  } catch (error) {
+    if (error instanceof ApiError) throw error;
     if (controller.signal.aborted) {
       throw new ApiError('The server took too long to respond.', { kind: 'timeout' });
     }
     throw new ApiError('Cannot reach the server. Check the internet connection.', { kind: 'network' });
   } finally {
     clearTimeout(timer);
+    signal?.removeEventListener('abort', onAbort);
   }
 
   let data = null;
@@ -113,6 +133,7 @@ export function errorMessageKey(error) {
       break;
   }
   if (error.status === 404) return 'error.notFound';
+  if (error.status === 401 || error.status === 403) return 'error.signIn';
   if (error.status === 422) return 'error.invalid';
   if (error.status === 503) return 'error.unavailable';
   return 'error.server';

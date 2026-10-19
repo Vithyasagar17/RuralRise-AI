@@ -1,0 +1,242 @@
+[
+  {
+    "id": "solar-001",
+    "title": "Safety and Electrical Awareness",
+    "skill": "electrical safety",
+    "difficulty": "beginner",
+    "lesson": "Prototype practice worksheet. This is introductory learning, not an accredited course or professional qualification.\n\nElectricity can cause shock, burns and fire. In a paper workshop scenario, look for damaged insulation, wet surfaces, overloaded sockets, trailing leads and missing warning signs. A learner should keep clear and report hazards; only a qualified person should isolate or repair equipment. For each fictional hazard, record what you observed, who to inform, and how to keep others away.\n\nPractice: Create a labelled list of common electrical hazards in a fictional workshop scene.\n\nSelf-check: Identify at least five hazards and describe a safe response for each. Explain your reasoning in your own words and ask a facilitator to review it. Completion is self-reported; it is not an assessment certificate.",
+    "practical_task": "Create a labelled list of common electrical hazards in a fictional workshop scene."
+  },
+  {
+    "id": "solar-002",
+    "title": "Basic Circuits and Measurement",
+    "skill": "basic circuit knowledge",
+    "difficulty": "beginner",
+    "lesson": "Prototype practice worksheet. This is introductory learning, not an accredited course or professional qualification.\n\nA circuit diagram represents components and their connections. Voltage is measured in volts (V), current in amperes (A), and resistance in ohms. In a simple ideal series circuit with a 6 V source and a 3 ohm resistor, Ohm's law gives 2 A. This is a calculation on paper, not permission to connect or test equipment. Draw a source, a switch and a load; explain how opening the switch breaks the path.\n\nPractice: Label a low-risk paper circuit diagram and match symbols to their meanings.\n\nSelf-check: Correctly explain the purpose of the main symbols in the practice diagram. Explain your reasoning in your own words and ask a facilitator to review it. Completion is self-reported; it is not an assessment certificate.",
+    "practical_task": "Label a low-risk paper circuit diagram and match symbols to their meanings."
+  },
+  {
+    "id": "solar-003",
+    "title": "Solar PV System Basics",
+    "skill": "solar system basics",
+    "difficulty": "beginner",
+    "lesson": "Prototype practice worksheet. This is introductory learning, not an accredited course or professional qualification.\n\nA photovoltaic panel converts sunlight into electrical energy. A system may include panels, a controller, battery storage, an inverter and loads. An inverter converts DC to AC; a battery stores energy and adds its own hazards. A grid-connected system may differ from an off-grid system. Draw only a conceptual energy-flow diagram, mark optional components, and explain that sizing, installation and servicing require trained professionals.\n\nPractice: Draw a simple block diagram of a solar PV system and label its main components.\n\nSelf-check: Submit a labelled diagram and explain each component in plain language. Explain your reasoning in your own words and ask a facilitator to review it. Completion is self-reported; it is not an assessment certificate.",
+    "practical_task": "Draw a simple block diagram of a solar PV system and label its main components."
+  },
+  {
+    "id": "electronics-001",
+    "title": "Electronic Components",
+    "skill": "component identification",
+    "difficulty": "beginner",
+    "lesson": "Prototype practice worksheet. This is introductory learning, not an accredited course or professional qualification.\n\nA resistor limits current; a capacitor stores electrical charge; a diode mainly allows current in one direction; an LED produces light when used in a suitable circuit. Symbols are simplified representations rather than pictures of the physical part. Make a four-row table containing the name, a hand-drawn symbol and a one-sentence purpose. Do not open appliances or handle charged components.\n\nPractice: Match component names with simple pictures or symbols.\n\nSelf-check: Identify the components in the provided practice sheet. Explain your reasoning in your own words and ask a facilitator to review it. Completion is self-reported; it is not an assessment certificate.",
+    "practical_task": "Match component names with simple pictures or symbols."
+  },
+  {
+    "id": "electronics-002",
+    "title": "Circuit and Measurement Basics",
+    "skill": "basic circuit knowledge",
+    "difficulty": "beginner",
+    "lesson": "Prototype practice worksheet. This is introductory learning, not an accredited course or professional qualification.\n\nUse a paper diagram to distinguish a connection from a crossing without a connection. Voltage describes a potential difference, current is a rate of charge flow, and resistance opposes current. Their common units are V, A and ohms. Label the source, load and switch, and match each quantity to its unit. This lesson introduces vocabulary only; using meters on electrical equipment requires appropriate training and supervision.\n\nPractice: Annotate a simple circuit diagram and write down the units used for basic measurements.\n\nSelf-check: Complete the diagram labels and measurement questions accurately. Explain your reasoning in your own words and ask a facilitator to review it. Completion is self-reported; it is not an assessment certificate.",
+    "practical_task": "Annotate a simple circuit diagram and write down the units used for basic measurements."
+  },
+  {
+    "id": "electronics-003",
+    "title": "Structured Troubleshooting",
+    "skill": "troubleshooting",
+    "difficulty": "beginner",
+    "lesson": "Prototype practice worksheet. This is introductory learning, not an accredited course or professional qualification.\n\nTroubleshooting separates observations from guesses. Fictional case: a battery-powered lamp does not light. Record the symptom first, then possible explanations such as an open switch, an exhausted battery or a faulty lamp. Choose a safe paper check that would distinguish explanations, record an expected result, and revise the hypothesis when evidence changes. Do not bypass protection or investigate live equipment.\n\nPractice: Work through a paper-based fault scenario and record possible causes before choosing a check.\n\nSelf-check: Record observations, possible causes, and a justified next check. Explain your reasoning in your own words and ask a facilitator to review it. Completion is self-reported; it is not an assessment certificate.",
+    "practical_task": "Work through a paper-based fault scenario and record possible causes before choosing a check."
+  },
+  {
+    "id": "electrician-001",
+    "title": "Electrical Safety Foundations",
+    "skill": "electrical safety",
+    "difficulty": "beginner",
+    "lesson": "Prototype practice worksheet. This is introductory learning, not an accredited course or professional qualification.\n\nElectrical work requires qualified training and local safety procedures. In a fictional room, water beside a socket, frayed leads, exposed conductors and overloaded adapters are warning signs. A learner should stay clear, prevent others approaching if safe to do so, and report to a responsible trained person. For each hazard, write a safe reporting action rather than attempting a repair.\n\nPractice: Review a fictional home-safety scenario and mark hazards without touching equipment.\n\nSelf-check: Identify hazards and state when qualified help is required. Explain your reasoning in your own words and ask a facilitator to review it. Completion is self-reported; it is not an assessment certificate.",
+    "practical_task": "Review a fictional home-safety scenario and mark hazards without touching equipment."
+  },
+  {
+    "id": "electrician-002",
+    "title": "Basic Circuits and Diagrams",
+    "skill": "basic circuit knowledge",
+    "difficulty": "beginner",
+    "lesson": "Prototype practice worksheet. This is introductory learning, not an accredited course or professional qualification.\n\nA source supplies energy, conductors connect parts, a switch opens or closes a path, and a load uses energy. A schematic shows relationships using symbols. In a series drawing there is one path; parallel branches provide multiple paths. Sketch both on paper, label the source and loads, and explain what an open switch means. This activity does not cover household wiring or installation.\n\nPractice: Label a simple paper circuit diagram.\n\nSelf-check: Correctly label the main components and explain the circuit path. Explain your reasoning in your own words and ask a facilitator to review it. Completion is self-reported; it is not an assessment certificate.",
+    "practical_task": "Label a simple paper circuit diagram."
+  },
+  {
+    "id": "electrician-003",
+    "title": "Tools and Measurement Awareness",
+    "skill": "safe tool handling",
+    "difficulty": "beginner",
+    "lesson": "Prototype practice worksheet. This is introductory learning, not an accredited course or professional qualification.\n\nA screwdriver, insulated tool and multimeter have different purposes and limitations. A tool's appearance does not prove it is safe or rated for a task. Draw a tool-identification table with purpose, condition checks and a reason to ask a qualified supervisor for help. Describe a multimeter as a measuring instrument without connecting it. Never practise on mains circuits or assume equipment is isolated.\n\nPractice: Complete a tool-identification and safe-use worksheet; do not perform live electrical work.\n\nSelf-check: Match tools to their general purposes and list essential precautions. Explain your reasoning in your own words and ask a facilitator to review it. Completion is self-reported; it is not an assessment certificate.",
+    "practical_task": "Complete a tool-identification and safe-use worksheet; do not perform live electrical work."
+  },
+  {
+    "id": "healthcare-001",
+    "title": "Respectful Care and Communication",
+    "skill": "communication",
+    "difficulty": "beginner",
+    "lesson": "Prototype practice worksheet. This is introductory learning, not an accredited course or professional qualification.\n\nRespectful support starts by introducing yourself, asking how someone wishes to be addressed, listening, and checking what assistance they want. Fictional case: a visitor cannot find a reception desk. Offer clear directions and ask whether they would like you to contact an authorised staff member. Preserve their choice and privacy. Do not diagnose, give treatment advice or promise outcomes outside your role.\n\nPractice: Write a short response to a fictional person requesting assistance.\n\nSelf-check: Response is respectful, clear, and protects the person’s privacy. Explain your reasoning in your own words and ask a facilitator to review it. Completion is self-reported; it is not an assessment certificate.",
+    "practical_task": "Write a short response to a fictional person requesting assistance."
+  },
+  {
+    "id": "healthcare-002",
+    "title": "Hygiene and Safety Awareness",
+    "skill": "hygiene and safety awareness",
+    "difficulty": "beginner",
+    "lesson": "Prototype practice worksheet. This is introductory learning, not an accredited course or professional qualification.\n\nIn a non-clinical support area, keep walkways clear, follow the setting's hand hygiene and cleaning procedures, and report spills or damaged equipment to authorised staff. Separate an observation from an action: \"a spill is near the entrance\" can lead to \"inform staff and keep people clear if safe\". Write a checklist for a fictional reception area. Clinical tasks and handling biological materials require separate professional training.\n\nPractice: Create a checklist for a fictional non-clinical support setting.\n\nSelf-check: Checklist includes basic hygiene and escalation to trained staff when needed. Explain your reasoning in your own words and ask a facilitator to review it. Completion is self-reported; it is not an assessment certificate.",
+    "practical_task": "Create a checklist for a fictional non-clinical support setting."
+  },
+  {
+    "id": "healthcare-003",
+    "title": "Teamwork and Record Keeping",
+    "skill": "teamwork",
+    "difficulty": "beginner",
+    "lesson": "Prototype practice worksheet. This is introductory learning, not an accredited course or professional qualification.\n\nA useful handover states the fictional situation, relevant observation, action already taken and unresolved request. Use factual language: \"Visitor asked for accessible directions at 10:00; reception was informed; response pending\". Avoid diagnoses, opinions and unnecessary personal details. Use invented names only in this worksheet and share real service information only through authorised procedures.\n\nPractice: Write a fictional, non-sensitive handover note from a support scenario.\n\nSelf-check: Note is factual, clear, and avoids unnecessary personal details. Explain your reasoning in your own words and ask a facilitator to review it. Completion is self-reported; it is not an assessment certificate.",
+    "practical_task": "Write a fictional, non-sensitive handover note from a support scenario."
+  },
+  {
+    "id": "agri-001",
+    "title": "Farm Observation and Records",
+    "skill": "observation",
+    "difficulty": "beginner",
+    "lesson": "Prototype practice worksheet. This is introductory learning, not an accredited course or professional qualification.\n\nAn observation log records a date, what was observed, the unit or method, and uncertainty. Fictional plant heights of 4, 5 and 6 cm over three days describe growth, but do not alone prove its cause. Keep methods consistent and distinguish a blank measurement from zero. Build a one-week table using invented values or observations made without touching hazards; mark missing values explicitly.\n\nPractice: Create a one-week observation log for a plant using fictional or safely observed data.\n\nSelf-check: Entries are dated, readable, and distinguish observations from guesses. Explain your reasoning in your own words and ask a facilitator to review it. Completion is self-reported; it is not an assessment certificate.",
+    "practical_task": "Create a one-week observation log for a plant using fictional or safely observed data."
+  },
+  {
+    "id": "agri-002",
+    "title": "Agriculture and Sustainability Basics",
+    "skill": "basic crop or farm-system awareness",
+    "difficulty": "beginner",
+    "lesson": "Prototype practice worksheet. This is introductory learning, not an accredited course or professional qualification.\n\nCrop growth depends on interacting factors such as water, soil, weather and management. Too little or too much water can affect plants, and runoff can carry soil away. Draw a concept map linking water use, soil moisture, plant condition and resource conservation. Label ideas as hypotheses to discuss with a qualified local adviser; this introductory activity does not prescribe irrigation rates, chemicals or treatment.\n\nPractice: Make a concept map showing how water use can affect a crop-growing activity.\n\nSelf-check: Concept map clearly links the main factors without unsupported yield claims. Explain your reasoning in your own words and ask a facilitator to review it. Completion is self-reported; it is not an assessment certificate.",
+    "practical_task": "Make a concept map showing how water use can affect a crop-growing activity."
+  },
+  {
+    "id": "agri-003",
+    "title": "Introduction to Farm Technology",
+    "skill": "sensor awareness",
+    "difficulty": "beginner",
+    "lesson": "Prototype practice worksheet. This is introductory learning, not an accredited course or professional qualification.\n\nTechnology is useful when it answers a clear observation question. A paper form can record date, plot label, observation, unit, method and notes before any app or sensor is chosen. Fictional case: a group wants to compare weekly plant height in two plots. Design consistent fields and a missing-data option, and explain how the records would be checked. Avoid collecting personal data or operating farm machinery.\n\nPractice: Design a paper form for recording a simple farm observation.\n\nSelf-check: Form has clear fields, units where needed, and a date or time field. Explain your reasoning in your own words and ask a facilitator to review it. Completion is self-reported; it is not an assessment certificate.",
+    "practical_task": "Design a paper form for recording a simple farm observation."
+  },
+  {
+    "id": "data-001",
+    "title": "Questions, Tables, and Data Quality",
+    "skill": "data interpretation",
+    "difficulty": "beginner",
+    "lesson": "Prototype practice worksheet. This is introductory learning, not an accredited course or professional qualification.\n\nStart with a question such as \"How many fictional library books were borrowed each day?\" A table should have one row per observation and named columns with units. Example rows: Monday 3, Tuesday blank, Tuesday 5, Wednesday \"five\". Flag the missing value, duplicate day and inconsistent number format. Ask for clarification rather than inventing a value; keep an unchanged copy of the original table.\n\nPractice: Inspect a tiny fictional dataset and note blank, duplicate, or inconsistent entries.\n\nSelf-check: List the issues found and explain why each one matters. Explain your reasoning in your own words and ask a facilitator to review it. Completion is self-reported; it is not an assessment certificate.",
+    "practical_task": "Inspect a tiny fictional dataset and note blank, duplicate, or inconsistent entries."
+  },
+  {
+    "id": "data-002",
+    "title": "Spreadsheet Basics and Summary Statistics",
+    "skill": "spreadsheet basics",
+    "difficulty": "beginner",
+    "lesson": "Prototype practice worksheet. This is introductory learning, not an accredited course or professional qualification.\n\nIn a spreadsheet, place labels in row 1 and fictional quantities 2, 4 and 6 in cells B2:B4. =SUM(B2:B4) returns 12; =AVERAGE(B2:B4) returns 4. Check these by hand. A blank value and zero have different meanings, so decide how missing values are handled before summarising. Format units consistently and label the summary so another learner can reproduce it.\n\nPractice: Create a small spreadsheet from fictional, non-sensitive data and calculate a total and average.\n\nSelf-check: Calculations are correct and column headings are clear. Explain your reasoning in your own words and ask a facilitator to review it. Completion is self-reported; it is not an assessment certificate.",
+    "practical_task": "Create a small spreadsheet from fictional, non-sensitive data and calculate a total and average."
+  },
+  {
+    "id": "data-003",
+    "title": "Charts and Explaining Findings",
+    "skill": "data visualisation",
+    "difficulty": "beginner",
+    "lesson": "Prototype practice worksheet. This is introductory learning, not an accredited course or professional qualification.\n\nA bar chart compares categories; a line chart can show an ordered time series. With fictional counts Monday 2, Tuesday 4 and Wednesday 6, label the axes \"Day\" and \"Books borrowed\" and use a clear scale. Two supported observations are that Wednesday has the highest count and the total is 12. These three points do not prove a future trend or explain why counts changed.\n\nPractice: Create or sketch a suitable chart and write two evidence-based observations.\n\nSelf-check: Chart matches the data and observations do not overstate causation. Explain your reasoning in your own words and ask a facilitator to review it. Completion is self-reported; it is not an assessment certificate.",
+    "practical_task": "Create or sketch a suitable chart and write two evidence-based observations."
+  },
+  {
+    "id": "web-001",
+    "title": "HTML Page Structure",
+    "skill": "HTML basics",
+    "difficulty": "beginner",
+    "lesson": "Prototype practice worksheet. This is introductory learning, not an accredited course or professional qualification.\n\nHTML describes a page's structure. A minimal practice page can contain <!doctype html>, <html lang=\"en\">, a head with a title, and a body with one h1, a paragraph and a list. Use headings in order and meaningful link text. In a local text file, describe a fictional community event using semantic elements. Save it as index.html and open it in a browser; do not include real contact details.\n\nPractice: Create a simple page about a fictional community activity.\n\nSelf-check: Page has a clear heading, meaningful sections, and working links where provided. Explain your reasoning in your own words and ask a facilitator to review it. Completion is self-reported; it is not an assessment certificate.",
+    "practical_task": "Create a simple page about a fictional community activity."
+  },
+  {
+    "id": "web-002",
+    "title": "CSS and Responsive Layout",
+    "skill": "CSS basics",
+    "difficulty": "beginner",
+    "lesson": "Prototype practice worksheet. This is introductory learning, not an accredited course or professional qualification.\n\nCSS controls presentation. Try body { font-family: sans-serif; margin: 1rem; } and main { max-width: 45rem; margin: auto; }. For a small card grid, use display: grid and grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)). Check at 360 px and a wide viewport. Text should remain readable, focus visible and controls reachable without horizontal scrolling.\n\nPractice: Style the page and check the layout at a narrow viewport width.\n\nSelf-check: Text remains readable and content does not require horizontal scrolling on a narrow screen. Explain your reasoning in your own words and ask a facilitator to review it. Completion is self-reported; it is not an assessment certificate.",
+    "practical_task": "Style the page and check the layout at a narrow viewport width."
+  },
+  {
+    "id": "web-003",
+    "title": "JavaScript and Interaction Basics",
+    "skill": "JavaScript fundamentals",
+    "difficulty": "beginner",
+    "lesson": "Prototype practice worksheet. This is introductory learning, not an accredited course or professional qualification.\n\nJavaScript can respond to an action. Add a button with id=\"greet\" and a paragraph with id=\"message\". After the HTML, attach a click listener using document.querySelector(\"#greet\").addEventListener(\"click\", () => { document.querySelector(\"#message\").textContent = \"Welcome to our practice page\"; });. Use textContent for plain text and a real button so keyboard users can activate it. Test repeated clicks and inspect the browser console.\n\nPractice: Add a simple button interaction to the practice page.\n\nSelf-check: The interaction works and the browser console has no unaddressed errors. Explain your reasoning in your own words and ask a facilitator to review it. Completion is self-reported; it is not an assessment certificate.",
+    "practical_task": "Add a simple button interaction to the practice page."
+  },
+  {
+    "id": "design-001",
+    "title": "Audience and Visual Hierarchy",
+    "skill": "audience awareness",
+    "difficulty": "beginner",
+    "lesson": "Prototype practice worksheet. This is introductory learning, not an accredited course or professional qualification.\n\nBegin with the audience and the action they need to take. For a fictional village reading event, the event name, date, place and next action need a clear order. Sketch three boxes: main heading, essential details and contact or action area using invented information. Make the most important text easiest to find. Ask another learner what they notice first and whether the purpose is clear.\n\nPractice: Sketch a poster layout for a fictional community event.\n\nSelf-check: The event name, date, and main action are easy to locate. Explain your reasoning in your own words and ask a facilitator to review it. Completion is self-reported; it is not an assessment certificate.",
+    "practical_task": "Sketch a poster layout for a fictional community event."
+  },
+  {
+    "id": "design-002",
+    "title": "Layout, Colour, and Typography",
+    "skill": "layout basics",
+    "difficulty": "beginner",
+    "lesson": "Prototype practice worksheet. This is introductory learning, not an accredited course or professional qualification.\n\nReadability depends on contrast, spacing and a clear text hierarchy. Create one poster with a strong heading and short details, then another with a different arrangement. Keep body text legible, avoid using colour alone to communicate meaning, and check both in grayscale and at a small viewing size. Explain which version makes the event date and next action easier to find, using observations rather than taste alone.\n\nPractice: Produce two variations of the same simple poster and compare readability.\n\nSelf-check: Both designs have clear hierarchy and readable text. Explain your reasoning in your own words and ask a facilitator to review it. Completion is self-reported; it is not an assessment certificate.",
+    "practical_task": "Produce two variations of the same simple poster and compare readability."
+  },
+  {
+    "id": "design-003",
+    "title": "Feedback and Portfolio Practice",
+    "skill": "portfolio building",
+    "difficulty": "beginner",
+    "lesson": "Prototype practice worksheet. This is introductory learning, not an accredited course or professional qualification.\n\nFeedback is more useful when questions are specific: \"Can you find the date quickly?\" and \"What should the reader do next?\" Record the response, choose one change and explain why it supports the audience. Keep an original and revised version with a short description of your own contribution. Use only work and images you have permission to share; do not invent client endorsements.\n\nPractice: Ask a reviewer two specific questions and revise the design based on feedback.\n\nSelf-check: Save the final design with a short note explaining the changes. Explain your reasoning in your own words and ask a facilitator to review it. Completion is self-reported; it is not an assessment certificate.",
+    "practical_task": "Ask a reviewer two specific questions and revise the design based on feedback."
+  },
+  {
+    "id": "hospitality-001",
+    "title": "Guest Communication Basics",
+    "skill": "customer communication",
+    "difficulty": "beginner",
+    "lesson": "Prototype practice worksheet. This is introductory learning, not an accredited course or professional qualification.\n\nA clear guest response acknowledges the question, provides accurate information and checks whether more help is needed. Fictional case: a visitor asks when a community venue opens. If the schedule is unknown, say you will check with the responsible staff instead of guessing. Practise a short greeting, a clear answer or escalation, and a respectful close. Never promise an unavailable service.\n\nPractice: Role-play a fictional guest question and write a clear response.\n\nSelf-check: Response is polite, relevant, and easy to follow. Explain your reasoning in your own words and ask a facilitator to review it. Completion is self-reported; it is not an assessment certificate.",
+    "practical_task": "Role-play a fictional guest question and write a clear response."
+  },
+  {
+    "id": "hospitality-002",
+    "title": "Teamwork, Organisation, and Hygiene",
+    "skill": "teamwork",
+    "difficulty": "beginner",
+    "lesson": "Prototype practice worksheet. This is introductory learning, not an accredited course or professional qualification.\n\nA shift checklist can group preparation, service and handover tasks, with an owner and a completion field. For a fictional information desk, include checking signs, keeping access routes clear and passing unresolved requests to the next worker. Follow the venue's hygiene procedures and report hazards. This worksheet does not qualify a learner for food handling or other regulated work.\n\nPractice: Create a fictional task checklist for a service shift.\n\nSelf-check: Checklist is ordered and includes checking relevant site procedures. Explain your reasoning in your own words and ask a facilitator to review it. Completion is self-reported; it is not an assessment certificate.",
+    "practical_task": "Create a fictional task checklist for a service shift."
+  },
+  {
+    "id": "hospitality-003",
+    "title": "Handling Questions and Feedback",
+    "skill": "customer service",
+    "difficulty": "beginner",
+    "lesson": "Prototype practice worksheet. This is introductory learning, not an accredited course or professional qualification.\n\nWhen someone raises a concern, listen without interrupting, restate the issue and explain the next action within your authority. Fictional case: an advertised room is unavailable. Acknowledge the inconvenience, contact the responsible person and give an honest update. Do not argue, blame a colleague or promise compensation you cannot authorise. Write a response and a brief factual handover.\n\nPractice: Write a response to a fictional customer concern.\n\nSelf-check: Response is respectful and does not promise something outside the worker’s authority. Explain your reasoning in your own words and ask a facilitator to review it. Completion is self-reported; it is not an assessment certificate.",
+    "practical_task": "Write a response to a fictional customer concern."
+  },
+  {
+    "id": "business-001",
+    "title": "Identify a Community Need",
+    "skill": "customer understanding",
+    "difficulty": "beginner",
+    "lesson": "Prototype practice worksheet. This is introductory learning, not an accredited course or professional qualification.\n\nA useful business idea starts with a problem experienced by a specific group. Fictional example: learners cannot easily find a quiet evening study space. Separate the observation from the assumption that they will pay for a service. Ask what they do now, what is difficult and what a useful improvement would look like. Avoid leading questions and do not collect unnecessary personal details.\n\nPractice: Write down a problem, who experiences it, and three questions to ask potential customers.\n\nSelf-check: Problem and target customer are clearly described; assumptions are labelled. Explain your reasoning in your own words and ask a facilitator to review it. Completion is self-reported; it is not an assessment certificate.",
+    "practical_task": "Write down a problem, who experiences it, and three questions to ask potential customers."
+  },
+  {
+    "id": "business-002",
+    "title": "Simple Costs and Record Keeping",
+    "skill": "basic cost tracking",
+    "difficulty": "beginner",
+    "lesson": "Prototype practice worksheet. This is introductory learning, not an accredited course or professional qualification.\n\nCosts and revenue should be recorded separately. Fictional example: make 10 notebooks with material cost 20 each and a fixed stall cost of 50. Total cost is 250. Selling all 10 at 30 gives revenue 300 and a surplus of 50 before other costs and taxes. Unsold items change the result. Build a labelled worksheet and vary the number sold; this is arithmetic practice, not a promise of profit.\n\nPractice: Complete a worksheet with fictional costs, quantities, and totals.\n\nSelf-check: Calculations are correct and costs are not presented as guaranteed market prices. Explain your reasoning in your own words and ask a facilitator to review it. Completion is self-reported; it is not an assessment certificate.",
+    "practical_task": "Complete a worksheet with fictional costs, quantities, and totals."
+  },
+  {
+    "id": "business-003",
+    "title": "Test an Idea and Communicate It",
+    "skill": "simple planning",
+    "difficulty": "beginner",
+    "lesson": "Prototype practice worksheet. This is introductory learning, not an accredited course or professional qualification.\n\nA small idea test should state the problem, intended users, proposed benefit, test method and what evidence would lead to a revision. Draft a one-page concept for a fictional study-space service and three neutral feedback questions. Record assumptions separately from observed responses. A prototype test can use a drawing and invented examples without spending money, collecting payments or promising a launch.\n\nPractice: Draft a one-page idea summary and a short feedback questionnaire.\n\nSelf-check: Summary explains the problem, proposed solution, assumptions, and next test. Explain your reasoning in your own words and ask a facilitator to review it. Completion is self-reported; it is not an assessment certificate.",
+    "practical_task": "Draft a one-page idea summary and a short feedback questionnaire."
+  }
+]

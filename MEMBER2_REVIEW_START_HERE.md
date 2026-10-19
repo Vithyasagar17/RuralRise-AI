@@ -1,3 +1,5 @@
+> Historical handoff. Current implementation, setup and verification are in [README.md](README.md), [QUICKSTART.md](QUICKSTART.md) and [docs/completion-handoff.md](docs/completion-handoff.md). Do not run older incremental upgraders against this full source release.
+
 # Member 2 integrated with the current Member 3/5 review
 
 This candidate retains the newer backend/storage/authentication work and Member 5's frontend while integrating Member 2's actual deterministic recommendation engine. Do not overwrite your working project with the uploaded Member 2 ZIP: that ZIP contains the older Stage 2 backend and no frontend.

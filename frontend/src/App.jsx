@@ -1,5 +1,8 @@
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { StudentProvider, useStudent } from './features/student/StudentContext.jsx';
+import Account from './pages/Account.jsx';
+import StatusPanel from './features/common/StatusPanel.jsx';
 import { LanguageSelect } from "./features/i18n";
 import { FacilitatorDashboard } from "./features/facilitator";
 import { OfflineBanner, OfflineLessons } from "./features/offline";
@@ -12,6 +15,7 @@ import Opportunities from "./pages/Opportunities";
 import Profile from "./pages/Profile";
 
 import "./index.css";
+import './integration.css';
 
 const DEMO_STUDENTS = [
   { id: "demo-student-001", name: "Demo Student" },
@@ -29,31 +33,41 @@ const navigation = [
   { id: "lessons", label: "Offline lessons", icon: "▣" },
 ];
 
-function App() {
-  const [activePage, setActivePage] = useState("dashboard");
+function AppShell() {
+  const session = useStudent();
+  const [activePage, setActivePage] = useState(() => navigation.some((n) => n.id === location.hash.slice(1)) ? location.hash.slice(1) : 'dashboard');
   const [studentId, setStudentId] = useState(DEMO_STUDENTS[0].id);
+  const onNavigate = (page) => { location.hash = page; setActivePage(page); };
+  useEffect(() => {
+    const update = () => setActivePage(navigation.some((n) => n.id === location.hash.slice(1)) ? location.hash.slice(1) : 'dashboard');
+    window.addEventListener('hashchange', update);
+    return () => window.removeEventListener('hashchange', update);
+  }, []);
+  useEffect(() => { if (session.account?.role === 'teacher') setActivePage('facilitator'); }, [session.account?.role]);
+  const teacher = session.secure && session.account?.role === 'teacher';
 
   const activeNavigation = navigation.find(
     (item) => item.id === activePage
   );
 
-  const student = DEMO_STUDENTS.find(
+  const demoStudent = DEMO_STUDENTS.find(
     (item) => item.id === studentId
   );
+  const student = session.student ? { id: session.student.student_id, name: session.student.profile.name } : !session.secure ? demoStudent : null;
 
   function renderPage() {
     switch (activePage) {
       case "dashboard":
-        return <Dashboard />;
+        return <Dashboard onNavigate={onNavigate} />;
 
       case "careers":
-        return <Careers />;
+        return <Careers onNavigate={onNavigate} />;
 
       case "recommendations":
-        return <Recommendations />;
+        return <Recommendations onNavigate={onNavigate} />;
 
       case "learning":
-        return <Learning />;
+        return <Learning onNavigate={onNavigate} />;
 
       case "opportunities":
         return <Opportunities />;
@@ -62,12 +76,13 @@ function App() {
         return <Profile />;
 
       case "facilitator":
-        return <FacilitatorDashboard />;
+        return <FacilitatorDashboard dataSource="api" />;
 
       case "lessons":
+        if (!student) return <div className="rr-notice"><p>Save your profile before starting lessons.</p><button type="button" onClick={() => onNavigate('profile')}>Create my profile</button></div>;
         return (
           <>
-            <div className="app-student-picker">
+            {!session.secure && !session.student && <div className="app-student-picker">
               <label htmlFor="app-student">Select demo student</label>
               <select
                 id="app-student"
@@ -80,10 +95,10 @@ function App() {
                   </option>
                 ))}
               </select>
-            </div>
+            </div>}
 
             <OfflineLessons
-              key={studentId}
+              key={`${session.identity}:${student.id}`}
               studentId={student.id}
               studentName={student.name}
             />
@@ -91,7 +106,7 @@ function App() {
         );
 
       default:
-        return <Dashboard />;
+        return <Dashboard onNavigate={onNavigate} />;
     }
   }
 
@@ -106,7 +121,7 @@ function App() {
           href="#dashboard"
           onClick={(event) => {
             event.preventDefault();
-            setActivePage("dashboard");
+            onNavigate(teacher ? 'facilitator' : 'dashboard');
           }}
         >
           <span className="brand-mark">R</span>
@@ -119,14 +134,14 @@ function App() {
         <div className="sidebar-label">YOUR SPACE</div>
 
         <nav className="navigation" aria-label="Main navigation">
-          {navigation.map((item) => (
+          {navigation.filter((item) => teacher ? item.id === 'facilitator' : !session.secure || item.id !== 'facilitator').map((item) => (
             <button
               key={item.id}
               type="button"
               className={`nav-item ${
                 activePage === item.id ? "active" : ""
               }`}
-              onClick={() => setActivePage(item.id)}
+              onClick={() => onNavigate(item.id)}
               aria-current={
                 activePage === item.id ? "page" : undefined
               }
@@ -166,14 +181,17 @@ function App() {
           <button
             type="button"
             className="avatar"
-            onClick={() => setActivePage("profile")}
+            onClick={() => onNavigate(teacher ? 'facilitator' : 'profile')}
             aria-label="Open profile"
           >
             S
           </button>
+          {session.secure && session.identity && <button type="button" onClick={session.logout}>Sign out</button>}
         </header>
 
         <section className="page-content">
+          {!session.secure && <p className="rr-notice">Fictional demo mode — use sample details only. Real student accounts require secure mode.</p>}
+          {session.offlineAccount && <p className="rr-notice">Offline account view: saved lessons and local progress are available in this tab. Reconnect to verify access and synchronize. This is not a fresh account verification.</p>}
           <div className="eyebrow">YOUR JOURNEY STARTS HERE</div>
 
           <h1>{activeNavigation?.label ?? "Dashboard"}</h1>
@@ -183,7 +201,7 @@ function App() {
             new possibilities.
           </p>
 
-          {renderPage()}
+          {session.secure && !session.identity ? <Account /> : session.secure && (session.loading || !session.account) ? <StatusPanel loading={session.loading} error={session.error || 'Account setup is unavailable. Check backend authentication and account-read configuration.'} onRetry={() => location.reload()} /> : teacher ? <FacilitatorDashboard dataSource="api" /> : renderPage()}
 
           <footer className="page-footer">
             RuralRise AI - Learn, grow, and rise together.
@@ -194,4 +212,4 @@ function App() {
   );
 }
 
-export default App;
+export default function App() { return <StudentProvider><AppShell /></StudentProvider>; }

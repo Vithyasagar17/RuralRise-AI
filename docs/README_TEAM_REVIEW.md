@@ -1,3 +1,5 @@
+> Historical baseline. See [completion-phases.md](completion-phases.md), [completion-contracts.md](completion-contracts.md) and [completion-handoff.md](completion-handoff.md) for this release. Earlier missing-component/status statements are historical.
+
 # RuralRise AI
 
 **Proposed replacement for the shared README — team review pending.**

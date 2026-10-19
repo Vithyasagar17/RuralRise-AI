@@ -1,3 +1,5 @@
+> Historical handoff. Current implementation, setup and verification are in [README.md](README.md), [QUICKSTART.md](QUICKSTART.md) and [docs/completion-handoff.md](docs/completion-handoff.md). Do not run older incremental upgraders against this full source release.
+
 # Member 3 backend — authentication/access review candidate
 
 > **Latest:** MEMBER2_REVIEW_START_HERE.md covers the actual Member 2 engine merged into this backend and the Member 5 frontend. It supersedes earlier missing-engine/source statements and identifies the correct baseline-specific updater.

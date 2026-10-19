@@ -1,90 +1,28 @@
-
-const learningGoals = [
-  {
-    title: "Explore career options",
-    description: "Discover careers that match your interests.",
-    icon: "🧭",
-    progress: 0,
-  },
-  {
-    title: "Build a new skill",
-    description: "Start learning through practical lessons.",
-    icon: "🛠️",
-    progress: 0,
-  },
-  {
-    title: "Find opportunities",
-    description: "Explore training, internships and jobs.",
-    icon: "🌱",
-    progress: 0,
-  },
-];
-
-function Dashboard() {
-  return (
-    <div className="dashboard-page">
-      <section className="welcome-section">
-        <p className="eyebrow">YOUR JOURNEY STARTS HERE</p>
-        <h2>Small steps. Bigger opportunities.</h2>
-        <p>
-          Discover your strengths, learn useful skills, and explore
-          opportunities for your future.
-        </p>
-      </section>
-
-      <section className="dashboard-section">
-        <div className="section-heading">
-          <div>
-            <h2>Your next steps</h2>
-            <p>Choose where you want to begin.</p>
-          </div>
-        </div>
-
-        <div className="quick-actions">
-          {learningGoals.map((goal) => (
-            <article className="action-card" key={goal.title}>
-              <div className="action-icon">{goal.icon}</div>
-              <h3>{goal.title}</h3>
-              <p>{goal.description}</p>
-              <div className="progress-track">
-                <div
-                  className="progress-fill"
-                  style={{ width: `${goal.progress}%` }}
-                />
-              </div>
-              <span className="progress-label">
-                {goal.progress}% completed
-              </span>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section className="dashboard-section">
-        <div className="section-heading">
-          <div>
-            <h2>Made for your future</h2>
-            <p>
-              RuralRise AI helps you connect learning with real-world
-              opportunities.
-            </p>
-          </div>
-        </div>
-
-        <div className="info-card">
-          <span className="info-icon">💡</span>
-          <div>
-            <h3>Start with your interests</h3>
-            <p>
-              Tell us what you enjoy, what skills you have, and what
-              you want to achieve. You can then explore suitable
-              learning paths and career options.
-            </p>
-          </div>
-        </div>
-      </section>
-    </div>
-  );
+import { useEffect, useState } from 'react';
+import { useStudent } from '../features/student/StudentContext.jsx';
+import { useProgressSync } from '../features/offline/useProgressSync.js';
+import { loadOwnProgress } from '../services/api.js';
+export default function Dashboard({ onNavigate = () => {} }) {
+  const { student, secure } = useStudent();
+  const { records } = useProgressSync({ studentId: student?.student_id, autoSync: !!student });
+  const [serverProgress, setServerProgress] = useState([]);
+  const [readError, setReadError] = useState(null);
+  const [retry, setRetry] = useState(0);
+  useEffect(() => {
+    let active = true; setServerProgress([]); setReadError(null);
+    if (secure && student) loadOwnProgress().then((data) => { if (active) setServerProgress(data.progress); }).catch(() => { if (active) setReadError('Server progress could not be loaded. The count below uses records available on this device.'); });
+    return () => { active = false; };
+  }, [secure, student, retry]);
+  const progress = new Map(serverProgress.map((row) => [row.course_id, row]));
+  records.forEach((row) => progress.set(row.payload.course_id, row.payload));
+  const completed = [...progress.values()].filter((row) => row.completed).length;
+  return <div className="dashboard-page"><section className="welcome-section"><p className="eyebrow">YOUR JOURNEY STARTS HERE</p><h2>{student ? `Welcome, ${student.profile.name}` : 'Small steps. Bigger opportunities.'}</h2><p>{student ? `${student.profile.education_level} · ${student.profile.location} · ${student.profile.weekly_learning_hours} hours per week` : 'Save your interests and goals to begin your own learning journey.'}</p></section>
+    {readError && <p className="rr-notice" role="status">{readError} <button type="button" onClick={() => setRetry((n) => n + 1)}>Retry server progress</button></p>}
+    {student && <div className="rr-notice"><strong>{completed} {completed === 1 ? 'lesson' : 'lessons'} marked complete</strong><p>Based on available records. Pending local changes are included; open lessons to see synchronization status.</p><p>Student ID: {student.student_id}</p></div>}
+    <section className="dashboard-section"><h2>Your next steps</h2><div className="quick-actions">{[
+      ['profile', student ? 'Update my profile' : 'Create my profile', 'Tell us your interests, skills and goals.'],
+      ['recommendations', 'Explore career options', 'See rankings based on your saved profile.'],
+      ['learning', 'Build a new skill', 'Choose a pathway, read lessons and complete practical tasks.'],
+      ['opportunities', 'Find opportunities', 'Review sourced training and scholarship listings.'],
+    ].map(([page, title, description]) => <article className="action-card" key={page}><h3>{title}</h3><p>{description}</p><button type="button" onClick={() => onNavigate(page)}>Open {title.toLowerCase()}</button></article>)}</div></section></div>;
 }
-
-export default Dashboard;

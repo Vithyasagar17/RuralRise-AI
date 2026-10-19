@@ -1,0 +1,68 @@
+{
+  "mode": "demo",
+  "checks": [
+    {
+      "name": "Profile persisted through live POST /profile",
+      "passed": true
+    },
+    {
+      "name": "Career rankings loaded from live backend",
+      "passed": true
+    },
+    {
+      "name": "Roadmap opens an actual cached lesson and PWA controls app",
+      "passed": true
+    },
+    {
+      "name": "Offline completion is durable and scoped to created student",
+      "passed": true
+    },
+    {
+      "name": "Offline reload restores roadmap, content and completion",
+      "passed": true
+    },
+    {
+      "name": "Reconnect automatically syncs exactly one queued row",
+      "passed": true
+    },
+    {
+      "name": "Opportunity filters call the documented live endpoint",
+      "passed": true
+    },
+    {
+      "name": "Opportunity links retain official HTTPS URLs",
+      "passed": true
+    },
+    {
+      "name": "Modal closes using keyboard",
+      "passed": true
+    },
+    {
+      "name": "Demo facilitator remains fictional only",
+      "passed": true
+    },
+    {
+      "name": "Dashboard automated WCAG A/AA scan",
+      "passed": true
+    },
+    {
+      "name": "360 px view has no horizontal page overflow",
+      "passed": true
+    },
+    {
+      "name": "No uncaught browser errors",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "executed_at_utc": "2026-10-19T04:15:01.064Z",
+  "limitations": [
+    "Desktop Chrome with mobile emulation; not a physical phone.",
+    "Hosted Supabase and microphone/audio output not exercised."
+  ],
+  "student_id": "3111a996-b04f-4d8a-9851-1a73ed2a4867",
+  "course_id": "solar-001",
+  "accessibility": [],
+  "passed": true,
+  "live_backend_disk_confirmation": true
+}
